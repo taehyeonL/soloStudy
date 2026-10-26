@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "concepts": [
+    {"concept_id": "NET-TCPIP", "title": "TCP/IP", "tracks": ["computer-science", "security-written", "security-practical"], "status": "not_started", "lesson_file": null, "evidence_attempt_ids": [], "last_studied_on": null},
+    {"concept_id": "OS-LINUX-PERM", "title": "Linux 권한", "tracks": ["computer-science", "security-written", "security-practical"], "status": "not_started", "lesson_file": null, "evidence_attempt_ids": [], "last_studied_on": null},
+    {"concept_id": "APP-SQLI", "title": "SQL Injection", "tracks": ["computer-science", "security-written", "security-practical"], "status": "not_started", "lesson_file": null, "evidence_attempt_ids": [], "last_studied_on": null},
+    {"concept_id": "SEC-CRYPTO", "title": "암호화", "tracks": ["computer-science", "security-written", "security-practical"], "status": "not_started", "lesson_file": null, "evidence_attempt_ids": [], "last_studied_on": null}
+  ]
+}

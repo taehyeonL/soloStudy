@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-26",
+  "events": [],
+  "pending_verification": ["2027년 정보보안기사 공식 출제기준과 필기·실기 일정", "사용자 TOEIC 응시일", "지원 공공기관 채용공고·필기일·TOEIC 인정 기준"],
+  "event_schema": {"id": "고유 ID", "allocation_group": "ncs/cs_security/toeic", "exam_date": "YYYY-MM-DD", "status": "confirmed 또는 unverified", "official_source_url": "공식 근거", "verified_on": "YYYY-MM-DD"}
+}

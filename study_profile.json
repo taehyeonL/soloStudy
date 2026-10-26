@@ -1,17 +1,141 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "language": "ko-KR",
   "timezone": "Asia/Seoul",
   "created_on": "2026-10-26",
-  "goal": {"year": 2027, "sector": "공공기관", "employment": "일반직 정규직", "job": "전산직", "location": "전국 가능"},
-  "background": {"ncs_level": "완전 초보", "experience": "Java/Spring 공공 SI 약 4년", "certifications": ["정보처리기사", "ADsP"]},
-  "availability_minutes": {"weekday": [60, 90], "weekend": [120, 180]},
-  "plan": {"weeks": 12, "learning_days": 84, "start_date": "2026-10-26", "calendar_is_flexible": true},
-  "preferences": {"lecture_block_minutes": [15, 20], "one_question_at_a_time": true, "hide_answers_until_response": true, "original_questions": true, "examples": "공공기관 업무와 SI 경험에 연결하되 초보 수준부터", "platform": "Codex Windows 채팅과 로컬 Markdown/JSON"},
-  "review": {"interval_days": [1, 3, 7, 14], "anchor": "등록일 또는 직전 실제 성공일", "failure_retry_days": 1, "failure_keeps_stage": true},
-  "adaptation": {"window_first_attempts_per_domain": 10, "increase_accuracy_min": 0.8, "maintain_accuracy_min": 0.6, "increase_requires_stability": true},
+  "goal": {
+    "year": 2027,
+    "sector": "공공기관",
+    "employment": "일반직 정규직",
+    "job": "전산직",
+    "location": "전국 가능"
+  },
+  "background": {
+    "ncs_level": "완전 초보",
+    "experience": "Java/Spring 공공 SI 약 4년",
+    "certifications": [
+      "정보처리기사",
+      "ADsP"
+    ],
+    "computer_science_level": "전공 이론 기초부터 체계적 복습"
+  },
+  "availability_minutes": {
+    "weekday": [
+      60,
+      90
+    ],
+    "weekend": [
+      120,
+      180
+    ]
+  },
+  "plan": {
+    "weeks": 24,
+    "learning_days": 168,
+    "start_date": "2026-10-26",
+    "calendar_is_flexible": true,
+    "legacy_ncs_learning_units": 84
+  },
+  "preferences": {
+    "lecture_block_minutes": [
+      15,
+      20
+    ],
+    "one_question_at_a_time": true,
+    "hide_answers_until_response": true,
+    "original_questions": true,
+    "examples": "공공기관 업무와 SI 경험에 연결하되 초보 수준부터",
+    "platform": "Codex Windows 채팅과 로컬 Markdown/JSON"
+  },
+  "review": {
+    "interval_days": [
+      1,
+      3,
+      7,
+      14
+    ],
+    "anchor": "등록일 또는 직전 실제 성공일",
+    "failure_retry_days": 1,
+    "failure_keeps_stage": true
+  },
+  "adaptation": {
+    "window_first_attempts_per_domain": 10,
+    "increase_accuracy_min": 0.8,
+    "maintain_accuracy_min": 0.6,
+    "increase_requires_stability": true
+  },
   "target_institutions": [],
   "exam_notice_policy": "기관별 해당 연도 실제 채용공고 우선; 미확인 범위를 단정하지 않음",
   "time_policy": "실측 또는 사용자 보고만 기록; 미확인 null",
-  "sync": {"preferred_visibility": "private", "push_requires_user_request": true, "work_pc_policy": "회사 보안정책 준수"}
+  "sync": {
+    "preferred_visibility": "private",
+    "push_requires_user_request": true,
+    "work_pc_policy": "회사 보안정책 준수"
+  },
+  "additional_goals": [
+    {
+      "year": 2027,
+      "exam": "정보보안기사",
+      "stages": [
+        "필기",
+        "실기"
+      ],
+      "official_criteria_status": "검증 필요"
+    },
+    {
+      "year": 2027,
+      "exam": "TOEIC",
+      "target_score_range": [
+        700,
+        750
+      ],
+      "role": "공공기관 지원자격 확보용 보조 과목"
+    }
+  ],
+  "weekly_hours": 14,
+  "weekly_allocation_hours": {
+    "ncs": 6,
+    "cs_security": 6,
+    "toeic": 2
+  },
+  "toeic": {
+    "target_score_range": [
+      700,
+      750
+    ],
+    "role": "지원자격 확보용 보조 과목",
+    "regular_weekly_hours": 2,
+    "focus": [
+      "기본 문법",
+      "어휘",
+      "독해"
+    ],
+    "baseline_minutes": {
+      "grammar": 40,
+      "vocabulary": 30,
+      "reading": 50
+    },
+    "confirmed_official_score": null,
+    "score_evidence_confirmed": false,
+    "confirmed_institution_requirement": null,
+    "mock_scores": [],
+    "pre_exam_mock_required": true,
+    "mock_requires_real_audio_for_lc": true,
+    "stop_regular_study_when_target_secured": true,
+    "post_target_allocation_hours": {
+      "ncs": 7,
+      "cs_security": 7,
+      "toeic": 0
+    }
+  },
+  "scheduling": {
+    "imminent_days": 28,
+    "temporary_transfer_fraction": 0.14285714285714285,
+    "exam_schedule_file": "subjects/exam_schedule.json",
+    "priority_rule": "공식 근거로 확인된 28일 이내 가장 가까운 시험에 총시간의 1/7을 타 과목에서 비례 이동; 지나면 기본 배분 복귀",
+    "background_execution": false,
+    "hours_change_policy": "6:6:2 비례; TOEIC 확보 후 7:7:0; 분 단위 최대 나머지 배분으로 총시간 유지"
+  },
+  "availability_note": "주 14시간을 우선 적용. 종전 평일90분·주말180분 상한 합계는13.5시간이므로 주중 또는 주말에 총30분 추가 분할학습. 불가하면 요청 시간으로 재계산.",
+  "concept_registry": "subjects/concepts.json"
 }
