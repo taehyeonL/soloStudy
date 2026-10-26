@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "language": "ko-KR",
+  "timezone": "Asia/Seoul",
+  "created_on": "2026-10-26",
+  "goal": {"year": 2027, "sector": "공공기관", "employment": "일반직 정규직", "job": "전산직", "location": "전국 가능"},
+  "background": {"ncs_level": "완전 초보", "experience": "Java/Spring 공공 SI 약 4년", "certifications": ["정보처리기사", "ADsP"]},
+  "availability_minutes": {"weekday": [60, 90], "weekend": [120, 180]},
+  "plan": {"weeks": 12, "learning_days": 84, "start_date": "2026-10-26", "calendar_is_flexible": true},
+  "preferences": {"lecture_block_minutes": [15, 20], "one_question_at_a_time": true, "hide_answers_until_response": true, "original_questions": true, "examples": "공공기관 업무와 SI 경험에 연결하되 초보 수준부터", "platform": "Codex Windows 채팅과 로컬 Markdown/JSON"},
+  "review": {"interval_days": [1, 3, 7, 14], "anchor": "등록일 또는 직전 실제 성공일", "failure_retry_days": 1, "failure_keeps_stage": true},
+  "adaptation": {"window_first_attempts_per_domain": 10, "increase_accuracy_min": 0.8, "maintain_accuracy_min": 0.6, "increase_requires_stability": true},
+  "target_institutions": [],
+  "exam_notice_policy": "기관별 해당 연도 실제 채용공고 우선; 미확인 범위를 단정하지 않음",
+  "time_policy": "실측 또는 사용자 보고만 기록; 미확인 null",
+  "sync": {"preferred_visibility": "private", "push_requires_user_request": true, "work_pc_policy": "회사 보안정책 준수"}
+}

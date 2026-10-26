@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "version": 1,
+  "id": "NCS-D001-E001",
+  "kind": "worked_example",
+  "domain": "의사소통",
+  "subtype": "공지문 정보 확인",
+  "difficulty": "기초",
+  "passage": "개발팀은 회의 자료를 금요일 14시까지 공동 폴더에 올려야 한다. 메일 제출은 받지 않는다. 자료 업로드만으로 제출이 완료되며 별도 승인은 필요 없다.",
+  "prompt": "공지에 맞게 자료를 제출한 경우는?",
+  "choices": ["금요일 13시에 메일로 보냈다.", "금요일 15시에 공동 폴더에 올렸다.", "금요일 13시에 공동 폴더에 올렸다.", "금요일 13시에 메신저로 보냈다."],
+  "answer": 3,
+  "explanation": "금요일 14시까지 공동 폴더에 업로드해야 한다. 3번은 금요일 13시 공동 폴더 제출이므로 두 조건을 충족한다. 1번과 4번은 제출 경로가 다르고 2번은 마감 이후다.",
+  "quick_solution": "마감 14시, 방법 공동 폴더를 표시하고 각 선택지의 시각과 방법만 대조한다.",
+  "distractor_analysis": {"1": "메일 제출은 받지 않음", "2": "마감 이후", "4": "메신저는 정해진 제출 경로가 아님"},
+  "concept": "문서에 제시된 시간과 방법을 모두 충족해야 한다.",
+  "recommended_seconds": 60,
+  "source_type": "독창적 창작; 기출 아님",
+  "review_status": "passed",
+  "manual_review": {"date": "2026-10-26", "reviewer": "Codex", "status": "passed", "scope": "지문과 모델의 요일·시각·경로 대응, 중복 선택지 없음, 정답 유일성 확인. 독립된 사람의 검수 아님."},
+  "verification": {
+    "model": "submission_window",
+    "required_weekday": "금요일",
+    "start_hour": null,
+    "end_hour": 14,
+    "required_method": "공동 폴더",
+    "choice_facts": [
+      {"weekday": "금요일", "hour": 13, "method": "메일"},
+      {"weekday": "금요일", "hour": 15, "method": "공동 폴더"},
+      {"weekday": "금요일", "hour": 13, "method": "공동 폴더"},
+      {"weekday": "금요일", "hour": 13, "method": "메신저"}
+    ]
+  }
+}

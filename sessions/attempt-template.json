@@ -1,0 +1,22 @@
+{
+  "_template_only": true,
+  "_note": "실제 세션의 attempts 배열에 채점 후 추가한다. 이 파일은 통계에서 제외한다. 미확인 값은 null.",
+  "attempt_id": null,
+  "question_id": null,
+  "question_version": null,
+  "kind": null,
+  "date": null,
+  "user_answer_raw": null,
+  "selected_choice": null,
+  "correct": null,
+  "elapsed_seconds": null,
+  "time_source": null,
+  "hint_level": 0,
+  "reasoning_raw": null,
+  "stability": null,
+  "stability_basis": null,
+  "error_category": null,
+  "error_confirmation": null,
+  "feedback": null,
+  "review_id": null
+}
