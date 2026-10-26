@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "session_id": "2026-10-26-01",
   "date": "2026-10-26",
   "timezone": "Asia/Seoul",
@@ -7,11 +7,11 @@
   "status": "active",
   "week": 1,
   "day": 1,
-  "topic": "NCS 개요와 공지문 독해 입문",
+  "topic": "NCS Day1 및 공통 네트워크 TCP/IP 기초",
   "duration_minutes": null,
   "duration_source": null,
   "lesson_file": "lessons/day-001.md",
-  "stage": "git_setup_then_day1_summary",
+  "stage": "tcp_connection_vs_application_push_reexplanation",
   "pending_question_id": null,
   "pending_question_kind": null,
   "pending_hint_level": 0,
@@ -77,32 +77,252 @@
         "related_concept": "항상 필요한 조건과 특정 상황에만 추가되는 조건 구분"
       },
       "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-26-01-A003",
+      "question_id": "CS-NET-001-Q001",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-26",
+      "user_answer_raw": "1. 이어지는 바이트 흐름을 갖고 전송하기 때문",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "이어지는 바이트 흐름을 갖고 전송하기 때문",
+      "stability": "partially_confirmed",
+      "stability_basis": "TCP 바이트 스트림 특성을 근거로 맞힘. 재전송·순서 보장 적용과 시간은 아직 미확인. 불안정으로 판정하지 않음.",
+      "error_category": null,
+      "error_confirmation": "오답 아님",
+      "feedback": {
+        "verdict": "정답",
+        "standard_solution": "TCP는 신뢰성 있는 순서 보장 바이트 스트림 서비스를 제공하며, 손실 검출과 재전송 등으로 이를 지원한다. UDP 자체는 전달과 순서 복구를 보장하지 않는다. IP는 주소를 이용한 데이터그램 전달을 담당한다. 포트 번호는 서비스나 통신 끝점을 구분하는 번호로 프로토콜이 아니다. TCP의 신뢰성은 영구 장애에서도 반드시 전달된다는 뜻은 아니다.",
+        "quick_solution": "재전송·순서·신뢰성이라는 단서를 전송 프로토콜의 역할과 연결한다.",
+        "distractors": {
+          "2": "UDP 자체에는 신뢰성 있는 순서 보장 바이트 스트림 기능이 없음",
+          "3": "IP는 인터넷 계층 프로토콜이며 전송계층 신뢰성 복구를 제공하지 않음",
+          "4": "포트 번호는 프로토콜이 아닌 식별 번호"
+        },
+        "error_analysis": "바이트 스트림이라는 핵심 근거가 맞음. 신뢰성을 구성하는 재전송·순서 보장을 덧붙여 설명 보강. 오답 원인을 추정하지 않음.",
+        "related_concept": "IP는 목적지 주소 기반 전달, 포트는 서비스 구분, TCP와 UDP는 전송 기능"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-26-01-A004",
+      "question_id": "CS-NET-001-Q002",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-26",
+      "user_answer_raw": "2. 포트는 서비스별로 다른 접속 포인트를 의미함",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "포트는 서비스별로 다른 접속 포인트를 의미함",
+      "stability": "reasoning_supported",
+      "stability_basis": "동일 IP에서 포트로 서비스 접속점을 구분한다는 근거가 정확함. 실제시간은 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님",
+      "feedback": {
+        "verdict": "정답",
+        "standard_solution": "IP 주소가 같아도 목적지 TCP 포트 번호가 다르면 서로 다른 서비스의 통신 끝점을 구분할 수 있다. A는10.0.0.10:8080, B는10.0.0.10:9090으로 구분한다. TCP 자체가 암호화를 제공하지는 않는다. 접속 가능성은 주어진 연습 상황을 전제로 하며 실제 방화벽 등은 별도다.",
+        "quick_solution": "공통인 IP와 서로 다른 포트를 표시하고 각각의 역할을 대조한다.",
+        "distractors": {
+          "1": "같은 IP라도 목적지 포트로 구분 가능",
+          "3": "TCP 신뢰성과 암호화는 서로 다른 기능",
+          "4": "8080과9090은 포트 번호이며 IP 주소가 아님"
+        },
+        "error_analysis": "오답 없음, 포트의 역할을 올바르게 설명함.",
+        "related_concept": "IP는 목적지 주소, 포트는 서비스 구분; TCP 신뢰성과 암호화 구분"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-26-01-A005",
+      "question_id": "CS-NET-002-Q001",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-26",
+      "user_answer_raw": "2",
+      "user_followup_raw": "순서, 확인을 확인하는 작업이 필요하니까",
+      "selected_choice": 2,
+      "correct": false,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "순서, 확인을 확인하는 작업이 필요하니까",
+      "stability": null,
+      "stability_basis": "마지막 확인의 필요성을 언급했으나 선택번호2는 두번째와세번째 메시지가 뒤바뀐 순서. 번호실수인지 개념혼동인지 사용자확인대기.",
+      "error_category": "기타",
+      "error_confirmation": "사용자 확인:4번을의도했으나2번으로번호입력실수",
+      "feedback": {
+        "verdict": "제출번호2 기준 오답; 정답4",
+        "standard_solution": "클라이언트가 SYN으로 시작하고, 서버는 클라이언트 SYN에 대한 ACK와 자신의 SYN을 함께 보낸다. 클라이언트가 서버 SYN에 ACK를 보내는 기본3단계다. 양방향 초기 순서 번호 동기화와 연결 상태 확립을 위한 과정이며 사용자 인증이나 암호화 키 교환과 구분한다.",
+        "quick_solution": "시작 SYN → 상대 시작과 확인 SYN+ACK → 최종 확인 ACK 순서로 연결한다.",
+        "distractors": {
+          "1": "일반 연결 시작을ACK로 잘못 배치",
+          "2": "두번째와세번째 메시지 순서가 바뀜",
+          "3": "클라이언트의첫SYN 전에 서버응답이 놓임"
+        },
+        "error_analysis": "사용자가정답공개후번호입력실수라고확인. 개념혼동으로분류하지않음. 최초제출2/채점오답은보존하고의도4와원인확인을별도로기록.",
+        "related_concept": "TCP SYN·ACK 제어 비트와 기본3단계 연결 설정"
+      },
+      "review_id": "REV-CS-0001",
+      "clarification": {
+        "date": "2026-10-26",
+        "user_raw": "4번 을 생각했는데 번호를 잘못적음",
+        "intended_choice": 4,
+        "cause": "번호 입력 실수",
+        "confirmed_by": "user",
+        "after_answer_disclosure": true,
+        "original_submission_preserved": true
+      }
+    },
+    {
+      "attempt_id": "2026-10-26-01-A006",
+      "question_id": "CS-NET-002-Q002",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-26",
+      "user_answer_raw": "2. 클라이언트가 요청을 보낸게 syn, 서버가 syn+ack응답한게 클라이언트 요청에 대한 확인작업. 그 확인작업을 확인함",
+      "selected_choice": 2,
+      "correct": false,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "클라이언트가 요청을 보낸게 syn, 서버가 syn+ack응답한게 클라이언트 요청에 대한 확인작업. 그 확인작업을 확인함",
+      "stability": null,
+      "stability_basis": "서버SYN+ACK가클라이언트요청확인이라는부분은타당. 마지막문장의확인대상과선택지2는서버두번째메시지의ACK대상과불일치.",
+      "error_category": "개념 부족",
+      "error_confirmation": "사용자가 이번 문제는 실제로 틀렸다고 확인. 세부 분류 ACK 확인 대상 혼동은 제출 설명을 근거로 강사가 기록.",
+      "feedback": {
+        "verdict": "제출2기준오답, 정답1",
+        "standard_solution": "서버의SYN+ACK에서ACK는앞서받은클라이언트SYN에대한확인이다. 함께있는SYN은서버의시작정보다. 서버SYN은다음단계에서클라이언트가ACK로확인한다. 사용자로그인과내용암호화는이ACK의의미가아니다.",
+        "quick_solution": "누가받고누가답하는지방향을보면서버ACK는클라이언트SYN의확인이다.",
+        "distractors": {
+          "2": "자기가보내는SYN을자기ACK로확인하는것이아님",
+          "3": "TCP연결설정과사용자인증은다름",
+          "4": "TCP연결설정은암호화완료확인이아님"
+        },
+        "error_analysis": "사용자가 이번 문제의 실제 오답을 인정. 번호 입력 실수와 구분해 ACK 확인 대상 개념을 보완한다. 같은 원인을 다시 확인하지 않고 쉬운 예시와 확인 문제로 재학습.",
+        "related_concept": "서버SYN+ACK는클라이언트SYN확인과서버SYN전달을겸함"
+      },
+      "review_id": "REV-CS-0002",
+      "clarification": {
+        "date": "2026-10-26",
+        "user_raw": "아니 내가 틀린게 맞아",
+        "confirmed_wrong_understanding": true,
+        "scope": "이번 ACK 확인 대상 문제; 앞선 번호 입력 실수와 별도"
+      }
+    },
+    {
+      "attempt_id": "2026-10-26-01-A007",
+      "question_id": "CS-NET-002-Q003",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-26",
+      "user_answer_raw": "2번인거같은데 근데 처음 메세지는 클라이언트만 보내는거지?  요청이 없는데 서버에서 보낼 수 있나? 근데 fcm push메세지는 서버에서 클라로 보내는거아님?",
+      "selected_choice": 2,
+      "correct": false,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": null,
+      "stability_basis": "번호2를제출했고TCP연결시작방향과FCM서버알림방향에대해질문. ACK대상근거는미제공.",
+      "error_category": null,
+      "error_confirmation": "미확인; ACK대상혼동및연결설정/업무메시지구분보완필요는강사관찰",
+      "feedback": {
+        "verdict": "제출2기준오답, 정답3",
+        "standard_solution": "서버는 두번째 메시지에서 자기 SYN을 보낸다. 클라이언트는 이를 받은 뒤 마지막 ACK로 서버 SYN을 확인한다. 서버 SYN+ACK 안의 ACK는 먼저 받은 클라이언트 SYN을 확인하는 역할이다.",
+        "quick_solution": "서버가 보낸 SYN을 받는 쪽은 클라이언트이므로 그 다음 클라이언트의 ACK를 찾는다.",
+        "distractors": {
+          "1": "클라이언트 최초 SYN은 서버 SYN보다 먼저 보낸 시작 정보",
+          "2": "서버가 자기 SYN을 자기 ACK로 확인하는 것이 아님",
+          "4": "기본 연결 설정의 마지막 ACK가 서버 SYN을 확인함"
+        },
+        "error_analysis": "서버SYN을확인하는쪽은클라이언트. FCM질문은타당하며TCP연결을시작하는쪽과연결후업무메시지를시작하는쪽을구분하여설명한다. 원인확정질문을반복하지않음.",
+        "related_concept": "TCP는연결후양방향전송가능. 기본능동연결시작과응용푸시알림방향은별개."
+      },
+      "review_id": "REV-CS-0003"
     }
   ],
   "summary": {
-    "first_attempts": 2,
-    "first_correct": 2,
-    "first_incorrect": 0,
-    "first_accuracy": 1.0,
+    "first_attempts": 7,
+    "first_correct": 4,
+    "first_incorrect": 3,
+    "first_accuracy": 0.5714285714285714,
     "review_attempts": 0,
     "review_correct": 0,
     "review_incorrect": 0,
     "review_accuracy": null
   },
-  "weak_concepts": [],
+  "weak_concepts": [
+    "TCP 두번째·세번째 메시지의 ACK 확인 대상 구분: 보완 필요"
+  ],
   "covered_concepts": [
     "NCS의 뜻",
     "기존 직업기초능력과 개편 직업공통능력의 구분",
     "지문·선택지·근거",
     "공지문 읽기 풀이 시범",
-    "항상 필요한 조건과 특정 상황에서만 필요한 조건 구분"
+    "항상 필요한 조건과 특정 상황에서만 필요한 조건 구분",
+    "TCP 바이트 스트림 특성 확인 및 재전송·순서 보장 설명 보강",
+    "IP·포트 역할 응용 확인",
+    "TCP 기본3-way handshake·SYN·ACK 정의"
   ],
-  "next_action": "사용자 요청에 따라 GitHub 연동 진행: 저장소 URL 대기. 연동 후 Day 1 핵심 요약 및 종료 시 달성 여부 평가. 새 문제 미제시.",
+  "next_action": "FCM사례로TCP연결시작과응용데이터송신을구분하여설명. 새문제없이질문을먼저해결하고이후ACK대상으로복귀. 학습중상태유지.",
   "notes": [
     "복습 예정 없음",
     "예상 시간과 실제 시간을 구분",
     "수업 시작 상태이며 Day 1 완료 아님",
     "Q001 정답 기록. 1문항으로 표본 부족; 기초 난이도 유지. 오답 또는 불안정의 확인 근거가 없어 복습 미등록. 필요 시 사용자 자기평가로 보완.",
-    "Q002 정답. 총 2문항으로 표본 부족, 기초 유지. 사용자 요청으로 수업을 잠시 멈추고 Git 연동 진행. 세션 종료 및 Day 완료 처리 아님."
-  ]
+    "Q002 정답. 총 2문항으로 표본 부족, 기초 유지. 사용자 요청으로 수업을 잠시 멈추고 Git 연동 진행. 세션 종료 및 Day 완료 처리 아님.",
+    "GitHub 연결 완료 후 사용자 요청으로 강의→문제풀이 재개. TCP/IP 공통 첫 블록과 시범 진행, 전산 트랙 기초1문제 답변 대기. 실제시간 미확인.",
+    "전산Q002 정답과 근거 타당. 첫 네트워크 블록 강의·기초·응용피드백 완료, TCP/IP 전체숙달 아님. 복습등록근거 없음. 다음 기본연결설정블록 진행.",
+    "첫오답:CS-NET-002-Q001, 제출2/정답4. 추가설명은확인절차필요성언급. 원인미확인. 2026-10-27 단계1복습등록. 전산2/3, 전체4/5. 표본부족으로기초유지.",
+    "사용자확인:4번의도·2번입력실수. 개념오답분류해제, 원인기타-번호입력실수. 원제출기준성적과의도답변구분, 내일복습은번호대조습관포함짧은확인으로유지.",
+    "전산4문항2정답50%로표본부족. 명백한어려움부분ACK대상재설명, 쉬운확인문제계획. 최초1오답은입력실수확인, 이번원인은미확인. REV-CS-0002 2026-10-27등록.",
+    "사용자 이번 실제 오답 확인. 개념 부족-ACK 대상 혼동으로 보완, 앞선 번호 실수 분류는 그대로. 새 기초 보완 문제 제시, 재설명만으로 복습 성공/숙달 처리하지 않음.",
+    "Q003제출2/정답3. FCM서버→클라이언트알림질문공식문서확인. 기본3-way handshake역할고정가정과TCP양방향전송구분, Android지속연결·플랫폼별전달경로설명. 복습REV-CS-0003 2026-10-27. 실제시간미확인."
+  ],
+  "pending_exam_track": null,
+  "lesson_files": [
+    "lessons/day-001.md",
+    "lessons/net-tcpip-01.md",
+    "lessons/net-tcpip-02.md"
+  ],
+  "pending_user_prompt": null
 }

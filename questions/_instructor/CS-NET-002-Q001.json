@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "CS-NET-002-Q001",
+  "kind": "practice",
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "concept_ids": [
+    "NET-TCPIP"
+  ],
+  "scoring_format": "choice",
+  "domain": "컴퓨터 네트워크",
+  "subtype": "TCP 기본 연결 설정 순서",
+  "difficulty": "기초",
+  "passage": "클라이언트가 먼저 연결을 시작하고 서버가 응답하는 일반적인 TCP 연결 설정 상황이다. 동시 연결 시작과 재전송 등은 제외한다.",
+  "prompt": "3-way handshake의 기본 메시지 순서로 옳은 것은?",
+  "choices": [
+    "ACK → SYN → SYN+ACK",
+    "SYN → ACK → SYN+ACK",
+    "SYN+ACK → SYN → ACK",
+    "SYN → SYN+ACK → ACK"
+  ],
+  "answer": 4,
+  "explanation": "클라이언트가 SYN으로 시작하고, 서버는 클라이언트 SYN에 대한 ACK와 자신의 SYN을 함께 보낸다. 클라이언트가 서버 SYN에 ACK를 보내는 기본3단계다. 양방향 초기 순서 번호 동기화와 연결 상태 확립을 위한 과정이며 사용자 인증이나 암호화 키 교환과 구분한다.",
+  "quick_solution": "시작 SYN → 상대 시작과 확인 SYN+ACK → 최종 확인 ACK 순서로 연결한다.",
+  "distractor_analysis": {
+    "1": "일반 연결 시작을ACK로 잘못 배치",
+    "2": "두번째와세번째 메시지 순서가 바뀜",
+    "3": "클라이언트의첫SYN 전에 서버응답이 놓임"
+  },
+  "concept": "TCP SYN·ACK 제어 비트와 기본3단계 연결 설정",
+  "hints": [
+    "먼저 연결을 요청하는 쪽의 메시지를 생각해보세요.",
+    "서버는 상대 요청 확인과 자기 시작 정보를 함께 보낸다는 점을 떠올려보세요."
+  ],
+  "recommended_seconds": 60,
+  "source_type": "독창적 창작; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5",
+      "section": "3.5 Figure6",
+      "checked_on": "2026-10-26"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-26",
+    "reviewer": "Codex",
+    "scope": "RFC9293 Figure6와 기본 순서 대조, 동시open·재전송 제외 조건 명시. 선택지 중복과 정답 유일성 수동 확인. 독립 검수 아님."
+  },
+  "verification": {
+    "model": "manual_source_review",
+    "choice_facts": [
+      {
+        "supported": false,
+        "reason": "기본도식과시작비트불일치",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5"
+      },
+      {
+        "supported": false,
+        "reason": "기본도식의두번째와세번째불일치",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5"
+      },
+      {
+        "supported": false,
+        "reason": "기본도식의최초SYN위치불일치",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5"
+      },
+      {
+        "supported": true,
+        "reason": "RFC9293 Figure6 기본3-way handshake와일치",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5"
+      }
+    ]
+  }
+}

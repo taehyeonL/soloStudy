@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "CS-NET-002-Q002",
+  "kind": "practice",
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "concept_ids": [
+    "NET-TCPIP"
+  ],
+  "scoring_format": "choice",
+  "domain": "컴퓨터 네트워크",
+  "subtype": "SYN+ACK의 확인 대상",
+  "difficulty": "기초",
+  "passage": "일반적인 TCP 연결 설정에서 클라이언트가 SYN을 보냈고, 서버가 SYN+ACK로 응답했다.",
+  "prompt": "서버가 보낸 SYN+ACK 중 ACK가 확인하는 대상은?",
+  "choices": [
+    "클라이언트가 앞서 보낸 SYN",
+    "서버 자신이 지금 보내는 SYN",
+    "클라이언트의 로그인 성공",
+    "통신 내용의 암호화 완료"
+  ],
+  "answer": 1,
+  "explanation": "서버의SYN+ACK에서ACK는앞서받은클라이언트SYN에대한확인이다. 함께있는SYN은서버의시작정보다. 서버SYN은다음단계에서클라이언트가ACK로확인한다. 사용자로그인과내용암호화는이ACK의의미가아니다.",
+  "quick_solution": "누가받고누가답하는지방향을보면서버ACK는클라이언트SYN의확인이다.",
+  "distractor_analysis": {
+    "2": "자기가보내는SYN을자기ACK로확인하는것이아님",
+    "3": "TCP연결설정과사용자인증은다름",
+    "4": "TCP연결설정은암호화완료확인이아님"
+  },
+  "concept": "서버SYN+ACK는클라이언트SYN확인과서버SYN전달을겸함",
+  "hints": [
+    "먼저 연결을 요청하는 쪽의 메시지를 생각해보세요.",
+    "서버는 상대 요청 확인과 자기 시작 정보를 함께 보낸다는 점을 떠올려보세요."
+  ],
+  "recommended_seconds": 60,
+  "source_type": "독창적 창작; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5",
+      "section": "3.5 Figure6",
+      "checked_on": "2026-10-26"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-26",
+    "reviewer": "Codex",
+    "scope": "RFC9293 Figure6 ACK방향대조. 사용자로그인·암호화와혼동없음. 정답유일성수동검수. 독립검수아님."
+  },
+  "verification": {
+    "model": "manual_source_review",
+    "choice_facts": [
+      {
+        "supported": true,
+        "reason": "RFC9293 Figure6 서버가클라이언트SYN확인",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5"
+      },
+      {
+        "supported": false,
+        "reason": "서버SYN은클라이언트의다음ACK가확인",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5"
+      },
+      {
+        "supported": false,
+        "reason": "사용자인증이아닌TCP순서번호확인",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5"
+      },
+      {
+        "supported": false,
+        "reason": "TCP핸드셰이크는암호화완료절차가아님",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5"
+      }
+    ]
+  }
+}

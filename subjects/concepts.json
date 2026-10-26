@@ -1,9 +1,67 @@
 {
   "schema_version": 1,
   "concepts": [
-    {"concept_id": "NET-TCPIP", "title": "TCP/IP", "tracks": ["computer-science", "security-written", "security-practical"], "status": "not_started", "lesson_file": null, "evidence_attempt_ids": [], "last_studied_on": null},
-    {"concept_id": "OS-LINUX-PERM", "title": "Linux 권한", "tracks": ["computer-science", "security-written", "security-practical"], "status": "not_started", "lesson_file": null, "evidence_attempt_ids": [], "last_studied_on": null},
-    {"concept_id": "APP-SQLI", "title": "SQL Injection", "tracks": ["computer-science", "security-written", "security-practical"], "status": "not_started", "lesson_file": null, "evidence_attempt_ids": [], "last_studied_on": null},
-    {"concept_id": "SEC-CRYPTO", "title": "암호화", "tracks": ["computer-science", "security-written", "security-practical"], "status": "not_started", "lesson_file": null, "evidence_attempt_ids": [], "last_studied_on": null}
+    {
+      "concept_id": "NET-TCPIP",
+      "title": "TCP/IP",
+      "tracks": [
+        "computer-science",
+        "security-written",
+        "security-practical"
+      ],
+      "status": "learning",
+      "lesson_file": "lessons/net-tcpip-01.md",
+      "evidence_attempt_ids": [
+        "2026-10-26-01-A003",
+        "2026-10-26-01-A004",
+        "2026-10-26-01-A005",
+        "2026-10-26-01-A006",
+        "2026-10-26-01-A007"
+      ],
+      "last_studied_on": "2026-10-26",
+      "lesson_files": [
+        "lessons/net-tcpip-01.md",
+        "lessons/net-tcpip-02.md"
+      ]
+    },
+    {
+      "concept_id": "OS-LINUX-PERM",
+      "title": "Linux 권한",
+      "tracks": [
+        "computer-science",
+        "security-written",
+        "security-practical"
+      ],
+      "status": "not_started",
+      "lesson_file": null,
+      "evidence_attempt_ids": [],
+      "last_studied_on": null
+    },
+    {
+      "concept_id": "APP-SQLI",
+      "title": "SQL Injection",
+      "tracks": [
+        "computer-science",
+        "security-written",
+        "security-practical"
+      ],
+      "status": "not_started",
+      "lesson_file": null,
+      "evidence_attempt_ids": [],
+      "last_studied_on": null
+    },
+    {
+      "concept_id": "SEC-CRYPTO",
+      "title": "암호화",
+      "tracks": [
+        "computer-science",
+        "security-written",
+        "security-practical"
+      ],
+      "status": "not_started",
+      "lesson_file": null,
+      "evidence_attempt_ids": [],
+      "last_studied_on": null
+    }
   ]
 }

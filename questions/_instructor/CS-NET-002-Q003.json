@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "CS-NET-002-Q003",
+  "kind": "practice",
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "concept_ids": [
+    "NET-TCPIP"
+  ],
+  "scoring_format": "choice",
+  "domain": "컴퓨터 네트워크",
+  "subtype": "서버 SYN을 확인하는 메시지",
+  "difficulty": "기초",
+  "passage": "클라이언트가 먼저 SYN을 보내고, 서버가 SYN+ACK로 응답한 뒤, 클라이언트가 마지막 ACK를 보내는 기본 TCP 연결 설정 상황이다.",
+  "prompt": "서버가 보낸 SYN을 확인하는 메시지는 무엇인가?",
+  "choices": [
+    "클라이언트가 처음 보낸 SYN",
+    "서버가 보낸 SYN+ACK",
+    "클라이언트가 마지막에 보낸 ACK",
+    "TCP에는 서버 SYN을 확인하는 메시지가 없다"
+  ],
+  "answer": 3,
+  "explanation": "서버는 두번째 메시지에서 자기 SYN을 보낸다. 클라이언트는 이를 받은 뒤 마지막 ACK로 서버 SYN을 확인한다. 서버 SYN+ACK 안의 ACK는 먼저 받은 클라이언트 SYN을 확인하는 역할이다.",
+  "quick_solution": "서버가 보낸 SYN을 받는 쪽은 클라이언트이므로 그 다음 클라이언트의 ACK를 찾는다.",
+  "distractor_analysis": {
+    "1": "클라이언트 최초 SYN은 서버 SYN보다 먼저 보낸 시작 정보",
+    "2": "서버가 자기 SYN을 자기 ACK로 확인하는 것이 아님",
+    "4": "기본 연결 설정의 마지막 ACK가 서버 SYN을 확인함"
+  },
+  "concept": "양쪽 SYN을 상대가 ACK로 확인하는 관계",
+  "hints": [
+    "확인할 대상이 어느 쪽에서 보낸 SYN인지 먼저 표시하세요.",
+    "그 SYN을 받은 쪽에서 이후 보내는 메시지를 찾아보세요."
+  ],
+  "recommended_seconds": 60,
+  "source_type": "독창적 창작; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5",
+      "section": "3.5 Figure6",
+      "checked_on": "2026-10-26"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-26",
+    "reviewer": "Codex",
+    "scope": "RFC9293 Figure6와 메시지 방향 및 확인 대상 수동 대조. 기본 연결 상황 명시, 유일 정답·선택지 중복 확인. 독립 검수 아님."
+  },
+  "verification": {
+    "model": "manual_source_review",
+    "choice_facts": [
+      {
+        "supported": false,
+        "reason": "서버 SYN 전의 클라이언트 시작 메시지",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5"
+      },
+      {
+        "supported": false,
+        "reason": "서버 자신의 SYN을 확인하는 ACK가 아님",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5"
+      },
+      {
+        "supported": true,
+        "reason": "RFC9293 Figure6 마지막 클라이언트 ACK는 서버 SYN 확인",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5"
+      },
+      {
+        "supported": false,
+        "reason": "기본도식에서 확인메시지가 존재함",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5"
+      }
+    ]
+  }
+}

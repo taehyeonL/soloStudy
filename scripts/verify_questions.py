@@ -71,6 +71,16 @@ def check(q, seen):
             denied = (not state['reserved']) or (state['external'] and not state['approved'])
             require(valid(state) == (not denied), 'truth-table mismatch')
         require(any(map(valid, states)), 'unsatisfiable rules')
+    elif v['model'] == 'manual_source_review':
+        # Only checks consistency of recorded manual verdicts, not technical truth.
+        require(bool(q.get('references')), 'missing technical references')
+        for fact in facts:
+            require(type(fact.get('supported')) is bool, 'missing manual verdict')
+            require(bool(fact.get('reason')) and bool(fact.get('source_url')), 'missing manual rationale')
+
+        def valid(f):
+            return f['supported']
+
     else:
         raise ValueError('unsupported model; add a verifier before release')
     winners = [i for i, fact in enumerate(facts, 1) if valid(fact)]
@@ -102,7 +112,7 @@ def main():
     if failures:
         raise SystemExit(1)
     print(f'PASS: {len(files)} items; schema, unique choices, satisfiable models, unique answers, student text checked.')
-    print('Scope: explicit rule models only; natural-language correspondence requires manual review.')
+    print('Scope: rule models and consistency of recorded source-review verdicts; technical truth and natural language require manual review.')
 
 
 if __name__ == '__main__':

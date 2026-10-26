@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "CS-NET-001-Q002",
+  "kind": "practice",
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "concept_ids": [
+    "NET-TCPIP"
+  ],
+  "scoring_format": "choice",
+  "domain": "컴퓨터 네트워크",
+  "subtype": "동일 서버의 서비스와 목적지 포트 구분",
+  "difficulty": "기초 응용",
+  "passage": "연습 상황: 같은 IP 주소 10.0.0.10을 사용하는 서버에서 서비스 A는 TCP 8080번 포트, 서비스 B는 TCP 9090번 포트에서 각각 연결을 기다리고 있다.",
+  "prompt": "이 상황에 대한 설명으로 옳은 것은?",
+  "choices": [
+    "두 서비스의 IP 주소가 같으므로 클라이언트는 접속 대상을 구분할 수 없다.",
+    "클라이언트는 목적지 포트 번호를 달리하여 서비스 A와 B에 접속할 수 있다.",
+    "TCP를 사용하므로 두 서비스의 통신 내용은 TCP 자체에 의해 자동 암호화된다.",
+    "8080과 9090은 두 서비스가 사용하는 서로 다른 목적지 IP 주소이다."
+  ],
+  "answer": 2,
+  "explanation": "IP 주소가 같아도 목적지 TCP 포트 번호가 다르면 서로 다른 서비스의 통신 끝점을 구분할 수 있다. A는10.0.0.10:8080, B는10.0.0.10:9090으로 구분한다. TCP 자체가 암호화를 제공하지는 않는다. 접속 가능성은 주어진 연습 상황을 전제로 하며 실제 방화벽 등은 별도다.",
+  "quick_solution": "공통인 IP와 서로 다른 포트를 표시하고 각각의 역할을 대조한다.",
+  "distractor_analysis": {
+    "1": "같은 IP라도 목적지 포트로 구분 가능",
+    "3": "TCP 신뢰성과 암호화는 서로 다른 기능",
+    "4": "8080과9090은 포트 번호이며 IP 주소가 아님"
+  },
+  "concept": "IP는 목적지 주소, 포트는 서비스 구분; TCP 신뢰성과 암호화 구분",
+  "hints": [
+    "지문에서 두 서비스에 공통인 정보와 다른 정보를 나눠보세요.",
+    "IP 주소·포트·TCP를 각각 어떤 역할로 배웠는지 대조해보세요."
+  ],
+  "recommended_seconds": 90,
+  "source_type": "독창적 창작; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-2.2",
+      "section": "2.2,7",
+      "checked_on": "2026-10-26"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-26",
+    "reviewer": "Codex",
+    "scope": "RFC9293의 포트에 의한 서비스 식별 및 TCP 보안 논의와 대조. 서비스가 지정 포트에서 대기하는 연습 상황 명시. 중복 선택지·정답 유일성 수동 확인. 독립 검수 아님."
+  },
+  "verification": {
+    "model": "manual_source_review",
+    "choice_facts": [
+      {
+        "supported": false,
+        "reason": "같은IP에서 서로 다른 TCP포트로 서비스 구분 가능",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-2.2"
+      },
+      {
+        "supported": true,
+        "reason": "RFC9293 포트번호로 application services 식별",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-2.2"
+      },
+      {
+        "supported": false,
+        "reason": "TCP 자체는 기밀성 암호화를 제공하지 않으며 보호수단은 별도",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-7"
+      },
+      {
+        "supported": false,
+        "reason": "연습 상황에서 두숫자는 목적지TCP포트로 정의",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-2.2"
+      }
+    ]
+  }
+}

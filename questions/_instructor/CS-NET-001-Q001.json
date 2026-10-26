@@ -1,0 +1,87 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "CS-NET-001-Q001",
+  "kind": "practice",
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "concept_ids": [
+    "NET-TCPIP"
+  ],
+  "scoring_format": "choice",
+  "domain": "컴퓨터 네트워크",
+  "subtype": "IP·TCP·UDP·포트 역할 구분",
+  "difficulty": "기초",
+  "passage": "응용 프로그램 사이에서 데이터를 전송하려고 한다. 아래 질문은 각 프로토콜 자체가 제공하는 기능을 기준으로 판단한다.",
+  "prompt": "손실된 데이터의 재전송과 순서 정리를 통해 신뢰성 있는 바이트 스트림을 제공하는 전송계층 프로토콜은?",
+  "choices": [
+    "TCP",
+    "UDP",
+    "IP",
+    "포트 번호"
+  ],
+  "answer": 1,
+  "explanation": "TCP는 신뢰성 있는 순서 보장 바이트 스트림 서비스를 제공하며, 손실 검출과 재전송 등으로 이를 지원한다. UDP 자체는 전달과 순서 복구를 보장하지 않는다. IP는 주소를 이용한 데이터그램 전달을 담당한다. 포트 번호는 서비스나 통신 끝점을 구분하는 번호로 프로토콜이 아니다. TCP의 신뢰성은 영구 장애에서도 반드시 전달된다는 뜻은 아니다.",
+  "quick_solution": "재전송·순서·신뢰성이라는 단서를 전송 프로토콜의 역할과 연결한다.",
+  "distractor_analysis": {
+    "2": "UDP 자체에는 신뢰성 있는 순서 보장 바이트 스트림 기능이 없음",
+    "3": "IP는 인터넷 계층 프로토콜이며 전송계층 신뢰성 복구를 제공하지 않음",
+    "4": "포트 번호는 프로토콜이 아닌 식별 번호"
+  },
+  "concept": "IP는 목적지 주소 기반 전달, 포트는 서비스 구분, TCP와 UDP는 전송 기능",
+  "hints": [
+    "질문이 주소 식별인지 데이터 전달 방식인지 구분해 보세요.",
+    "전송계층에 속하는 후보와 그렇지 않은 후보를 나눠 보세요."
+  ],
+  "recommended_seconds": 60,
+  "source_type": "독창적 창작; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-2.2",
+      "section": "2.2",
+      "checked_on": "2026-10-26"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc768.html",
+      "section": "Introduction",
+      "checked_on": "2026-10-26"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+      "section": "1.2,1.4",
+      "checked_on": "2026-10-26"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-26",
+    "reviewer": "Codex",
+    "scope": "RFC 원문과 각 선택지 역할 대조. TCP의 절대 전달 보장·암호화와 혼동 없음. 선택지 중복·정답 유일성 수동 확인. 독립 검수 아님."
+  },
+  "verification": {
+    "model": "manual_source_review",
+    "choice_facts": [
+      {
+        "supported": true,
+        "reason": "RFC9293 2.2 reliable in-order byte stream 및 retransmission",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-2.2"
+      },
+      {
+        "supported": false,
+        "reason": "RFC768은 UDP의 delivery 및 duplicate protection 비보장 명시",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc768.html"
+      },
+      {
+        "supported": false,
+        "reason": "RFC791 IP의 주소 기반 데이터그램 전달 기능과 구분",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc791.html"
+      },
+      {
+        "supported": false,
+        "reason": "RFC9293 포트는 application services 식별용 번호",
+        "source_url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-2.2"
+      }
+    ]
+  }
+}
