@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "concept_ids": [
+    "NET-TCPIP"
+  ],
+  "scoring_format": "choice",
+  "domain": "컴퓨터 네트워크",
+  "subtype": "순서대로 받은 TCP 데이터의 누적 ACK 번호",
+  "difficulty": "기초",
+  "recommended_seconds": 90,
+  "source_type": "독창적 창작; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.4",
+      "section": "3.4 cumulative acknowledgment and byte sequence",
+      "checked_on": "2026-10-27"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "RFC9293의바이트별순서번호와누적ACK다음기대번호규칙수동대조. 이전기대번호와수신시작일치,누락없음,SYN/FIN없음명시. 수치·유일성코드검사. 독립검수아님."
+  },
+  "concept": "ACK번호는상대에게서다음에받기를기대하는번호;정상연속데이터는시작SEQ+데이터바이트수",
+  "id": "CS-NET-004-E001",
+  "kind": "worked_example",
+  "passage": "TCP 연결이 이미 설정되어 있고 서버가 다음에 기대하던 클라이언트 데이터의 순서 번호는 200이었다. 클라이언트가 SEQ=200, 응용 데이터 20바이트인 세그먼트를 보냈고 서버가 전부 순서대로 받았다. 이전 누락은 없고 SYN·FIN은 없다. 20바이트는 TCP 헤더를 제외한 데이터 길이다.",
+  "prompt": "서버가 보내는 응답의 ACK 번호는?",
+  "choices": [
+    "201",
+    "219",
+    "220",
+    "221"
+  ],
+  "answer": 3,
+  "explanation": "20바이트는200부터219까지번호를사용한다. 다음기대번호220이ACK번호다. SYN이없는일반데이터이므로추가1을더하지않는다.",
+  "quick_solution": "200+20=220.",
+  "distractor_analysis": {
+    "1": "데이터20바이트대신SYN처럼1만더함",
+    "2": "마지막수신번호를답함",
+    "4": "데이터길이에추가1을중복가산"
+  },
+  "verification": {
+    "model": "tcp_data_ack",
+    "sequence_start": 200,
+    "prior_expected": 200,
+    "payload_bytes": 20,
+    "all_received_in_order": true,
+    "syn": false,
+    "fin": false,
+    "choice_facts": [
+      {
+        "ack": 201
+      },
+      {
+        "ack": 219
+      },
+      {
+        "ack": 220
+      },
+      {
+        "ack": 221
+      }
+    ]
+  }
+}

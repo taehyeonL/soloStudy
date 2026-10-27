@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "concept_ids": [
+    "NET-TCPIP"
+  ],
+  "scoring_format": "choice",
+  "domain": "컴퓨터 네트워크",
+  "subtype": "누락 데이터 도착 후 누적 ACK 전진",
+  "difficulty": "기초 응용",
+  "recommended_seconds": 120,
+  "source_type": "독창적 창작; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.4",
+      "section": "3.4 cumulative ACK",
+      "checked_on": "2026-10-27"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.10.7.4",
+      "section": "3.10.7.4 receive processing",
+      "checked_on": "2026-10-27"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "RFC9293 3.4 누적 ACK와 3.10.7.4 순서가 뒤인 세그먼트 보관·연속 데이터 처리 규칙 대조. 버퍼 보관을 명시하고 숫자 모델 병행. 독립 검수 아님."
+  },
+  "concept": "앞서 저장한 뒤쪽 데이터까지 연속 구간으로 이어지면 누적 ACK가 그 다음 번호로 전진",
+  "id": "CS-NET-006-Q001",
+  "kind": "practice",
+  "passage": "TCP 연결이 설정되어 있고 서버는 처음에 데이터 번호 2000을 기대했다. 서버는 2000~2099를 받았고, 2200~2299도 먼저 받아 버퍼에 저장했다. 이후 누락됐던 2100~2199가 도착했다. 이전 누락은 없고 SYN·FIN은 없으며 수신 창은 충분하다.",
+  "prompt": "누락됐던 데이터까지 받은 뒤 서버의 누적 ACK 번호는?",
+  "choices": [
+    "2100",
+    "2200",
+    "2300",
+    "2301"
+  ],
+  "answer": 3,
+  "explanation": "뒤쪽 2200~2299가 저장되어 있으므로 빈 구간 2100~2199가 채워지면 2000~2299 전체가 연속으로 수신된 상태다. 다음 필요한 바이트 번호는 2300이다.",
+  "quick_solution": "누락이 채워진 뒤 저장된 데이터까지 이어서 보고 연속 구간 마지막 번호에 1을 더한다.",
+  "distractor_analysis": {
+    "1": "이미 채워진 누락 시작 번호에 머무름",
+    "2": "새로 도착한 조각만 보고 저장된 뒤쪽 조각을 누락",
+    "4": "일반 데이터에 SYN/FIN의 추가 1을 잘못 가산"
+  },
+  "hints": [
+    "먼저 받았던 뒤쪽 데이터가 저장되어 있다는 조건을 확인하세요.",
+    "빈 구간이 채워진 뒤 연속으로 이어지는 범위를 표시하세요."
+  ],
+  "verification": {
+    "model": "tcp_cumulative_ack",
+    "initial_expected": 2000,
+    "syn": false,
+    "fin": false,
+    "received_segments": [
+      {
+        "seq": 2000,
+        "payload_bytes": 100
+      },
+      {
+        "seq": 2200,
+        "payload_bytes": 100
+      },
+      {
+        "seq": 2100,
+        "payload_bytes": 100
+      }
+    ],
+    "choice_facts": [
+      {
+        "ack": 2100
+      },
+      {
+        "ack": 2200
+      },
+      {
+        "ack": 2300
+      },
+      {
+        "ack": 2301
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "concept_ids": [
+    "ENG-PRESENT-SV"
+  ],
+  "scoring_format": "choice",
+  "domain": "TOEIC RC 기초 문법",
+  "subtype": "현재시제 일반동사의 주어·동사 수일치",
+  "difficulty": "기초",
+  "recommended_seconds": 45,
+  "source_type": "독창적 비공식 연습; 공식 TOEIC 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple?page=1",
+      "section": "Grammar explanation: regular activities, he/she/it, affirmative table",
+      "checked_on": "2026-10-27"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "British Council 현재시제 설명과 수일치 규칙을 대조. 조동사 없는 긍정문에서 동사 자리 및 유일 정답 수동 검토. 단어 의미도 함께 안내. 공식 TOEIC 문항 검수나 점수환산이 아님."
+  },
+  "id": "TOEIC-RC-001-E001",
+  "kind": "worked_example",
+  "passage": "The manager _____ the schedule every morning.",
+  "prompt": "현재의 정기적인 업무를 설명하는 문장을 완성하세요.",
+  "choices": [
+    "check",
+    "checks",
+    "checking",
+    "to check"
+  ],
+  "answer": 2,
+  "explanation": "주어the manager는3인칭단수이며반복업무를나타내는현재시제다. 조동사가없는긍정문에서일반동사check에s를붙여checks를쓴다. checking과to check만으로이문장의서술동사를완성할수없다.",
+  "quick_solution": "주어manager한명→현재일반동사checks.",
+  "distractor_analysis": {
+    "1": "3인칭단수주어와현재동사형태불일치",
+    "3": "be동사없이현재분사만으로서술어불완전",
+    "4": "to부정사만으로서술어불완전"
+  },
+  "concept": "주어의인칭·수와현재일반동사형태연결",
+  "verification": {
+    "model": "manual_source_review",
+    "choice_facts": [
+      {
+        "supported": false,
+        "reason": "단수3인칭주어에원형check불일치",
+        "source_url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple?page=1"
+      },
+      {
+        "supported": true,
+        "reason": "단수3인칭현재형checks",
+        "source_url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple?page=1"
+      },
+      {
+        "supported": false,
+        "reason": "유한동사없이checking단독불가",
+        "source_url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple?page=1"
+      },
+      {
+        "supported": false,
+        "reason": "유한동사없이to check단독불가",
+        "source_url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple?page=1"
+      }
+    ]
+  }
+}

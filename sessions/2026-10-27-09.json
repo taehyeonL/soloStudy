@@ -1,0 +1,249 @@
+{
+  "schema_version": 2,
+  "session_id": "2026-10-27-09",
+  "date": "2026-10-27",
+  "timezone": "Asia/Seoul",
+  "session_number": 9,
+  "status": "completed",
+  "week": 2,
+  "days_covered": [
+    13,
+    14
+  ],
+  "topic": "NCS Day13·14 문서 종합·미니평가 + DNS/HTTP 전산·보안기사",
+  "duration_minutes": null,
+  "duration_source": null,
+  "planned_minutes": 95,
+  "plan": [
+    {
+      "topic": "오늘 복습 예정 확인",
+      "minutes": 0
+    },
+    {
+      "topic": "NCS Day13 문서 종합·문제",
+      "minutes": 20
+    },
+    {
+      "topic": "NCS Day14 의사소통 미니평가",
+      "minutes": 20
+    },
+    {
+      "topic": "DNS/HTTP 공통 강의",
+      "minutes": 25
+    },
+    {
+      "topic": "전산 전공1 + 보안기사 필기1",
+      "minutes": 25
+    },
+    {
+      "topic": "정리·기록",
+      "minutes": 5
+    }
+  ],
+  "lesson_files": [
+    "lessons/ncs-day-013-014-dns-http.md"
+  ],
+  "stage": "package_complete",
+  "pending_question_id": null,
+  "pending_question_kind": null,
+  "pending_exam_track": null,
+  "pending_hint_level": 0,
+  "review_queue": [],
+  "planned_questions": [
+    {
+      "question_id": "NCS-D013-Q001",
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "status": "answered"
+    },
+    {
+      "question_id": "NCS-D014-Q001",
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "status": "answered"
+    },
+    {
+      "question_id": "CS-NET-012-Q001",
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "status": "answered"
+    },
+    {
+      "question_id": "SEC-WR-NET-005-Q001",
+      "subject": "security-engineer-written",
+      "exam_track": "security-written",
+      "status": "answered"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_id": "2026-10-27-09-A001",
+      "question_id": "NCS-D013-Q001",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-INTEGRATION"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "2.",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답. 번호 답변만으로 풀이 안정성은 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "이번 달 25일까지 교육 일정을 회신하고 변경 적용 전에 교육을 준비한다.",
+        "quick_solution": "메일 기한과 규정의 선행 조건을 교차 확인한다.",
+        "distractors": {
+          "note": "1은 시범결과를 전 부서로 확대하고 교육을 생략한다. 3은 시범 결과 일반화. 4는 회신·적용 순서를 바꿨다."
+        },
+        "error_analysis": "정답. 번호 답변만으로 풀이 안정성은 미확인.",
+        "related_concept": "복수 문서에서 기한·대상·선후 조건 통합."
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-09-A002",
+      "question_id": "NCS-D014-Q001",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-INTEGRATION"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "2.",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답. 번호 답변만으로 풀이 안정성은 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "일반 신청자는 30번까지, 안전 담당자는 정원과 별도 필수 교육 대상이다.",
+        "quick_solution": "정원 적용 범위와 예외 문장을 나눈다.",
+        "distractors": {
+          "note": "1은 별도 필수대상을 정원에 포함한다. 3은 안전담당 예외를 놓친다. 4는 별도 신청을 면제로 잘못 읽었다."
+        },
+        "error_analysis": "정답. 번호 답변만으로 풀이 안정성은 미확인.",
+        "related_concept": "예외 조항과 기본 규칙 적용범위."
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-09-A003",
+      "question_id": "CS-NET-012-Q001",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-DNS-HTTP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "1.",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "DNS가 주소를 찾고 HTTP가 리소스를 요청하는 흐름에 관해 서술.",
+      "stability": "reasoning_supported",
+      "stability_basis": "정답. 사용자가 DNS 해석과 이후 HTTP 리소스 조회를 구분했다. 포트는 DNS 결과가 아니라 URL·연결 설정에서 정해질 수 있음을 보충했다.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "DNS는 IP 주소를 해석했고, HTTP 404는 요청한 리소스를 찾지 못했음을 나타낼 수 있다.",
+        "quick_solution": "DNS=이름 해석, HTTP 상태코드=리소스 요청 응답으로 단계 분리.",
+        "distractors": {
+          "note": "2는 DNS 실패로 오해. 3은 404를 5xx로 오분류. 4는 DNS 성공으로 다른 페이지까지 정상이라고 확대."
+        },
+        "error_analysis": "정답. 사용자가 DNS 해석과 이후 HTTP 리소스 조회를 구분했다. 포트는 DNS 결과가 아니라 URL·연결 설정에서 정해질 수 있음을 보충했다.",
+        "related_concept": "DNS와 HTTP의 역할 및 404(4xx) 의미."
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-09-A004",
+      "question_id": "SEC-WR-NET-005-Q001",
+      "question_version": 1,
+      "subject": "security-engineer-written",
+      "exam_track": "security-written",
+      "concept_ids": [
+        "SEC-TLS-BOUNDARY"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "2.",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답. 번호만 답해 풀이 안정성은 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "TLS는 통신 경로를 보호하지만 애플리케이션 권한 검사 취약점을 자동으로 해결하지 않는다.",
+        "quick_solution": "통신 경로의 TLS 보호와 앱 내부 인가 로직을 분리한다.",
+        "distractors": {
+          "note": "1은 TLS가 권한로직 보장한다는 오해. 3은 기밀성 누락. 4는 인증서 유효성이 모든 기능의 안전을 보장한다는 오해."
+        },
+        "error_analysis": "정답. 번호만 답해 풀이 안정성은 미확인.",
+        "related_concept": "TLS 보호와 접근통제는 서로 다른 보안 계층."
+      },
+      "review_id": null
+    }
+  ],
+  "summary": {
+    "first_attempts": 4,
+    "first_correct": 4,
+    "first_incorrect": 0,
+    "first_accuracy": 1.0,
+    "review_attempts": 0,
+    "review_correct": 0,
+    "review_incorrect": 0,
+    "review_accuracy": null,
+    "remediation_attempts": 0,
+    "remediation_correct": 0,
+    "remediation_incorrect": 0,
+    "remediation_accuracy": null
+  },
+  "covered_concepts": [
+    "보고서·규정·메일 종합: 기한·적용 전 교육·시범 결과 범위",
+    "예외 규칙과 일반 정원 구분",
+    "DNS 이름 해석 후 HTTP 404 리소스 응답",
+    "TLS 통신 보호와 앱 접근권한 통제 구분"
+  ],
+  "weak_concepts": [],
+  "next_action": "세션09 기본문제 완료. 다음 실제 학습 시작 시 도래 복습을 확인한 뒤 다음 패키지 미리보기부터 제시.",
+  "notes": [
+    "기존 세션01–08 기록 보존.",
+    "현재 날짜 10/27 도래 복습0건; 내일10/28 복습4건,10/30 복습2건.",
+    "기본문제 NCS2·전산1·보안기사 필기1. 보안 실기0, 평일 TOEIC0.",
+    "실측시간 미확인. 기술 근거는 RFC1034, RFC9110, RFC8446.",
+    "세션09 완료: 기본4문제 모두 정답(NCS2, 전산1, 보안기사 필기1). DNS/HTTP 설명은 대체로 타당했으며 DNS가 포트를 알려준다는 표현은 바로잡았다. NCS·보안기사 문항은 풀이 근거 미확인. 실측시간 미확인."
+  ]
+}

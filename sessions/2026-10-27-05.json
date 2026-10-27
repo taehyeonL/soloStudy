@@ -1,0 +1,350 @@
+{
+  "schema_version": 2,
+  "session_id": "2026-10-27-05",
+  "date": "2026-10-27",
+  "timezone": "Asia/Seoul",
+  "session_number": 5,
+  "status": "completed",
+  "week": 1,
+  "days_covered": [
+    5,
+    6
+  ],
+  "topic": "NCS Day 5–6 조건·예외와 공지문 독해 + 네트워크 계층 공통개념 및 시험별 적용",
+  "duration_minutes": null,
+  "duration_source": null,
+  "planned_minutes": 85,
+  "plan": [
+    {
+      "topic": "NCS Day5 조건·예외 강의와 확인문제",
+      "minutes": 20
+    },
+    {
+      "topic": "NCS Day6 공지·메일 독해 강의와 확인문제",
+      "minutes": 20
+    },
+    {
+      "topic": "공통 네트워크 계층·캡슐화 강의",
+      "minutes": 25
+    },
+    {
+      "topic": "전산 전공 적용문제 1 + 보안기사 필기 문제 1",
+      "minutes": 15
+    },
+    {
+      "topic": "정리와 기록",
+      "minutes": 5
+    }
+  ],
+  "lesson_files": [
+    "lessons/ncs-day-005-006-network-layers.md"
+  ],
+  "stage": "package_complete_remediation_passed_review_due",
+  "pending_question_id": null,
+  "pending_question_kind": null,
+  "pending_exam_track": null,
+  "pending_hint_level": 0,
+  "review_queue": [],
+  "planned_questions": [
+    {
+      "question_id": "NCS-D005-Q001",
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "status": "answered"
+    },
+    {
+      "question_id": "NCS-D006-Q001",
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "status": "answered"
+    },
+    {
+      "question_id": "CS-NET-007-Q001",
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "status": "answered"
+    },
+    {
+      "question_id": "SEC-WR-NET-001-Q001",
+      "subject": "security-engineer-written",
+      "exam_track": "security-written",
+      "status": "answered"
+    },
+    {
+      "question_id": "SEC-WR-NET-002-Q001",
+      "subject": "security-engineer-written",
+      "exam_track": "security-written",
+      "status": "answered",
+      "remediation_for": "SEC-WR-NET-001-Q001",
+      "remediation_type": "guided"
+    },
+    {
+      "question_id": "SEC-WR-NET-002-Q002",
+      "subject": "security-engineer-written",
+      "exam_track": "security-written",
+      "status": "answered",
+      "remediation_for": "SEC-WR-NET-001-Q001",
+      "remediation_type": "independent"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_id": "2026-10-27-05-A003",
+      "question_id": "CS-NET-007-Q001",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-LAYERS-ENCAP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "3",
+      "selected_choice": 3,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 제출. 이유·자기평가·풀이시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님; 정상 정답이며 불안정 증거 없어 복습 미등록.",
+      "feedback": {
+        "verdict": "정답 3번",
+        "standard_solution": "TCP는 TCP/IP 구조의 전송 계층 프로토콜이다. UDP도 전송 계층에 속하고, IP는 인터넷 계층에서 주소 기반 전달을 맡는다.",
+        "quick_solution": "TCP/UDP=전송, IP=인터넷 계층으로 구분한다.",
+        "distractors": {
+          "1": "링크 구간의 프레임 전달 계층이다.",
+          "2": "IP가 속하는 계층이다.",
+          "4": "HTTP 등 응용 프로토콜의 계층이다."
+        },
+        "error_analysis": "정답 3번. 선택 번호만 제출되어 풀이 근거와 안정성은 미확인.",
+        "related_concept": "TCP/IP 계층 구분"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-05-A001",
+      "question_id": "NCS-D005-Q001",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-CONDITIONS"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "2. 그렇게 써 잇음",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "지문에 그렇게 쓰여 있다고 답함. 문구 근거는 확인했으나 조건과 대체 대상 구분에 대한 설명은 추가로 확인하지 않음.",
+      "stability": "unconfirmed",
+      "stability_basis": "정답과 지문 문구를 확인했으나 풀이의 독립 안정성·시간은 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님; 정상 정답이므로 자동 복습에 등록하지 않음.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "‘발급이 어려운 경우’가 대체의 조건이고, 확인서가 대신하는 대상은 재직증명서다. 교육 신청서는 별도 제출이다.",
+        "quick_solution": "‘대신할 수 있다’ 앞에서 조건, 뒤에서 대체 대상을 찾는다.",
+        "distractors": {
+          "1": "대체 대상을 신청서로 바꾸었다.",
+          "3": "조건부 대체를 항상 두 문서 제출로 바꾸었다.",
+          "4": "지정된 포털 외 이메일을 임의로 추가했다."
+        },
+        "error_analysis": "정답. 사용자는 지문 명시 내용을 근거로 선택했다. 조건과 대체 대상 구분의 안정성은 미확인.",
+        "related_concept": "조건부 예외와 대체 대상의 범위를 분리한다."
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-05-A002",
+      "question_id": "NCS-D006-Q001",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-NOTICE"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "2. 그렇게 써 있음",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "안내문에 제시된 기한·방법이 선택지에 그대로 쓰여 있다고 답함.",
+      "stability": "unconfirmed",
+      "stability_basis": "정답과 지문 문구를 확인했으나 풀이시간과 독립적 안정성은 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님; 자동 복습에 등록하지 않음.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "행동은 만족도 설문 제출, 기한은 교육 종료 후 2시간 이내, 방법은 포털 작성이다.",
+        "quick_solution": "행동·기한 기준점·제출처를 각각 대조한다.",
+        "distractors": {
+          "1": "시작 기준과 금지된 종이를 제시했다.",
+          "3": "지문에 없는 당일 자정과 이메일을 추가했다.",
+          "4": "의무를 선택으로 바꾸고 종이 제출을 허용했다."
+        },
+        "error_analysis": "정답. 안내문과 선택지의 조건이 같다는 점을 확인했다. 풀이 안정성과 시간은 미확인.",
+        "related_concept": "공지문에서 행동·기한·방법을 분리해 읽는다."
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-05-A004",
+      "question_id": "SEC-WR-NET-001-Q001",
+      "question_version": 1,
+      "subject": "security-engineer-written",
+      "exam_track": "security-written",
+      "concept_ids": [
+        "NET-LAYERS-ENCAP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "3",
+      "selected_choice": 3,
+      "correct": false,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "incorrect",
+      "stability_basis": "IP 주소 지정과 라우팅을 전송 계층으로 선택. 풀이시간 미확인.",
+      "error_category": "개념 부족",
+      "error_confirmation": "개념 혼동으로 임시 분류; 사용자의 실제 판단 이유는 아직 미확인.",
+      "feedback": {
+        "verdict": "오답: 정답은 2번 인터넷 계층",
+        "standard_solution": "IP는 IP 주소를 사용해 목적지 네트워크로 전달하는 인터넷 계층 프로토콜이다. TCP는 전송 계층 프로토콜이며 프로세스 간 통신과 포트를 다룬다.",
+        "quick_solution": "IP=인터넷, TCP/UDP=전송으로 짝지어 기억한다.",
+        "distractors": {
+          "1": "링크 내 프레임 전달을 맡는다.",
+          "3": "TCP·UDP와 포트가 이 계층에 해당한다.",
+          "4": "HTTP 등 응용 프로토콜이 위치한다."
+        },
+        "error_analysis": "IP의 인터넷 계층과 TCP의 전송 계층을 혼동한 것으로 보이나, 사용자의 이유는 미확인이다.",
+        "related_concept": "TCP/IP 계층 구분: IP는 인터넷 계층, TCP/UDP는 전송 계층"
+      },
+      "review_id": "REV-SEC-WR-0001"
+    },
+    {
+      "attempt_id": "2026-10-27-05-A005",
+      "question_id": "SEC-WR-NET-002-Q001",
+      "question_version": 1,
+      "subject": "security-engineer-written",
+      "exam_track": "security-written",
+      "concept_ids": [
+        "NET-LAYERS-ENCAP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "1",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 선택; 이유와 시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "보완 유도형 정답. 최초 오답 원인에 대한 사용자 설명은 아직 미수신.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "IP 주소 기반 전달은 인터넷 계층이고, TCP 포트를 이용한 프로세스 구분은 전송 계층이다.",
+        "quick_solution": "IP=인터넷, TCP 포트=전송 계층으로 대응한다.",
+        "distractors": {
+          "2": "두 계층을 바꿨다.",
+          "3": "둘 다 링크 계층으로 묶을 수 없다.",
+          "4": "둘 다 응용 계층이 아니다."
+        },
+        "error_analysis": "정답. 두 기능을 각각 계층에 연결했다. 풀이 안정성은 번호만 제출되어 미확인.",
+        "related_concept": "IP 주소 기반 전달과 TCP 포트 기반 전달은 다른 계층 기능이다."
+      },
+      "review_id": null,
+      "practice_role": "remediation"
+    },
+    {
+      "attempt_id": "2026-10-27-05-A006",
+      "question_id": "SEC-WR-NET-002-Q002",
+      "question_version": 1,
+      "subject": "security-engineer-written",
+      "exam_track": "security-written",
+      "concept_ids": [
+        "NET-LAYERS-ENCAP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "1",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 선택. 이유와 시간은 미확인. 직전 유도형에 이어 독립형도 정답이나 풀이 근거는 제출되지 않음.",
+      "error_category": null,
+      "error_confirmation": "독립형 보완 정답. 최초 오답 이유는 사용자가 설명하지 않아 미확인 상태 유지.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "목적지 IP 주소는 인터넷 계층의 IP 전달 정보이고, TCP 목적지 포트는 전송 계층에서 프로세스를 구분하는 정보다.",
+        "quick_solution": "IP=인터넷, TCP 포트=전송 계층으로 구분한다.",
+        "distractors": {
+          "2": "TCP 포트를 IP와 같은 계층으로 분류했다.",
+          "3": "두 정보의 계층을 잘못 연결했다.",
+          "4": "두 정보를 응용 계층으로 잘못 올렸다."
+        },
+        "error_analysis": "정답. 독립형에서도 맞혔으나 이유 설명이 없어 안정적 숙달은 보류한다.",
+        "related_concept": "IP 주소·라우팅은 인터넷 계층, TCP 포트는 전송 계층"
+      },
+      "review_id": "REV-SEC-WR-0001",
+      "practice_role": "remediation"
+    }
+  ],
+  "summary": {
+    "first_attempts": 4,
+    "first_correct": 3,
+    "first_incorrect": 1,
+    "first_accuracy": 0.75,
+    "review_attempts": 0,
+    "review_correct": 0,
+    "review_incorrect": 0,
+    "review_accuracy": null,
+    "remediation_attempts": 2,
+    "remediation_correct": 2,
+    "remediation_incorrect": 0,
+    "remediation_accuracy": 1.0
+  },
+  "covered_concepts": [
+    "조건과 대체 대상 구분",
+    "공지문 행동·기한·제출처 확인",
+    "TCP/IP 계층과 TCP의 전송 계층 역할",
+    "IP 인터넷 계층과 TCP 전송 계층 구분; 보완 유도형·독립형 정답"
+  ],
+  "weak_concepts": [
+    "NET-LAYERS-ENCAP: 최초 오답 원인 사용자 확인 미완료; 즉시 보완문제 2개 정답, 설명 안정성 미확인"
+  ],
+  "next_action": "패키지 완료. 다음 실제 학습일에 2026-10-28 복습 일정 확인 후 다음 통합 패키지 시작. 미확인 오답 원인은 원인 확인이 필요하면 추후 질문.",
+  "notes": [
+    "이전 2026-10-27 세션 01–04와 기존 복습 이력은 보존.",
+    "오늘 기준 도래 복습0건; 다음 예정 2026-10-28.",
+    "기본 문제 트랙별 NCS2·전산1·정보보안기사 필기1. 보안 실기0은 이번 패키지 범위에서 제외. TOEIC 평일0.",
+    "실측 학습시간 및 풀이시간은 미확인. 사용자가 알려주기 전까지 null.",
+    "정답·해설은 학생용 파일에 공개하지 않음.",
+    "SEC-WR-NET-001-Q001 오답 3: IP 계층과 TCP 계층 혼동 가능성으로 임시 분류; 실제 오답 원인은 사용자 확인 대기. 보완문제 2개를 추가하고 REV-SEC-WR-0001을 10/28 예정으로 등록.",
+    "SEC-WR-NET-002-Q001 유도형 보완문제 답1 정답. 이유·안정성·시간 미확인. 최초 오답 원인 사용자 확인 대기.",
+    "SEC-WR-NET-002-Q001 유도형1 정답, Q002 독립형1 정답. 최초 오답의 구체적 사고 이유는 사용자가 제공하지 않아 미확인 유지. 즉시 보완은 통과했으나 풀이 이유·시간은 모두 미확인; REV-SEC-WR-0001 10/28 예정 유지. 패키지 기본4문제 완료, 추가보완2문제 완료."
+  ]
+}

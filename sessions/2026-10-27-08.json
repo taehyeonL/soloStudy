@@ -1,0 +1,250 @@
+{
+  "schema_version": 2,
+  "session_id": "2026-10-27-08",
+  "date": "2026-10-27",
+  "timezone": "Asia/Seoul",
+  "session_number": 8,
+  "status": "active",
+  "week": 2,
+  "days_covered": [
+    11,
+    12
+  ],
+  "topic": "NCS Day11 추론·Day12 문장 연결 + TCP/UDP 전산·보안기사 적용",
+  "duration_minutes": null,
+  "duration_source": null,
+  "planned_minutes": 90,
+  "plan": [
+    {
+      "topic": "오늘 복습 일정 확인",
+      "minutes": 0
+    },
+    {
+      "topic": "NCS Day11 추론 범위 강의·문제",
+      "minutes": 20
+    },
+    {
+      "topic": "NCS Day12 문장 순서·빈칸 문제",
+      "minutes": 20
+    },
+    {
+      "topic": "TCP/UDP 공통 이론",
+      "minutes": 25
+    },
+    {
+      "topic": "전산 전공 문제1·보안기사 필기 문제1",
+      "minutes": 20
+    },
+    {
+      "topic": "정리·기록",
+      "minutes": 5
+    }
+  ],
+  "lesson_files": [
+    "lessons/ncs-day-011-012-tcp-udp.md"
+  ],
+  "stage": "package_complete",
+  "pending_question_id": null,
+  "pending_question_kind": null,
+  "pending_exam_track": null,
+  "pending_hint_level": 0,
+  "review_queue": [],
+  "planned_questions": [
+    {
+      "question_id": "NCS-D011-Q001",
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "status": "answered"
+    },
+    {
+      "question_id": "NCS-D012-Q001",
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "status": "answered"
+    },
+    {
+      "question_id": "CS-NET-011-Q001",
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "status": "answered"
+    },
+    {
+      "question_id": "SEC-WR-NET-004-Q001",
+      "subject": "security-engineer-written",
+      "exam_track": "security-written",
+      "status": "answered"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_id": "2026-10-27-08-A001",
+      "question_id": "NCS-D011-Q001",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-INFERENCE"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "1.",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답. 번호만 답해 풀이 안정성은 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "응답자20명 중15명이라는 조사 범위 내에서만 결론을 내린다.",
+        "quick_solution": "지문에서 대상과 수를 그대로 유지한다.",
+        "distractors": {
+          "2": "2번은 처리시간이 지문에 없고, 3번은 모든 이전 시스템 이용자 선호를 말하지 않았으며, 4번은 기관 전체·오류 제거를 근거 없이 확대한다."
+        },
+        "error_analysis": "정답. 번호만 답해 풀이 안정성은 미확인.",
+        "related_concept": "명시 정보와 지지되는 추론의 범위를 구분한다."
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-08-A002",
+      "question_id": "NCS-D012-Q001",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-SENTENCE-ORDER"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "3.",
+      "selected_choice": 3,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답. 번호만 답해 풀이 안정성은 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 3번",
+        "standard_solution": "문제 상황 나 → 점검으로 확인한 원인 다 → 따라서로 시작하는 대응 가 순이다.",
+        "quick_solution": "원인과 대응을 찾고 따라서가 받는 앞 내용을 확인한다.",
+        "distractors": {
+          "2": "1·2번은 결론을 앞에 두고, 4번은 원인 설명보다 점검 결과가 먼저 나와 흐름이 어색하다."
+        },
+        "error_analysis": "정답. 번호만 답해 풀이 안정성은 미확인.",
+        "related_concept": "지시어와 접속어를 이용한 문장 배열."
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-08-A003",
+      "question_id": "CS-NET-011-Q001",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "2. 빠른걸 우선 한다고 했으니. 신뢰도는 부족하지만 빠른 udp",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "빠른 것을 우선하고 신뢰도는 부족하지만 UDP라고 설명.",
+      "stability": "reasoning_supported",
+      "stability_basis": "정답. 요구사항과 UDP의 지연 우선 특성을 연결한 근거가 타당하다.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "실시간 음성은 낮은 지연을 우선하고 손실을 앱이 보완하므로 UDP 특성이 더 적합하다.",
+        "quick_solution": "앱의 우선 요구가 신뢰성인지 지연인지 먼저 분류한다.",
+        "distractors": {
+          "2": "1은 재전송 대기 지연, 3은 TCP 자체 암호화 오해, 4는 UDP가 순서·전달을 보장한다는 오해다."
+        },
+        "error_analysis": "정답. 요구사항과 UDP의 지연 우선 특성을 연결한 근거가 타당하다.",
+        "related_concept": "전송 신뢰성과 지연 요구의 절충."
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-08-A004",
+      "question_id": "SEC-WR-NET-004-Q001",
+      "question_version": 1,
+      "subject": "security-engineer-written",
+      "exam_track": "security-written",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "2.",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답. 번호만 답해 풀이 안정성은 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "UDP는 데이터그램을 전달하지만 전달 여부와 순서를 자체적으로 보장하지 않는다.",
+        "quick_solution": "UDP=데이터그램, 전달·순서 보장 없음으로 구분한다.",
+        "distractors": {
+          "2": "1은 UDP 자체 기밀성 오해, 3은 연결 설정 필수 오해, 4는 포트 미사용 오해다."
+        },
+        "error_analysis": "정답. 번호만 답해 풀이 안정성은 미확인.",
+        "related_concept": "UDP의 전달 보장·순서·포트·기밀성을 구분한다."
+      },
+      "review_id": null
+    }
+  ],
+  "summary": {
+    "first_attempts": 4,
+    "first_correct": 4,
+    "first_incorrect": 0,
+    "first_accuracy": 1.0,
+    "review_attempts": 0,
+    "review_correct": 0,
+    "review_incorrect": 0,
+    "review_accuracy": null,
+    "remediation_attempts": 0,
+    "remediation_correct": 0,
+    "remediation_incorrect": 0,
+    "remediation_accuracy": null
+  },
+  "covered_concepts": [
+    "NCS 추론 범위와 과잉 일반화",
+    "문장 순서의 원인·결과 및 접속어",
+    "TCP/UDP 선택과 지연·신뢰성 요구",
+    "UDP 데이터그램·전달 비보장"
+  ],
+  "weak_concepts": [],
+  "next_action": "세션08 완료. 다음은 NCS Day13–14 보고서·규정·메일 종합 및 의사소통 미니평가. 기준일 복습 예정 항목을 확인하고 다음 패키지 미리보기를 먼저 제시한다.",
+  "notes": [
+    "세션01–07 기록은 보존하고 추가 세션08 시작.",
+    "기준일 10/27 도래 복습0건. 10/28 예정4건, 10/30 예정2건.",
+    "기본문제 트랙별 NCS2·전산1·보안기사 필기1. 보안실기0, 평일 TOEIC0.",
+    "실측시간은 사용자 보고 전 미확인.",
+    "기술 근거는 RFC9293 TCP 및 RFC768 UDP 공식 문서.",
+    "세션08 완료: 기본4문제 모두 정답(NCS2, 전산1, 보안기사 필기1). 풀이시간 미확인. NCS 두 문항 및 보안기사 문항은 번호만 제출해 안정성 미확인, 별도 복습 사유는 확인되지 않음. TCP/UDP 전산 문항은 요구사항에 근거한 풀이. 오늘 할당량 집계는 학습 관리자 기준에 따름."
+  ]
+}

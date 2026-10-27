@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-10-27",
+  "sets": [],
+  "set_template": {
+    "set_id": "TOEIC-RC-YYYY-MM-DD-01",
+    "weekend_start": "YYYY-MM-DD",
+    "status": "planned/active/completed/incomplete",
+    "target_questions": 50,
+    "part_targets": {"part5": 25, "part6": 8, "part7": 17},
+    "question_ids": [],
+    "attempt_ids": [],
+    "report_file": null
+  },
+  "note": "Template only; no actual set has started. Weekend total is 50, not 50 each day. Part distribution is a personal diagnostic plan, not an official test blueprint."
+}

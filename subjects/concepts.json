@@ -2,6 +2,68 @@
   "schema_version": 1,
   "concepts": [
     {
+      "concept_id": "NET-SUBNET-AND",
+      "title": "서브넷 마스크와 네트워크 주소",
+      "tracks": [
+        "computer-science",
+        "security-written",
+        "security-practical"
+      ],
+      "status": "learning",
+      "lesson_file": "lessons/ncs-day-009-010-subnet-calculation.md",
+      "evidence_attempt_ids": [
+        "2026-10-27-07-A003",
+        "2026-10-27-07-A004",
+        "2026-10-27-07-A005"
+      ],
+      "last_studied_on": "2026-10-27"
+    },
+    {
+      "concept_id": "NET-IPV4-PREFIX",
+      "title": "IPv4 주소와 CIDR 프리픽스",
+      "tracks": [
+        "computer-science",
+        "security-written"
+      ],
+      "status": "learning",
+      "lesson_file": "lessons/ncs-day-007-008-ipv4-prefix.md",
+      "evidence_attempt_ids": [
+        "2026-10-27-06-A004"
+      ],
+      "last_studied_on": "2026-10-27"
+    },
+    {
+      "concept_id": "SEC-PRIVATE-ADDRESS",
+      "title": "RFC 1918 사설 IPv4 주소 블록",
+      "tracks": [
+        "security-written",
+        "security-practical"
+      ],
+      "status": "learning",
+      "lesson_file": "lessons/ncs-day-007-008-ipv4-prefix.md",
+      "evidence_attempt_ids": [
+        "2026-10-27-06-A004"
+      ],
+      "last_studied_on": "2026-10-27"
+    },
+    {
+      "concept_id": "NET-LAYERS-ENCAP",
+      "title": "네트워크 계층과 캡슐화",
+      "tracks": [
+        "computer-science",
+        "security-written"
+      ],
+      "status": "learning",
+      "lesson_file": "lessons/ncs-day-005-006-network-layers.md",
+      "evidence_attempt_ids": [
+        "2026-10-27-05-A003",
+        "2026-10-27-05-A004",
+        "2026-10-27-05-A005",
+        "2026-10-27-05-A006"
+      ],
+      "last_studied_on": "2026-10-27"
+    },
+    {
       "concept_id": "NET-TCPIP",
       "title": "TCP/IP",
       "tracks": [
@@ -16,12 +78,22 @@
         "2026-10-26-01-A004",
         "2026-10-26-01-A005",
         "2026-10-26-01-A006",
-        "2026-10-26-01-A007"
+        "2026-10-26-01-A007",
+        "2026-10-27-01-A002",
+        "2026-10-27-01-A003",
+        "2026-10-27-01-A005",
+        "2026-10-27-01-A006",
+        "2026-10-27-01-A007"
       ],
-      "last_studied_on": "2026-10-26",
+      "last_studied_on": "2026-10-27",
       "lesson_files": [
         "lessons/net-tcpip-01.md",
-        "lessons/net-tcpip-02.md"
+        "lessons/net-tcpip-02.md",
+        "lessons/net-tcpip-03.md",
+        "lessons/net-tcpip-04.md",
+        "lessons/net-tcpip-05.md",
+        "lessons/net-tcpip-06.md",
+        "lessons/ncs-day-011-012-tcp-udp.md"
       ]
     },
     {

@@ -1,0 +1,96 @@
+{
+  "schema_version": 2,
+  "session_id": "2026-10-27-02",
+  "date": "2026-10-27",
+  "timezone": "Asia/Seoul",
+  "session_number": 2,
+  "status": "completed",
+  "week": 1,
+  "day": 2,
+  "topic": "NCS 의사소통: 문장 속 주체·행동·대상·기한·방법",
+  "duration_minutes": null,
+  "duration_source": null,
+  "planned_minutes": 25,
+  "plan": [
+    {
+      "topic": "NCS 문장 쪼개기 강의·예시·연습",
+      "minutes": 20
+    },
+    {
+      "topic": "피드백·기록",
+      "minutes": 5
+    }
+  ],
+  "lesson_files": [
+    "lessons/ncs-day-002.md"
+  ],
+  "stage": "feedback_complete_session_closed",
+  "pending_question_id": null,
+  "pending_question_kind": null,
+  "pending_exam_track": null,
+  "pending_review_id": null,
+  "pending_hint_level": 0,
+  "review_queue": [],
+  "attempts": [
+    {
+      "attempt_id": "2026-10-27-02-A001",
+      "question_id": "NCS-D002-Q001",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-SENTENCE-STRUCTURE"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "1.",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 선택. 선택 이유를 별도로 쓰지 않아 풀이 근거·자기확신·시간은 확인되지 않음.",
+      "error_category": null,
+      "error_confirmation": "오답 아님. 원인 분석 불필요.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "문장에서 행동은 “등록한다”이고, 그 행동을 하는 주체는 “전산 담당자”다. “점검 결과”는 등록 대상, “매주 금요일 16시까지”는 기한, “팀 공용 폴더”는 등록 장소다.",
+        "quick_solution": "“누가 등록한다?”에 답하는 문장 속 주체를 찾으면 된다.",
+        "distractors": {
+          "2": "팀장은 지문에 등장하지 않는다.",
+          "3": "시간 표현은 기한이지 사람을 가리키지 않는다.",
+          "4": "팀 공용 폴더는 장소이며 등록 주체가 아니다."
+        },
+        "error_analysis": "정답. 번호만 제출되어 이유와 풀이 안정성은 미확인으로 둔다.",
+        "related_concept": "문장 성분의 기능을 묻는 독해에서는 동작을 먼저 찾고, 누가 그 동작을 하는지 확인한다."
+      },
+      "review_id": null
+    }
+  ],
+  "summary": {
+    "first_attempts": 1,
+    "first_correct": 1,
+    "first_incorrect": 0,
+    "first_accuracy": 1.0,
+    "review_attempts": 0,
+    "review_correct": 0,
+    "review_incorrect": 0,
+    "review_accuracy": null
+  },
+  "weak_concepts": [],
+  "covered_concepts": [
+    "문장 속 동사와 주체 찾기",
+    "주체·대상·기한·장소의 역할 구분"
+  ],
+  "next_action": "NCS Day 2 문장 구조 학습 단위 완료. 기존 Day 1 미완료 기록은 별도로 보존한다. 다음에는 사용자 의도에 따라 Day 3 또는 Day 1 보완을 진행한다.",
+  "notes": [
+    "사용자 지시로 오늘을 NCS Day 2로 지정. Day 1 기록은 미완료 상태로 보존하며 자동 완료하지 않음.",
+    "오늘 이 세션에서는 복습 스킵. review_schedule.md 원래 다음 도래일(2026-10-28)은 변경하지 않음.",
+    "당일 할당량 목표는 NCS 추가 학습으로 한시 조정했으며 subjects/daily_plans/2026-10-27.json revision 참조.",
+    "시간은 실측 전까지 null.",
+    "NCS-D002-Q001 최종답1 정답. 번호만 제시하여 설명 근거·안정성·시간은 미확인. 오늘 한정 복습 스킵 유지, review_schedule 변경 없음. Day2 학습단위 완료, Day1 미완료 상태 보존."
+  ]
+}

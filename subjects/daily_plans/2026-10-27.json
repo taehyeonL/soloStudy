@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-27",
+  "declared_on": "2026-10-27",
+  "basis": "기존 일일 목표 14개를 완료한 뒤 사용자가 새 학습 패키지를 시작하도록 요청하여 오늘 패키지 기본문제 4개(NCS2·전산1·보안필기1)와 마무리1개를 당일 목표에 추가했다. 기존 완료 세션과 기록은 보존한다. 오답/불안정 개념에 한해 추가문제를 붙인다. 동일 날짜 후속 패키지 세션06을 사용자 요청으로 시작하여 NCS2 + 전산1 + 보안필기1 + 마무리1을 추가했다. 이전 완료량 보존. 같은 날짜에 사용자가 다음 패키지를 요청해 NCS Day9–10 및 서브넷 전산/보안 문제 4개와 마무리 1개를 추가 목표로 편성; 앞선 완료량 보존. 사용자 요청으로 같은 날짜 후속 패키지 세션08을 시작. NCS Day11·12와 TCP/UDP 전산·보안필기 기본4문항+마무리1을 오늘 목표에 추가; 완료 기록 보존. 사용자 요청 다음 패키지 세션09 편성: NCS Day13·14와 DNS/HTTP 공통강의, 전산·보안필기 각각1문제 및 마무리1 추가.",
+  "targets": {
+    "review": 3,
+    "ncs": 16,
+    "cs_security": 14,
+    "wrapup": 1
+  },
+  "unit": "채점·피드백을 마친 문항 또는 오늘 공부 끝 마무리 기록",
+  "lecture_policy": "강의와 시범은 해당 문항 블록에 포함하며 따로 중복 집계하지 않음",
+  "time_policy": "예상75분과 별개인 작업량 진행률. 실측시간 미확인으로 시간 달성률을 계산하지 않음.",
+  "extra_work_policy": "사용자가 앞선 목표 완료 뒤 새 패키지를 시작하면 해당 패키지 기본문제와 마무리를 오늘 분모에 추가하고 revision 이력을 보존. 오답·불안정 개념 외에는 문제를 추가하지 않음.",
+  "revisions": [
+    {
+      "changed_on": "2026-10-27",
+      "reason": "사용자 요청: 오늘은 NCS Day 2로 진행. 추가 세션의 NCS 문항 블록을 오늘 한정 목표에 포함. 기존 Day1 세션의 완료량은 보존.",
+      "previous_targets": {
+        "review": 3,
+        "ncs": 1,
+        "cs_security": 4,
+        "wrapup": 1
+      },
+      "new_targets": {
+        "review": 3,
+        "ncs": 2,
+        "cs_security": 4,
+        "wrapup": 1
+      }
+    },
+    {
+      "changed_on": "2026-10-27",
+      "reason": "사용자 요청: Day2의 기본 연습과 적용·한 문장 요약까지 완료. NCS 문제 블록 2개를 당일 한정 추가.",
+      "previous_targets": {
+        "review": 3,
+        "ncs": 2,
+        "cs_security": 4,
+        "wrapup": 1
+      },
+      "new_targets": {
+        "review": 3,
+        "ncs": 4,
+        "cs_security": 4,
+        "wrapup": 1
+      }
+    },
+    {
+      "changed_on": "2026-10-27",
+      "reason": "사용자 요청으로 NCS Day3·Day4 두 단위를 오늘 추가. 정상 정답을 자동 복습하지 않으며, 복습이 필요한 기존 오답은 달력 도래일부터 처리.",
+      "previous_targets": {
+        "review": 3,
+        "ncs": 4,
+        "cs_security": 4,
+        "wrapup": 1
+      },
+      "new_targets": {
+        "review": 3,
+        "ncs": 6,
+        "cs_security": 4,
+        "wrapup": 1
+      }
+    },
+    {
+      "changed_on": "2026-10-27",
+      "reason": "앞선 당일 할당량 완료 후 사용자 요청으로 Day5–6 및 전산·보안필기 통합 패키지를 시작. 기본문제 NCS2 + 전산1 + 보안필기1 및 세션 마무리1을 추가.",
+      "previous_targets": {
+        "review": 3,
+        "ncs": 6,
+        "cs_security": 4,
+        "wrapup": 1
+      },
+      "new_targets": {
+        "review": 3,
+        "ncs": 8,
+        "cs_security": 6,
+        "wrapup": 1
+      }
+    },
+    {
+      "changed_on": "2026-10-27",
+      "reason": "사용자 요청으로 다음 통합 패키지(Day7–8 NCS, IPv4/프리픽스 전산·보안필기)를 오늘 같은 날짜의 추가 세션으로 시작. 기본 문제 NCS2 + 전산1 + 보안필기1 및 세션 마무리1 추가.",
+      "previous_targets": {
+        "review": 3,
+        "ncs": 8,
+        "cs_security": 6,
+        "wrapup": 1
+      },
+      "new_targets": {
+        "review": 3,
+        "ncs": 10,
+        "cs_security": 8,
+        "wrapup": 1
+      }
+    },
+    {
+      "changed_on": "2026-10-27",
+      "reason": "사용자 요청으로 다음 패키지 세션07(Day9–10 NCS, 서브넷 전산·보안 필기)을 같은 날짜에 시작. 기본 NCS2·전산1·보안필기1·마무리1 추가.",
+      "previous_targets": {
+        "review": 3,
+        "ncs": 10,
+        "cs_security": 8,
+        "wrapup": 1
+      },
+      "new_targets": {
+        "review": 3,
+        "ncs": 12,
+        "cs_security": 10,
+        "wrapup": 1
+      }
+    },
+    {
+      "changed_on": "2026-10-27",
+      "reason": "사용자 요청 다음 패키지: NCS Day11–12 + TCP/UDP 공통강의 및 전산/보안필기 트랙 문제를 추가 세션08에 편성.",
+      "previous_targets": {
+        "review": 3,
+        "ncs": 12,
+        "cs_security": 10,
+        "wrapup": 1
+      },
+      "new_targets": {
+        "review": 3,
+        "ncs": 14,
+        "cs_security": 12,
+        "wrapup": 1
+      }
+    },
+    {
+      "changed_on": "2026-10-27",
+      "reason": "세션08 완료 후 사용자가 다음 패키지를 요청. 같은 날짜 세션09에 NCS Day13·14 2문항과 DNS/HTTP 전산1·보안필기1, 마무리1을 추가하며 이전 완료량을 보존.",
+      "previous_targets": {
+        "review": 3,
+        "ncs": 14,
+        "cs_security": 12,
+        "wrapup": 1
+      },
+      "new_targets": {
+        "review": 3,
+        "ncs": 16,
+        "cs_security": 14,
+        "wrapup": 1
+      }
+    }
+  ]
+}

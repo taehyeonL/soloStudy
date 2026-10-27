@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "NCS-D003-Q001",
+  "kind": "practice",
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "concept_ids": [
+    "NCS-DOC-D03"
+  ],
+  "scoring_format": "choice",
+  "domain": "의사소통",
+  "subtype": "접속어 그러나의 대조·제한 관계",
+  "difficulty": "기초",
+  "passage": "모바일로 신청할 수 있다. 그러나 첨부 서류는 PC 포털에서만 제출할 수 있다.",
+  "prompt": "두 문장에서 “그러나”가 나타내는 관계는?",
+  "choices": [
+    "원인과 결과",
+    "앞 내용과 반대되거나 제한되는 내용",
+    "구체적인 예시",
+    "앞 내용을 바탕으로 한 결론"
+  ],
+  "answer": 2,
+  "explanation": "앞 문장은 모바일 신청이 가능하다고 하고, 뒤 문장은 첨부서류 제출 방법을 PC 포털로 제한한다. “그러나”는 앞 내용에 제한·대조되는 정보를 이어 준다.",
+  "quick_solution": "“그러나” 앞뒤에서 기대와 달라지거나 제한되는 부분을 찾는다.",
+  "distractor_analysis": {
+    "1": "원인을 나타내지 않는다.",
+    "2": "앞뒤의 가능 범위가 달라지는 대조·제한이다.",
+    "3": "구체 사례를 들지 않는다.",
+    "4": "결론을 도출하는 말이 아니다."
+  },
+  "concept": "접속어가 문장 관계를 나타내며, 사실은 근거로 확인할 수 있는 내용이고 의견은 평가나 판단을 담는다.",
+  "hints": [
+    "두 문장이 비슷한 내용을 되풀이하는지, 반대 방향으로 꺾이는지 살펴보세요.",
+    "표현 자체가 자료로 확인 가능한지, 평가나 판단인지 구분해 보세요."
+  ],
+  "recommended_seconds": 75,
+  "source_type": "독창적 창작; 실제 기출 아님",
+  "review_status": "passed",
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "지문과 선택지의 문장 관계/객관적·평가 표현 구분을 수동 대조하고 유일 정답 확인."
+  },
+  "verification": {
+    "model": "text_lookup",
+    "target": "앞 내용과 반대되거나 제한되는 내용",
+    "choice_facts": [
+      {
+        "value": "원인과 결과"
+      },
+      {
+        "value": "앞 내용과 반대되거나 제한되는 내용"
+      },
+      {
+        "value": "구체적인 예시"
+      },
+      {
+        "value": "앞 내용을 바탕으로 한 결론"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "concept_ids": [
+    "NET-DNS-HTTP"
+  ],
+  "scoring_format": "choice",
+  "id": "CS-NET-012-Q001",
+  "kind": "practice",
+  "domain": "컴퓨터 네트워크",
+  "subtype": "DNS·HTTP 장애 계층 구분",
+  "difficulty": "기초 응용",
+  "recommended_seconds": 100,
+  "source_type": "독창적 비공식 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc1034.html",
+      "section": "Domain Name Space and resolvers",
+      "checked_on": "2026-10-27"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "section": "Section 15.5.5 and 15",
+      "checked_on": "2026-10-27"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "RFC1034 이름 해석과 RFC9110 404·5xx 의미 대조. 독립 검수 아님."
+  },
+  "passage": "사용자가 웹 서비스 주소를 입력하면 운영체제는 먼저 해당 도메인의 IP 주소를 DNS로 조회한다. IP 주소를 얻은 뒤 웹 클라이언트는 서버에 HTTP 요청을 보내고 응답 상태 코드를 받는다.",
+  "prompt": "DNS 조회는 성공하여 서버 IP를 얻었지만 HTTP 응답으로 404가 돌아왔다. 가장 적절한 해석은?",
+  "choices": [
+    "DNS가 도메인을 IP 주소로 해석했으며, HTTP 요청 대상 리소스를 찾지 못했음을 나타낼 수 있다.",
+    "DNS가 HTTP 요청을 거부했으므로 클라이언트가 서버 IP 주소를 얻지 못했다.",
+    "404는 서버가 요청을 처리하지 못했음을 뜻하는 5xx 서버 오류다.",
+    "DNS가 성공했으므로 해당 웹 서버의 모든 페이지가 정상임이 확인되었다."
+  ],
+  "answer": 1,
+  "explanation": "DNS 조회 성공은 이름을 주소로 해석했다는 뜻이다. HTTP 404는 서버가 요청 대상 리소스를 찾지 못했음을 나타내는 4xx 응답이다. 이는 DNS 실패나 서버 측 5xx 오류와 다르며 서버의 다른 페이지 상태까지 보증하지 않는다.",
+  "quick_solution": "DNS는 이름→주소, HTTP 404는 해당 요청 리소스 없음(4xx)으로 구분한다.",
+  "distractor_analysis": {
+    "2": "DNS 조회가 이미 성공했고 404는 HTTP 응답이다.",
+    "3": "404는 4xx 클라이언트 오류 계열이지 5xx가 아니다.",
+    "4": "한 요청의 성공적인 DNS 해석은 다른 리소스 상태를 보증하지 않는다."
+  },
+  "hints": [
+    "DNS의 결과와 HTTP 상태 코드가 각각 어느 단계에서 나오는지 분리하세요.",
+    "404가 어느 응답 범위에 속하는지 확인하세요."
+  ],
+  "verification": {
+    "model": "text_lookup",
+    "target": "DNS 해석 성공; HTTP 요청 리소스를 찾지 못했을 수 있음",
+    "choice_facts": [
+      {
+        "value": "DNS 해석 성공; HTTP 요청 리소스를 찾지 못했을 수 있음"
+      },
+      {
+        "value": "DNS 단계 실패"
+      },
+      {
+        "value": "404는 5xx"
+      },
+      {
+        "value": "DNS 성공이 모든 페이지 정상 보장"
+      }
+    ]
+  }
+}

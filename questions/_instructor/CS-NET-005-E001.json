@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "concept_ids": [
+    "NET-TCPIP"
+  ],
+  "scoring_format": "choice",
+  "domain": "컴퓨터 네트워크",
+  "subtype": "누락 구간이 있는 TCP 누적 ACK 번호",
+  "difficulty": "기초 응용",
+  "recommended_seconds": 120,
+  "source_type": "독창적 창작; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.4",
+      "section": "3.4 cumulative ACK",
+      "checked_on": "2026-10-27"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "RFC9293누적ACK는연속수신범위다음번호라는규칙대조. 초기기대값·수신길이·누락구간·순서·SYN/FIN없음명시. 숫자코드검증병행. 독립검수아님."
+  },
+  "concept": "중간누락이있으면누적ACK는가장앞의미수신바이트번호에머무름",
+  "id": "CS-NET-005-E001",
+  "kind": "worked_example",
+  "passage": "TCP 연결이 설정되어 있고 서버는 다음 클라이언트 데이터 번호로 1000을 기대했다. 서버는 SEQ=1000의 데이터 100바이트를 받았고, 이어 SEQ=1200의 데이터 100바이트를 받았다. 1100~1199 데이터는 도착하지 않았다. 이전 누락은 없고 SYN·FIN은 없으며 수신 창은 충분하다.",
+  "prompt": "두 번째 데이터 수신 후 서버의 누적 ACK 번호는?",
+  "choices": [
+    "1000",
+    "1100",
+    "1200",
+    "1300"
+  ],
+  "answer": 2,
+  "explanation": "1000~1099는연속수신했지만1100~1199가없다. 1200~1299가도착해도연속수신범위가이어지지않으므로다음누적ACK는1100이다.",
+  "quick_solution": "처음비어있는번호1100을찾는다.",
+  "distractor_analysis": {
+    "1": "이미받은1000~1099를반영하지않음",
+    "3": "누락구간을건너뜀",
+    "4": "가장뒤수신번호에기계적으로길이를더함"
+  },
+  "verification": {
+    "model": "tcp_cumulative_ack",
+    "initial_expected": 1000,
+    "syn": false,
+    "fin": false,
+    "received_segments": [
+      {
+        "seq": 1000,
+        "payload_bytes": 100
+      },
+      {
+        "seq": 1200,
+        "payload_bytes": 100
+      }
+    ],
+    "choice_facts": [
+      {
+        "ack": 1000
+      },
+      {
+        "ack": 1100
+      },
+      {
+        "ack": 1200
+      },
+      {
+        "ack": 1300
+      }
+    ]
+  }
+}

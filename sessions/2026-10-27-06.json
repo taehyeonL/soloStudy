@@ -1,0 +1,256 @@
+{
+  "schema_version": 2,
+  "session_id": "2026-10-27-06",
+  "date": "2026-10-27",
+  "timezone": "Asia/Seoul",
+  "session_number": 6,
+  "status": "completed",
+  "week": 2,
+  "days_covered": [
+    7,
+    8
+  ],
+  "topic": "NCS Day7 1주 통합 점검·Day8 문단 중심 내용 + IPv4/CIDR 공통 및 시험 트랙 적용",
+  "duration_minutes": null,
+  "duration_source": null,
+  "planned_minutes": 90,
+  "plan": [
+    {
+      "topic": "오늘 복습 일정 확인",
+      "minutes": 0
+    },
+    {
+      "topic": "NCS Day7 통합 미니평가 개념·문제",
+      "minutes": 20
+    },
+    {
+      "topic": "NCS Day8 중심 내용 강의·문제",
+      "minutes": 20
+    },
+    {
+      "topic": "공통 IPv4·CIDR 프리픽스 강의",
+      "minutes": 25
+    },
+    {
+      "topic": "전산 전공 문제1·보안기사 필기 문제1",
+      "minutes": 20
+    },
+    {
+      "topic": "요약 및 기록",
+      "minutes": 5
+    }
+  ],
+  "lesson_files": [
+    "lessons/ncs-day-007-008-ipv4-prefix.md"
+  ],
+  "stage": "package_complete",
+  "pending_question_id": null,
+  "pending_question_kind": null,
+  "pending_exam_track": null,
+  "pending_hint_level": 0,
+  "review_queue": [],
+  "planned_questions": [
+    {
+      "question_id": "NCS-D007-Q001",
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "status": "answered"
+    },
+    {
+      "question_id": "NCS-D008-Q001",
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "status": "answered"
+    },
+    {
+      "question_id": "CS-NET-008-Q001",
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "status": "answered"
+    },
+    {
+      "question_id": "SEC-WR-NET-002-Q003",
+      "subject": "security-engineer-written",
+      "exam_track": "security-written",
+      "status": "answered"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_id": "2026-10-27-06-A001",
+      "question_id": "NCS-D007-Q001",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-CONDITIONS",
+        "NCS-DOC-NOTICE"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "1.",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "選択番号のみ。 지문근거 설명·시간은 확인되지 않음.",
+      "error_category": null,
+      "error_confirmation": "오답 아님. 안정성 미확인만으로 자동복습 등록하지 않음.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "모든 부서는 변경이 없어도 매월 5일까지 포털에 계획을 등록해야 한다. 일정 변경 때의 2일 이내 수정 등록은 추가 조건이다.",
+        "quick_solution": "기본 규칙의 ‘모든 부서/매월 5일/포털’을 확인한다.",
+        "distractors": {
+          "2": "변경 시 수정 기한 2일을 5일로 바꾸고 제출처도 이메일로 바꿨다.",
+          "3": "변경 시 수정계획 재등록을 누락했다.",
+          "4": "‘해야 한다’는 의무를 선택으로 바꾸었다."
+        },
+        "error_analysis": "정답. 번호만 답해 지문 근거와 안정성은 미확인이다.",
+        "related_concept": "기본 규칙과 조건부 추가 규칙 구분"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-06-A002",
+      "question_id": "NCS-D008-Q001",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-MAIN-IDEA"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "2.시스템 입력 오류를 개선하기 위한 여러 방안을 그냥 나열하는거임",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "여러 방안이 나열되며 입력 오류 개선 목적이라고 설명.",
+      "stability": "reasoning_supported",
+      "stability_basis": "응답에서 여러 방안과 공통 목적을 파악했으며 선택지2의 포괄적 요약과 부합. 실제 시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "필수항목 사전 안내, 첨부파일·입력내용 대조, 불일치 보완 요청이 오류 예방과 수정 절차를 구성한다. 안내문구 개선은 일부 부서의 추가 사례다.",
+        "quick_solution": "여러 문장이 공유하는 목적을 묶고, 한 문장에만 나온 ‘일부 부서’는 세부 사례로 본다.",
+        "distractors": {
+          "1": "종이 제출은 지문에 없다.",
+          "3": "일부 부서의 한 사례만 골라 문단 전체를 대표하지 못한다.",
+          "4": "필수 항목 누락 시 제출 전 안내한다고 했으므로 반대 내용이다."
+        },
+        "error_analysis": "정답. ‘입력 오류를 개선하기 위한 여러 방안을 나열한다’는 사용자 설명이 문단의 공통 목적과 일치한다.",
+        "related_concept": "중심 내용은 여러 세부 정보를 묶는 상위 주제이며, 세부 사례 하나와 다르다."
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-06-A003",
+      "question_id": "CS-NET-008-Q001",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-IPV4-PREFIX"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "서브넷 마스크의 cider 표기법임. 1. 네트워크 부분이 24비트고 8비트가 호스트",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "CIDR 프리픽스 /24가 앞 24 네트워크 비트와 남은 8 호스트 비트를 뜻한다고 답함.",
+      "stability": "reasoning_supported",
+      "stability_basis": "프리픽스 길이와 IPv4 32비트 중 잔여 호스트 부분을 모두 설명. 실측시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "IPv4는 32비트다. /24는 앞 24비트가 네트워크 프리픽스이고 나머지 8비트가 해당 프리픽스 아래 주소 부분임을 뜻한다.",
+        "quick_solution": "32-24=8비트가 남는다.",
+        "distractors": {
+          "2": "IPv4 전체 길이는 32비트다.",
+          "3": "앞 24비트가 프리픽스이므로 뒤 24비트가 호스트가 될 수 없다.",
+          "4": "/24는 개수가 아니라 프리픽스 비트 길이다."
+        },
+        "error_analysis": "정답. CIDR /24와 32비트의 잔여 8비트를 설명했다. 사용자가 쓴 ‘cider’는 CIDR(Classless Inter-Domain Routing) 표기로 정규화했다.",
+        "related_concept": "IPv4 32비트; /n은 앞 n비트 네트워크 프리픽스"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-06-A004",
+      "question_id": "SEC-WR-NET-002-Q003",
+      "question_version": 1,
+      "subject": "security-engineer-written",
+      "exam_track": "security-written",
+      "concept_ids": [
+        "NET-IPV4-PREFIX",
+        "SEC-PRIVATE-ADDRESS"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "1",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 제출; 주소 범위 판단 근거와 시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님. 정답 안정성 미확인만으로 추가 복습 등록하지 않음.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "172.16.0.0/12의 두 번째 옥텟 범위는 16~31이므로 172.20.4.8은 RFC 1918 사설 IPv4 범위에 들어간다.",
+        "quick_solution": "172.16/12의 두 번째 옥텟 16~31을 확인한다.",
+        "distractors": {
+          "2": "172.32는 16~31 범위 밖이다.",
+          "3": "192.0.2.0/24는 RFC 5737 문서 예시용 블록이다.",
+          "4": "198.51.100.0/24는 RFC 5737 문서 예시용 블록이다."
+        },
+        "error_analysis": "정답. 번호만 제출하여 범위 비교 근거와 안정성은 미확인.",
+        "related_concept": "RFC 1918 사설 주소 범위와 RFC 5737 문서 예시용 주소 범위는 구별한다."
+      },
+      "review_id": null
+    }
+  ],
+  "summary": {
+    "first_attempts": 4,
+    "first_correct": 4,
+    "first_incorrect": 0,
+    "first_accuracy": 1.0,
+    "review_attempts": 0,
+    "review_correct": 0,
+    "review_incorrect": 0,
+    "review_accuracy": null
+  },
+  "covered_concepts": [
+    "기본 규칙과 일정 변경 시 조건부 추가 규칙 구분",
+    "중심 내용과 세부 사례 구분; 입력 오류 개선이라는 공통 목적",
+    "IPv4 CIDR /24: 네트워크 프리픽스 24비트, 잔여 8비트",
+    "RFC1918 사설 IPv4 범위 구분"
+  ],
+  "weak_concepts": [],
+  "next_action": "패키지 종료. 다음 실제 학습일에는 2026-10-28 도래 복습 3건(REV-CS-0001, REV-CS-0004, REV-SEC-WR-0001)을 먼저 정답 가리고 진행하고, 나머지 10/30 복습2건은 예정 유지. 이후 다음 커리큘럼 패키지를 미리보기한다.",
+  "notes": [
+    "같은 날짜에 앞선 세션01–05와 그 기록은 보존한다. 세션06은 사용자 요청에 따른 추가 패키지다.",
+    "2026-10-27 도래 복습0건. 다음 예정 2026-10-28 복습 3건, 10-30 복습 2건.",
+    "기본문제 트랙별 NCS2·전산1·정보보안기사 필기1. 보안실기0, 평일 TOEIC0.",
+    "실측 학습·풀이시간은 사용자 보고 전 null로 유지.",
+    "NCS Day7–8 완료 조건은 두 기본문제 피드백, 공통 네트워크 강의와 전산/보안 트랙 문제 완료. 오답 시 보완2문제.",
+    "2026-10-27 Day7–8/IPv4 통합 패키지 완료: 기본 4문항 4정답, NCS Day7 정답 근거 미확인, Day8 근거 타당, 전산 /24 근거 타당, 보안 사설주소 문항 번호정답·근거 미확인. 실측 학습 및 풀이시간은 미확인. 다음 10/28 복습3건."
+  ]
+}

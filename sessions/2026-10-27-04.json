@@ -1,0 +1,136 @@
+{
+  "schema_version": 2,
+  "session_id": "2026-10-27-04",
+  "date": "2026-10-27",
+  "timezone": "Asia/Seoul",
+  "session_number": 4,
+  "status": "completed",
+  "week": 1,
+  "days_covered": [
+    3,
+    4
+  ],
+  "topic": "NCS 의사소통 Day3 접속어·Day4 사실과 의견",
+  "duration_minutes": null,
+  "duration_source": null,
+  "planned_minutes": 50,
+  "plan": [
+    {
+      "topic": "Day3 접속어 개념·시범·확인문제",
+      "minutes": 25
+    },
+    {
+      "topic": "Day4 사실·의견 개념·시범·확인문제",
+      "minutes": 25
+    }
+  ],
+  "lesson_files": [
+    "lessons/ncs-day-003-004.md"
+  ],
+  "stage": "day3_day4_complete",
+  "pending_question_id": null,
+  "pending_question_kind": null,
+  "pending_exam_track": null,
+  "pending_hint_level": 0,
+  "review_queue": [],
+  "attempts": [
+    {
+      "attempt_id": "2026-10-27-04-A001",
+      "question_id": "NCS-D003-Q001",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-D03"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "2",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 제출. 풀이 근거와 자기평가, 시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님; 정답 안정성 미확인만으로 추가 복습에 등록하지 않음.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "첫 문장은 모바일 신청 가능, 다음 문장은 첨부 서류를 PC에서만 제출할 수 있다고 제한한다. “그러나”는 대조 또는 제한 관계를 나타낸다.",
+        "quick_solution": "그러나의 앞뒤에서 달라지는 조건을 찾는다.",
+        "distractors": {
+          "1": "원인을 제시하지 않는다.",
+          "3": "예시를 들지 않는다.",
+          "4": "결론을 도출하는 접속어가 아니다."
+        },
+        "error_analysis": "정답. 번호만 응답해 근거·안정성은 미확인. 정상 정답은 자동 복습하지 않는다.",
+        "related_concept": "그러나=대조·제한, 따라서=결과, 예를 들어=사례."
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-04-A002",
+      "question_id": "NCS-D004-Q001",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-D04"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "1. 2,3,4는 주관적인 판단이 들어감",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "1번은 수치로 기록 확인이 가능하고 2~4번은 비교·가치·만족도 판단이 포함됨.",
+      "stability": "reasoning_supported",
+      "stability_basis": "정답뿐 아니라 각 다른 보기의 주관적·비교 표현을 구분한 근거를 제시함. 실제 풀이시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님. 안정적 풀이 근거 있음. 복습 불필요.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "운영 기록에서 4월에 문의 240건을 처리했는지 확인할 수 있다. “훨씬 좋아졌다”는 비교 기준이 주어지지 않았고, “훌륭했다”와 “만족스럽게”는 평가 표현이다.",
+        "quick_solution": "기록으로 확인할 수 있는 수치·기간과 평가 표현을 나눈다.",
+        "distractors": {
+          "2": "이전 대비라는 비교가 있지만 기준 수치가 없어 평가에 해당한다.",
+          "3": "“훌륭하다”는 주관적 가치 판단이다.",
+          "4": "직원의 만족 여부를 뒷받침하는 조사·근거가 없다."
+        },
+        "error_analysis": "객관적 수치와 주관적 판단을 올바르게 구분했다.",
+        "related_concept": "사실은 근거 자료로 확인할 수 있고 의견은 평가·해석을 포함한다."
+      },
+      "review_id": null
+    }
+  ],
+  "summary": {
+    "first_attempts": 2,
+    "first_correct": 2,
+    "first_incorrect": 0,
+    "first_accuracy": 1.0,
+    "review_attempts": 0,
+    "review_correct": 0,
+    "review_incorrect": 0,
+    "review_accuracy": null
+  },
+  "covered_concepts": [
+    "접속어의 대조·결과·예시 관계",
+    "사실과 평가·의견 표현 구분"
+  ],
+  "weak_concepts": [],
+  "next_action": "Day3·Day4 학습단위 완료. 다음 실제 학습일에는 도래 복습이 있으면 먼저 처리하고, 인접한 Day5·Day6 내용을 진행한다. 빠진 학습일 분량은 누적하지 않는다.",
+  "notes": [
+    "미학습일은 진도일수에서 제외하고 보충 분량을 누적하지 않는 사용자 선호.",
+    "오늘 도래 복습은 없음. 2개 기존 복습은 2026-10-28 예정.",
+    "당일 안정 정답은 자동 복습하지 않는다. 오답·힌트 의존·불안정 풀이에만 추가 연습과 일정 적용.",
+    "시간 실측 전 null.",
+    "NCS-D003-Q001 최종답2 정답. 번호만 제출하여 풀이 근거·안정성 미확인; 정상 정답이므로 자동 복습 미등록. 시간 null. 이어서 Day4 사실·의견 강의 후 Q001 대기.",
+    "NCS-D004-Q001 답1 정답, 수치 사실과 주관적 평가 구분 근거 타당. Day3·Day4 2문항 모두 정답. Day3 답은 근거 안정성 미확인, Day4 근거 안정적. 정상 정답들은 복습 미등록. 실제시간 null. 세션 완료."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "NCS-D002-Q002",
+  "kind": "practice",
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "concept_ids": [
+    "NCS-DOC-SENTENCE-STRUCTURE"
+  ],
+  "scoring_format": "choice",
+  "domain": "의사소통",
+  "subtype": "대상과 주체·기한·장소 구분",
+  "difficulty": "기초 응용",
+  "passage": "교육 담당자는 참석자 명단을 교육 종료 후 2시간 안에 인사 시스템에 등록한다.",
+  "prompt": "인사 시스템에 등록하는 대상은 무엇인가?",
+  "choices": [
+    "참석자 명단",
+    "교육 담당자",
+    "교육 종료 후 2시간",
+    "인사 시스템"
+  ],
+  "answer": 1,
+  "explanation": "동작은 “등록한다”다. 무엇을 등록하는지 묻고 있으므로 대상은 “참석자 명단”이다. 교육 담당자는 주체, 교육 종료 후 2시간은 기한, 인사 시스템은 등록 장소다.",
+  "quick_solution": "“무엇을 등록하나?”에 답하는 대상을 찾는다.",
+  "distractor_analysis": {
+    "1": "등록 행위의 주체를 대상으로 혼동",
+    "2": "시간 표현을 대상과 혼동",
+    "3": "등록 장소를 대상과 혼동"
+  },
+  "concept": "문장의 동사와 주체를 확인하고 대상·기한·방법 정보를 구분한다.",
+  "hints": [
+    "질문이 대상·시간·방법 중 어느 정보를 묻는지 먼저 확인하세요.",
+    "관련 동작을 나타내는 동사를 찾고 그 동사와 연결된 정보를 살펴보세요."
+  ],
+  "recommended_seconds": 75,
+  "source_type": "독창적 창작; 실제 기관 공지나 기출 아님",
+  "review_status": "passed",
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "지문에서 질문한 정보 역할을 특정하고 각 선택지를 역할·내용별 수동 대조하여 단일 정답 확인."
+  },
+  "verification": {
+    "model": "text_lookup",
+    "target": "참석자 명단",
+    "choice_facts": [
+      {
+        "value": "참석자 명단"
+      },
+      {
+        "value": "교육 담당자"
+      },
+      {
+        "value": "교육 종료 후 2시간"
+      },
+      {
+        "value": "인사 시스템"
+      }
+    ]
+  }
+}

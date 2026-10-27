@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "session_id": "2026-10-27-03",
+  "date": "2026-10-27",
+  "timezone": "Asia/Seoul",
+  "session_number": 3,
+  "status": "completed",
+  "week": 1,
+  "day": 2,
+  "topic": "NCS Day 2 전체 일정 마무리: 대상 구분·다문장 요약 적용",
+  "duration_minutes": null,
+  "duration_source": null,
+  "planned_minutes": 40,
+  "plan": [
+    {
+      "topic": "대상과 다른 문장 정보 구분 기초문제",
+      "minutes": 15
+    },
+    {
+      "topic": "두 문장 요약 적용문제",
+      "minutes": 20
+    },
+    {
+      "topic": "핵심요약 및 종료기록",
+      "minutes": 5
+    }
+  ],
+  "lesson_files": [
+    "lessons/ncs-day-002.md"
+  ],
+  "stage": "day2_complete",
+  "pending_question_id": null,
+  "pending_question_kind": null,
+  "pending_exam_track": null,
+  "pending_hint_level": 0,
+  "review_queue": [],
+  "attempts": [
+    {
+      "attempt_id": "2026-10-27-03-A001",
+      "question_id": "NCS-D002-Q002",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-SENTENCE-STRUCTURE"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "1. 교육담당자가 등록 주체고 등록 대상자는 참석자. 시간조건은 교육종료 후 2시간 안",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "주체는 교육 담당자, 대상은 참석자(명단), 기한은 교육 종료 후 2시간 안.",
+      "stability": "reasoning_supported",
+      "stability_basis": "정답과 풀이근거 확인됨.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 1번, 참석자 명단",
+        "standard_solution": "“등록한다”의 주체는 교육 담당자, 등록 대상은 참석자 명단, 기한은 교육 종료 후 2시간 안, 장소는 인사 시스템이다.",
+        "quick_solution": "“무엇을 등록하나?”에 답하는 말인 참석자 명단을 찾는다.",
+        "distractors": {
+          "2": "행동 주체를 등록 대상으로 혼동.",
+          "3": "시간 조건을 등록 대상으로 혼동.",
+          "4": "등록 장소를 대상으로 혼동."
+        },
+        "error_analysis": "주체와 대상을 구분했고 시간 조건도 정확히 찾았다. 사용자 표현 “참석자”를 선택지의 정확한 대상 “참석자 명단”으로 정리했다.",
+        "related_concept": "동사를 기준으로 행위자와 행위의 대상을 나눈다."
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-03-A002",
+      "question_id": "NCS-D002-Q003",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-SENTENCE-STRUCTURE"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "1.",
+      "selected_choice": "1",
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 선택. 이유·확신도 자기평가·풀이시간은 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "월간 점검표는 매월 마지막 근무일 17시까지 공용 저장소에 올린다. 긴급 장애 기록은 복구 후 1시간 안에 팀장에게 전화로 보고한다. 1번이 두 조건을 각각 그대로 보존한다.",
+        "quick_solution": "각 문장의 대상·기한·방법을 표시한 뒤 요약 선택지에서 서로 바뀌거나 빠지지 않았는지 대조한다.",
+        "distractors": {
+          "2": "두 문장의 대상과 기한·방법을 서로 바꿨다.",
+          "3": "긴급 장애의 별도 기한과 보고 방법을 지우고 첫 문장 조건으로 합쳤다.",
+          "4": "지문에 없는 주간 기한·복구 즉시 조건을 넣고 방법도 바꿨다."
+        },
+        "error_analysis": "정답. 선택 번호만 제출되어 풀이 근거와 안정성은 확인되지 않았다.",
+        "related_concept": "여러 문장의 요약에서는 각 행동의 대상·기한·방법을 분리해 보존한다."
+      },
+      "review_id": null
+    }
+  ],
+  "summary": {
+    "first_attempts": 2,
+    "first_correct": 2,
+    "first_incorrect": 0,
+    "first_accuracy": 1.0,
+    "review_attempts": 0,
+    "review_correct": 0,
+    "review_incorrect": 0,
+    "review_accuracy": null
+  },
+  "covered_concepts": [
+    "주체·행동·대상·기한·장소 구분",
+    "질문에 맞는 정보 조각 선택",
+    "문장에서 질문에 해당하는 대상 식별",
+    "둘 이상의 업무 문장을 조건을 보존하며 요약"
+  ],
+  "weak_concepts": [],
+  "next_action": "NCS Day 2 완료. Day 1 미완료 기록은 보존한다. 다음 학습에서는 Day 3(접속어와 문장 관계)로 진행하고 도래 복습을 확인한다.",
+  "notes": [
+    "사용자 요청으로 10/27 Day2 전체 일정에 맞춰 추가 학습 진행.",
+    "오늘 복습 스킵은 유지. 다음 예정 복습 10/28이며 기존 일정은 변경하지 않음.",
+    "오늘 할당량 NCS 목표를 추가 두 문항만큼 한시 확대. subjects/daily_plans/2026-10-27.json revision 참조.",
+    "시간 미확인.",
+    "Q002 정답1, 주체·대상·기한 구분 근거 타당. Q003 정답1; 선택 번호만 있어 풀이근거·안정성 미확인. 두 문제 모두 정답, 실제시간 null. 사용자가 요청한 Day2 전체 진도 완료. 오늘만 복습 스킵, 기존 일정 유지."
+  ]
+}

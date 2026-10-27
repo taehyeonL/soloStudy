@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "security-engineer-written",
+  "exam_track": "security-written",
+  "concept_ids": [
+    "NET-DNS-HTTP",
+    "SEC-TLS-BOUNDARY"
+  ],
+  "scoring_format": "choice",
+  "id": "SEC-WR-NET-005-Q001",
+  "kind": "practice",
+  "domain": "정보보안기사 필기 · 네트워크 보안",
+  "subtype": "HTTPS와 TLS 보호 범위",
+  "difficulty": "기초 응용",
+  "recommended_seconds": 100,
+  "source_type": "독창적 비공식 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "section": "Section 4.2.2",
+      "checked_on": "2026-10-27"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+      "section": "Section 1",
+      "checked_on": "2026-10-27"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "HTTPS의 TLS 보안 통신과 애플리케이션 접근통제의 경계를 RFC9110·RFC8446 기준으로 검토. 독립 검수 아님."
+  },
+  "passage": "직원이 HTTPS로 내부 업무 사이트에 접속한다. TLS 연결이 정상적으로 성립해 통신 경로의 기밀성과 무결성이 보호되더라도, 웹 애플리케이션의 접근권한 검사가 잘못 구현되어 있다면 다른 직원의 자료가 노출될 수 있다.",
+  "prompt": "가장 적절한 설명은?",
+  "choices": [
+    "HTTPS 연결이 성립했으므로 애플리케이션 접근권한도 올바르다고 보장된다.",
+    "TLS는 전송 중 통신을 보호하지만, 애플리케이션의 권한 검사 취약점까지 자동으로 해결하지는 않는다.",
+    "HTTPS는 데이터 무결성만 제공하고 통신 내용의 기밀성은 제공하지 않는다.",
+    "서버 인증서가 유효하면 해당 서버의 모든 기능이 안전하다는 뜻이다."
+  ],
+  "answer": 2,
+  "explanation": "TLS는 통신 경로에서 기밀성·무결성 등 보안 속성을 제공하고 서버 인증을 수행할 수 있지만, 애플리케이션의 권한 검사 로직이나 모든 기능의 안전성을 보증하지 않는다.",
+  "quick_solution": "TLS 보호 범위(통신 경로)와 앱 권한검사(애플리케이션)를 분리한다.",
+  "distractor_analysis": {
+    "1": "전송 보호가 애플리케이션 인가 로직의 정확성을 보증하지 않는다.",
+    "3": "TLS는 기밀성과 무결성 등 보호를 제공한다.",
+    "4": "유효한 인증서가 모든 서버 기능의 안전성을 증명하지 않는다."
+  },
+  "hints": [
+    "TLS가 보호하는 통신 경로와 웹 앱 내부의 권한 판단을 구분하세요.",
+    "암호화된 통신이 잘못된 권한 검사를 고쳐주는지 생각해 보세요."
+  ],
+  "verification": {
+    "model": "text_lookup",
+    "target": "TLS protects communication but not app permission logic",
+    "choice_facts": [
+      {
+        "value": "HTTPS guarantees correct app authorization"
+      },
+      {
+        "value": "TLS protects communication but not app permission logic"
+      },
+      {
+        "value": "TLS provides integrity only, no confidentiality"
+      },
+      {
+        "value": "valid certificate proves all server functions safe"
+      }
+    ]
+  }
+}

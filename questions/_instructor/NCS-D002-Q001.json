@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "NCS-D002-Q001",
+  "kind": "practice",
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "concept_ids": [
+    "NCS-DOC-SENTENCE-STRUCTURE"
+  ],
+  "scoring_format": "choice",
+  "domain": "의사소통",
+  "subtype": "문장의 주체·행동·대상·기한·방법 파악",
+  "difficulty": "기초",
+  "passage": "전산 담당자는 점검 결과를 매주 금요일 16시까지 팀 공용 폴더에 등록한다.",
+  "prompt": "점검 결과를 등록하는 사람은 누구인가?",
+  "choices": [
+    "전산 담당자",
+    "팀장",
+    "매주 금요일",
+    "팀 공용 폴더"
+  ],
+  "answer": 1,
+  "explanation": "문장의 주체는 행동을 하는 사람이나 조직이다. 여기서는 “등록한다”의 주체가 “전산 담당자”다. 점검 결과는 대상, 금요일 16시는 기한, 팀 공용 폴더는 방법/장소다.",
+  "quick_solution": "“누가 등록한다?”라고 물어 동사 “등록한다” 앞의 주체를 찾는다.",
+  "distractor_analysis": {
+    "2": "문장에 나오지 않은 팀장을 주체로 추가함",
+    "3": "기한을 사람으로 혼동함",
+    "4": "등록 장소를 사람으로 혼동함"
+  },
+  "concept": "한 문장에서 주체(누가), 행동(무엇을 하는가), 대상(무엇을), 기한(언제까지), 방법·장소(어떻게·어디에)를 나눠 읽는다.",
+  "hints": [
+    "먼저 문장에서 행동을 나타내는 말을 찾으세요.",
+    "“등록한다”를 하는 사람이 누구인지 찾아보세요."
+  ],
+  "recommended_seconds": 60,
+  "source_type": "독창적 창작; 실제 기관 공지나 기출 아님",
+  "review_status": "passed",
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "문장의 주체·대상·기한·장소를 분리하고 선택지 역할을 각각 대조. 주체의 유일성과 지문 일치 수동 검토."
+  },
+  "verification": {
+    "model": "text_lookup",
+    "target": "전산 담당자",
+    "choice_facts": [
+      {
+        "value": "전산 담당자"
+      },
+      {
+        "value": "팀장"
+      },
+      {
+        "value": "매주 금요일"
+      },
+      {
+        "value": "팀 공용 폴더"
+      }
+    ]
+  }
+}

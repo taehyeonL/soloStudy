@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "concept_ids": [
+    "NET-TCPIP"
+  ],
+  "scoring_format": "choice",
+  "domain": "컴퓨터 네트워크",
+  "subtype": "누락 데이터 도착 후 누적 ACK 전진",
+  "difficulty": "기초 응용",
+  "recommended_seconds": 120,
+  "source_type": "독창적 창작; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.4",
+      "section": "3.4 cumulative ACK",
+      "checked_on": "2026-10-27"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.10.7.4",
+      "section": "3.10.7.4 receive processing",
+      "checked_on": "2026-10-27"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "RFC9293 3.4 누적 ACK와 3.10.7.4 순서가 뒤인 세그먼트 보관·연속 데이터 처리 규칙 대조. 버퍼 보관을 명시하고 숫자 모델 병행. 독립 검수 아님."
+  },
+  "concept": "앞서 저장한 뒤쪽 데이터까지 연속 구간으로 이어지면 누적 ACK가 그 다음 번호로 전진",
+  "id": "CS-NET-006-E001",
+  "kind": "worked_example",
+  "passage": "처음 기대한 번호는 1000이다. 1000~1099를 수신하고 1200~1299를 먼저 받아 저장했다. 이후 빠졌던 1100~1199도 수신했다. 이전 누락 및 SYN·FIN은 없고 수신 창은 충분하다.",
+  "prompt": "누락 구간 수신 후 누적 ACK 번호는?",
+  "choices": [
+    "1100",
+    "1200",
+    "1300",
+    "1301"
+  ],
+  "answer": 3,
+  "explanation": "저장해 둔 뒤쪽 데이터까지 이어져 1000~1299가 연속 수신되었으므로 다음 필요한 번호는 1300이다.",
+  "quick_solution": "연속 구간 마지막 1299+1=1300.",
+  "distractor_analysis": {
+    "1": "이미 채워진 누락을 계속 누락으로 취급",
+    "2": "저장된 뒤쪽 데이터를 누락",
+    "4": "불필요한 1을 추가"
+  },
+  "hints": [
+    "먼저 받았던 뒤쪽 데이터가 저장되어 있다는 조건을 확인하세요.",
+    "빈 구간이 채워진 뒤 연속으로 이어지는 범위를 표시하세요."
+  ],
+  "verification": {
+    "model": "tcp_cumulative_ack",
+    "initial_expected": 1000,
+    "syn": false,
+    "fin": false,
+    "received_segments": [
+      {
+        "seq": 1000,
+        "payload_bytes": 100
+      },
+      {
+        "seq": 1200,
+        "payload_bytes": 100
+      },
+      {
+        "seq": 1100,
+        "payload_bytes": 100
+      }
+    ],
+    "choice_facts": [
+      {
+        "ack": 1100
+      },
+      {
+        "ack": 1200
+      },
+      {
+        "ack": 1300
+      },
+      {
+        "ack": 1301
+      }
+    ]
+  }
+}

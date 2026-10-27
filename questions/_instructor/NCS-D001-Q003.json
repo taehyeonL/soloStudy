@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "NCS-D001-Q003",
+  "kind": "practice",
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "concept_ids": [
+    "NCS-DOC-CONDITIONS"
+  ],
+  "scoring_format": "choice",
+  "domain": "의사소통",
+  "subtype": "문서의 필수 조건과 대체 서류 적용",
+  "difficulty": "기초",
+  "passage": "교육 신청자는 교육 신청서와 재직 증명서를 모두 제출해야 한다. 재직 증명서를 발급받기 어려운 경우에는 인사 담당자 확인서로 재직 증명서를 대신할 수 있다. 서류는 온라인 신청 화면으로만 제출하며, 이메일 제출은 받지 않는다. 위 조건을 충족하면 신청이 완료되고 별도 요건은 없다.",
+  "prompt": "공지에 따라 신청이 완료되는 경우는?",
+  "choices": [
+    "교육 신청서와 재직 증명서를 이메일로 제출했다.",
+    "교육 신청서와 인사 담당자 확인서를 온라인 신청 화면으로 제출했다.",
+    "교육 신청서만 온라인 신청 화면으로 제출했다.",
+    "재직 증명서만 온라인 신청 화면으로 제출했다."
+  ],
+  "answer": 2,
+  "explanation": "교육신청서는필수이며재직확인서류는재직증명서또는대체가능한인사담당자확인서다. 제출경로는온라인이다. 2번은신청서+대체서류+온라인조건을모두충족한다. 대체서류는재직증명서만대신하며신청서를대신하지않는다.",
+  "quick_solution": "필수신청서 / 증명서또는확인서 / 온라인의세묶음으로나눠대조한다.",
+  "distractor_analysis": {
+    "1": "서류는있지만이메일경로불가",
+    "3": "재직확인서류누락",
+    "4": "교육신청서누락"
+  },
+  "concept": "필수조건과대체가능한조건·제출경로구분",
+  "hints": [
+    "지문에서항상필요한것과대신할수있는것을나눠보세요.",
+    "서류조건과제출경로조건을따로대조해보세요."
+  ],
+  "recommended_seconds": 90,
+  "source_type": "독창적 창작; 실제 기관 규정·기출 아님",
+  "review_status": "passed",
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "독창적지문의필수신청서·대체서류·온라인경로와선택지사실모델대조,정답유일성확인. 독립검수아님."
+  },
+  "verification": {
+    "model": "document_submission",
+    "choice_facts": [
+      {
+        "application": true,
+        "employment_proof": true,
+        "confirmation": false,
+        "online": false
+      },
+      {
+        "application": true,
+        "employment_proof": false,
+        "confirmation": true,
+        "online": true
+      },
+      {
+        "application": true,
+        "employment_proof": false,
+        "confirmation": false,
+        "online": true
+      },
+      {
+        "application": false,
+        "employment_proof": true,
+        "confirmation": false,
+        "online": true
+      }
+    ]
+  }
+}

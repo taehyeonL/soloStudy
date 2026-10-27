@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "concept_ids": [
+    "ENG-PRESENT-SV"
+  ],
+  "scoring_format": "choice",
+  "domain": "TOEIC RC 기초 문법",
+  "subtype": "현재시제 일반동사의 주어·동사 수일치",
+  "difficulty": "기초",
+  "recommended_seconds": 45,
+  "source_type": "독창적 비공식 연습; 공식 TOEIC 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple?page=1",
+      "section": "Grammar explanation: regular activities, he/she/it, affirmative table",
+      "checked_on": "2026-10-27"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "British Council 현재시제 설명과 수일치 규칙을 대조. 조동사 없는 긍정문에서 동사 자리 및 유일 정답 수동 검토. 단어 의미도 함께 안내. 공식 TOEIC 문항 검수나 점수환산이 아님."
+  },
+  "id": "TOEIC-RC-001-Q001",
+  "kind": "practice",
+  "passage": "The employees _____ the equipment every morning.",
+  "prompt": "현재의 정기적인 업무를 설명하는 문장을 완성하세요.",
+  "choices": [
+    "inspects",
+    "inspecting",
+    "to inspect",
+    "inspect"
+  ],
+  "answer": 4,
+  "explanation": "주어the employees는복수이며they로바꿀수있다. 매일반복되는현재업무를설명하고조동사는없다. 복수주어에맞는일반동사현재형inspect를쓴다. 문장뜻은직원들이매일아침장비를점검한다. equipment가장비라는뜻이어도이문장주어는employees다.",
+  "quick_solution": "employees→they→현재동사inspect. 장비equipment에동사를맞추지않는다.",
+  "distractor_analysis": {
+    "1": "inspects는3인칭단수현재형",
+    "2": "be동사없이ing형만으로이문장서술어불완전",
+    "3": "to inspect만으로서술어불완전"
+  },
+  "concept": "주어찾기와복수주어의현재일반동사형태",
+  "hints": [
+    "빈칸앞에서행동을하는대상을찾아보세요.",
+    "그대상을he/she/it또는they중어느것으로바꿀수있는지생각해보세요."
+  ],
+  "verification": {
+    "model": "manual_source_review",
+    "choice_facts": [
+      {
+        "supported": false,
+        "reason": "복수주어에3인칭단수형불일치",
+        "source_url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple?page=1"
+      },
+      {
+        "supported": false,
+        "reason": "분사만으로현재긍정문유한동사불완전",
+        "source_url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple?page=1"
+      },
+      {
+        "supported": false,
+        "reason": "부정사만으로현재긍정문유한동사불완전",
+        "source_url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple?page=1"
+      },
+      {
+        "supported": true,
+        "reason": "복수they의현재일반동사원형형태",
+        "source_url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple?page=1"
+      }
+    ]
+  }
+}

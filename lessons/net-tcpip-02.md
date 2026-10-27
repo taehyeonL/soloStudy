@@ -41,3 +41,14 @@ FCM의 서버발 알림이라는 관찰은 맞다. 논리 흐름은 우리서비
 - Firebase FCM architecture, lifecycle/platform transport: https://firebase.google.com/docs/cloud-messaging/fcm-architecture
 - Android FCM 지속TCP/IP연결: https://developer.android.com/develop/connectivity/minimize-effect-regular-updates
 - Android 공유지속연결: https://developer.android.com/training/monitoring-device-state/doze-standby
+
+
+## 2026-10-27 보완 — SYN과 포트 개방 구분
+
+서버 SYN은 클라이언트에 새 포트를 열거나 별도 서버를 띄우라는 요청이 아니다. SYN은 초기 순서 번호를 동기화하는 제어 비트다. ACK는 확인 번호 필드가 유효함을 표시하며 이번 서버 ACK는 클라이언트 SYN에 대한 확인이다.
+
+가정 예시: 클라이언트는 포트55000, 서버는8080을 사용한다. 첫 SYN은클라이언트55000→서버8080, SYN+ACK는서버8080→클라이언트55000, 마지막ACK는클라이언트55000→서버8080이다. 클라이언트의포트는첫SYN때이미정해져있다. 같은연결의응답이며새로운수신서버개설/방화벽규칙개방과구분한다.
+
+기억문장: 서버SYN+ACK는 ‘네 시작 번호를 확인했어. 내 시작 번호도 알려줄게.’이다. 초기순서번호는바이트흐름의위치를맞추기위한출발번호이며포트번호와역할이다르다.
+
+공식근거 RFC9293 §3.1 SYN/ACK와송수신포트필드, §3.5 Figure6. https://www.rfc-editor.org/rfc/rfc9293.html (2026-10-27확인). 이수치는설명용가정이며실제PC포트조회나변경을하지않았다.

@@ -71,6 +71,62 @@ def check(q, seen):
             denied = (not state['reserved']) or (state['external'] and not state['approved'])
             require(valid(state) == (not denied), 'truth-table mismatch')
         require(any(map(valid, states)), 'unsatisfiable rules')
+    elif v['model'] == 'document_submission':
+        keys = ('application', 'employment_proof', 'confirmation', 'online')
+        require(all(set(f) == set(keys) and all(type(x) is bool for x in f.values())
+                    for f in facts), 'invalid document facts')
+
+        def valid(f):
+            return f['application'] and (f['employment_proof'] or f['confirmation']) and f['online']
+
+        states = [dict(zip(keys, bits)) for bits in itertools.product([False, True], repeat=4)]
+        require(sum(map(valid, states)) == 3, 'document rule inconsistency')
+    elif v['model'] == 'tcp_handshake_ack':
+        modulus = 2 ** 32
+        require(all(type(v[k]) is int and 0 <= v[k] < modulus
+                    for k in ('client_isn', 'server_isn')), 'invalid initial sequence number')
+        require(v.get('syn_payload_bytes') == 0, 'this verifier assumes SYN without data')
+        require(all(set(f) == {'ack'} and type(f['ack']) is int and 0 <= f['ack'] < modulus
+                    for f in facts), 'invalid ACK choice')
+
+        def valid(f):
+            return f['ack'] == (v['server_isn'] + 1) % modulus
+
+    elif v['model'] == 'tcp_data_ack':
+        modulus = 2 ** 32
+        require(type(v['sequence_start']) is int and 0 <= v['sequence_start'] < modulus,
+                'invalid data sequence')
+        require(type(v['payload_bytes']) is int and 0 < v['payload_bytes'] < modulus,
+                'invalid payload length')
+        require(v.get('prior_expected') == v['sequence_start'] and v.get('all_received_in_order') is True
+                and v.get('syn') is False and v.get('fin') is False, 'unsupported data ACK conditions')
+        require(all(set(f) == {'ack'} and type(f['ack']) is int and 0 <= f['ack'] < modulus
+                    for f in facts), 'invalid ACK choice')
+
+        def valid(f):
+            return f['ack'] == (v['sequence_start'] + v['payload_bytes']) % modulus
+
+    elif v['model'] == 'tcp_cumulative_ack':
+        expected = v['initial_expected']
+        require(type(expected) is int and 0 <= expected < 2 ** 32, 'invalid initial ACK')
+        require(v.get('syn') is False and v.get('fin') is False, 'SYN/FIN not supported here')
+        segments = v['received_segments']
+        require(bool(segments), 'no received segments')
+        for segment in segments:
+            start, length = segment['seq'], segment['payload_bytes']
+            require(type(start) is int and type(length) is int and start >= expected
+                    and 0 < length <= 10000 and start + length < 2 ** 32,
+                    'invalid/non-wrapping segment assumptions')
+        for segment in sorted(segments, key=lambda item: item['seq']):
+            if segment['seq'] > expected:
+                break
+            expected = max(expected, segment['seq'] + segment['payload_bytes'])
+        require(all(set(f) == {'ack'} and type(f['ack']) is int and 0 <= f['ack'] < 2 ** 32
+                    for f in facts), 'invalid cumulative ACK choice')
+
+        def valid(f):
+            return f['ack'] == expected
+
     elif v['model'] == 'manual_source_review':
         # Only checks consistency of recorded manual verdicts, not technical truth.
         require(bool(q.get('references')), 'missing technical references')
@@ -80,6 +136,14 @@ def check(q, seen):
 
         def valid(f):
             return f['supported']
+
+    elif v['model'] == 'text_lookup':
+        require(isinstance(v.get('target'), str) and v['target'], 'missing lookup target')
+        require(all(set(f) == {'value'} and isinstance(f['value'], str)
+                    for f in facts), 'invalid text lookup facts')
+
+        def valid(f):
+            return f['value'] == v['target']
 
     else:
         raise ValueError('unsupported model; add a verifier before release')

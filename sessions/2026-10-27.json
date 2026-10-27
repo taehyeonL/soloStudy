@@ -1,0 +1,504 @@
+{
+  "schema_version": 2,
+  "session_id": "2026-10-27-01",
+  "date": "2026-10-27",
+  "timezone": "Asia/Seoul",
+  "session_number": 1,
+  "status": "completed",
+  "resumed_from": "2026-10-26-01",
+  "week": 1,
+  "day": 1,
+  "topic": "도래 TCP 복습 및 통합 학습 재개",
+  "duration_minutes": null,
+  "duration_source": null,
+  "planned_minutes": 75,
+  "plan": [
+    {
+      "topic": "TCP 도래 복습3건",
+      "minutes": 20
+    },
+    {
+      "topic": "NCS 문서 이해·정리",
+      "minutes": 25
+    },
+    {
+      "topic": "TCP 취약 개념 보완",
+      "minutes": 25
+    },
+    {
+      "topic": "정리·기록",
+      "minutes": 5
+    }
+  ],
+  "lesson_files": [
+    "lessons/day-001.md",
+    "lessons/net-tcpip-01.md",
+    "lessons/net-tcpip-02.md",
+    "lessons/ncs-documents-02.md",
+    "lessons/toeic-rc-01.md",
+    "lessons/net-tcpip-03.md",
+    "lessons/net-tcpip-04.md",
+    "lessons/net-tcpip-05.md",
+    "lessons/net-tcpip-06.md"
+  ],
+  "stage": "session_completed",
+  "pending_question_id": null,
+  "pending_question_kind": null,
+  "pending_exam_track": null,
+  "pending_review_id": null,
+  "pending_review_stage": null,
+  "pending_review_scheduled_date": null,
+  "pending_hint_level": 0,
+  "review_queue": [],
+  "attempts": [
+    {
+      "attempt_id": "2026-10-27-01-A001",
+      "question_id": "CS-NET-002-Q001",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "review",
+      "date": "2026-10-27",
+      "user_answer_raw": "4. client가 server에 접근요청 syn 보냄. 서버에서 접근 요청 확인하고 syn ack 로 클라이언트에게도 포트열어달라고 요청하기 때문",
+      "selected_choice": 4,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "client가 server에 접근요청 syn 보냄. 서버에서 접근 요청 확인하고 syn ack 로 클라이언트에게도 포트열어달라고 요청하기 때문",
+      "followup_questions_raw": [
+        "syn 받았다 ack 클라이언트도 포트 열어줘 요청 아니야?",
+        "ack 받았다 syn 클라이언트도 포트 열어줘 요청 아니야?"
+      ],
+      "stability": "unstable_concept",
+      "stability_basis": "연결순서는맞았으나서버SYN을클라이언트포트개방요청으로해석. 사용자설명에서직접관찰.",
+      "error_category": null,
+      "error_confirmation": "객관식정답. 개념설명의오해(SYN과포트개방혼동)는제출설명관찰이며심층원인미확인.",
+      "feedback": {
+        "verdict": "정답4; 풀이설명보완필요",
+        "standard_solution": "클라이언트가 SYN으로 시작하고, 서버는 클라이언트 SYN에 대한 ACK와 자신의 SYN을 함께 보낸다. 클라이언트가 서버 SYN에 ACK를 보내는 기본3단계다. 양방향 초기 순서 번호 동기화와 연결 상태 확립을 위한 과정이며 사용자 인증이나 암호화 키 교환과 구분한다.",
+        "quick_solution": "시작 SYN → 상대 시작과 확인 SYN+ACK → 최종 확인 ACK 순서로 연결한다.",
+        "distractors": {
+          "1": "일반 연결 시작을ACK로 잘못 배치",
+          "2": "두번째와세번째 메시지 순서가 바뀜",
+          "3": "클라이언트의첫SYN 전에 서버응답이 놓임"
+        },
+        "error_analysis": "서버ACK는클라이언트SYN확인, 서버SYN은서버초기순서번호동기화. 클라이언트포트는최초SYN을보낼때이미사용중이며서버가새포트를열라고요청하는절차가아님.",
+        "related_concept": "포트식별과초기순서번호동기화를구분"
+      },
+      "review_id": "REV-CS-0001",
+      "review_stage": 1,
+      "original_scheduled_date": "2026-10-27",
+      "review_success": false,
+      "review_failure_reason": "선택지는정답이나설명에개념오해가남아풀이안정성미충족",
+      "next_review_date": "2026-10-28"
+    },
+    {
+      "attempt_id": "2026-10-27-01-A002",
+      "question_id": "CS-NET-002-Q002",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "review",
+      "date": "2026-10-27",
+      "user_answer_raw": "1. 그게맞으니까",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "그게맞으니까",
+      "stability": "confirmed_by_user",
+      "stability_basis": "정답·힌트0, 사용자가확신해서선택했다고자기평가. 실제시간은미확인.",
+      "error_category": null,
+      "error_confirmation": "오답아님",
+      "feedback": {
+        "verdict": "정답1",
+        "standard_solution": "서버의SYN+ACK에서ACK는앞서받은클라이언트SYN에대한확인이다. 함께있는SYN은서버의시작정보다. 서버SYN은다음단계에서클라이언트가ACK로확인한다. 사용자로그인과내용암호화는이ACK의의미가아니다.",
+        "quick_solution": "누가받고누가답하는지방향을보면서버ACK는클라이언트SYN의확인이다.",
+        "distractors": {
+          "2": "자기가보내는SYN을자기ACK로확인하는것이아님",
+          "3": "TCP연결설정과사용자인증은다름",
+          "4": "TCP연결설정은암호화완료확인이아님"
+        },
+        "error_analysis": "정답이며사용자확신도확인완료. 복습성공으로단계2이동. 전체개념숙달을의미하지않음.",
+        "related_concept": "서버SYN+ACK는클라이언트SYN확인과서버SYN전달을겸함"
+      },
+      "review_id": "REV-CS-0002",
+      "review_stage": 1,
+      "original_scheduled_date": "2026-10-27",
+      "review_success": true,
+      "next_review_date": "2026-10-30",
+      "self_assessment_raw": "확신해서 고름",
+      "next_review_stage": 2
+    },
+    {
+      "attempt_id": "2026-10-27-01-A003",
+      "question_id": "CS-NET-002-Q003",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "review",
+      "date": "2026-10-27",
+      "user_answer_raw": "3",
+      "answer_revisions": [
+        {
+          "user_raw": "1",
+          "graded": false
+        },
+        {
+          "user_raw": "3",
+          "before_feedback": true,
+          "used_for_grading": true
+        }
+      ],
+      "selected_choice": 3,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "confirmed_by_user",
+      "stability_basis": "채점전최종3으로수정,정답·힌트0·사용자확신자기평가. 실제시간미확인.",
+      "error_category": null,
+      "error_confirmation": "최종답정답,수정전1은별도오답시도로집계하지않음",
+      "feedback": {
+        "verdict": "최종답3정답",
+        "standard_solution": "서버는 두번째 메시지에서 자기 SYN을 보낸다. 클라이언트는 이를 받은 뒤 마지막 ACK로 서버 SYN을 확인한다. 서버 SYN+ACK 안의 ACK는 먼저 받은 클라이언트 SYN을 확인하는 역할이다.",
+        "quick_solution": "서버가 보낸 SYN을 받는 쪽은 클라이언트이므로 그 다음 클라이언트의 ACK를 찾는다.",
+        "distractors": {
+          "1": "클라이언트 최초 SYN은 서버 SYN보다 먼저 보낸 시작 정보",
+          "2": "서버가 자기 SYN을 자기 ACK로 확인하는 것이 아님",
+          "4": "기본 연결 설정의 마지막 ACK가 서버 SYN을 확인함"
+        },
+        "error_analysis": "정답공개전최종답수정및사용자확신도확인으로복습성공확정. 수정이력보존,전체숙달처리안함.",
+        "related_concept": "양쪽 SYN을 상대가 ACK로 확인하는 관계"
+      },
+      "review_id": "REV-CS-0003",
+      "review_stage": 1,
+      "original_scheduled_date": "2026-10-27",
+      "review_success": true,
+      "next_review_date": "2026-10-30",
+      "self_assessment_raw": "확신",
+      "next_review_stage": 2
+    },
+    {
+      "attempt_id": "2026-10-27-01-A004",
+      "question_id": "NCS-D001-Q003",
+      "question_version": 1,
+      "subject": "ncs",
+      "exam_track": "ncs",
+      "concept_ids": [
+        "NCS-DOC-CONDITIONS"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "아 2번이야 잘못선택함",
+      "answer_revisions": [
+        {
+          "user_raw": "1. 이메일은 제외. 교육신청서는 필수. 재직증명서/인사담당자확인서는 옵션으로 대체가능",
+          "graded": false,
+          "reason": "번호와설명불일치로확인요청"
+        },
+        {
+          "user_raw": "아 2번이야 잘못선택함",
+          "before_answer_disclosure": true,
+          "used_for_grading": true
+        }
+      ],
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "이메일은 제외. 교육신청서는 필수. 재직증명서/인사담당자확인서는 옵션으로 대체가능",
+      "stability": "reasoning_supported",
+      "stability_basis": "초기설명에서금지경로·필수신청서·서류대체관계를구분. 번호불일치확인후정답공개전에2로확정.",
+      "error_category": null,
+      "error_confirmation": "최종답정답;확인전1은별도오답시도로집계하지않음. 사용자번호선택실수확인.",
+      "feedback": {
+        "verdict": "최종2번정답",
+        "standard_solution": "교육신청서는필수이며재직확인서류는재직증명서또는대체가능한인사담당자확인서다. 제출경로는온라인이다. 2번은신청서+대체서류+온라인조건을모두충족한다. 대체서류는재직증명서만대신하며신청서를대신하지않는다.",
+        "quick_solution": "필수신청서 / 증명서또는확인서 / 온라인의세묶음으로나눠대조한다.",
+        "distractors": {
+          "1": "서류는있지만이메일경로불가",
+          "3": "재직확인서류누락",
+          "4": "교육신청서누락"
+        },
+        "error_analysis": "개념근거타당. 옵션은서류미제출이아닌두서류중하나로충족한다는뜻으로명확히정리.",
+        "related_concept": "필수조건과대체가능한조건·제출경로구분"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-01-A005",
+      "question_id": "CS-NET-003-Q001",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "3. ack번호는 syn의 seq의 + 1을 따른다.",
+      "selected_choice": 3,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "ack번호는 syn의 seq의 + 1을 따른다.",
+      "stability": "reasoning_supported",
+      "stability_basis": "데이터없는SYN을확인하는이번조건에서SEQ+1규칙을정확히적용. 일반데이터ACK에는그대로일반화하지않도록설명.",
+      "error_category": null,
+      "error_confirmation": "오답아님",
+      "feedback": {
+        "verdict": "정답3,701",
+        "standard_solution": "클라이언트마지막ACK는서버SYN을확인한다. 서버SYN의SEQ700은순서공간1을소비하므로다음기대서버번호701이다. 121은클라이언트쪽다음번호이며최종ACK번호가아니다.",
+        "quick_solution": "서버SYN의SEQ700에1을더해701.",
+        "distractors": {
+          "1": "서버가클라이언트SYN을확인할때의ACK번호와혼동",
+          "2": "SYN이1소비함을누락",
+          "4": "서버SYN외에추가소비가있다고잘못계산"
+        },
+        "error_analysis": "근거타당. SYN+1은데이터없는SYN확인조건의규칙이며일반데이터는수신길이를고려한다고범위를명확히함.",
+        "related_concept": "SEQ는자기순서번호,ACK번호는상대에서다음에받기를기대하는번호;SYN은1소비"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-01-A006",
+      "question_id": "CS-NET-004-Q001",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "1.일반 데이터는 시작 바이트 + 데이터 바이트임",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "일반 데이터는 시작 바이트 + 데이터 바이트임",
+      "stability": "reasoning_supported",
+      "stability_basis": "이번누락없는일반데이터조건에서시작SEQ와데이터길이를더하는계산근거타당. 용어는시작순서번호로정확히보완.",
+      "error_category": null,
+      "error_confirmation": "오답아님",
+      "feedback": {
+        "verdict": "정답1,1080",
+        "standard_solution": "SEQ1000부터80바이트는1000~1079를사용한다. 서버는다음번호1080을기대하므로ACK번호1080. SYN·FIN이없어데이터길이외추가1을더하지않는다.",
+        "quick_solution": "1000+80=1080.",
+        "distractors": {
+          "2": "마지막받은번호1079와다음기대번호혼동",
+          "3": "데이터길이대신무조건+1을적용",
+          "4": "데이터80바이트에불필요한추가1가산"
+        },
+        "error_analysis": "계산근거타당. 시작바이트는시작순서번호(SEQ),데이터바이트는데이터바이트수로표현을보완. 이전누락없고SYN/FIN없다는조건유지.",
+        "related_concept": "ACK번호는상대에게서다음에받기를기대하는번호;정상연속데이터는시작SEQ+데이터바이트수"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-27-01-A007",
+      "question_id": "CS-NET-005-Q001",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "2",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 1,
+      "support_received": [
+        "사용자이해어려움요청에택배번호비유재설명",
+        "동일문제수신구간표제시"
+      ],
+      "reasoning_raw": null,
+      "stability": "assisted_correct",
+      "stability_basis": "재설명지원후정답. 사용자풀이근거는미제공,독립풀이숙달을단정하지않음.",
+      "error_category": null,
+      "error_confirmation": "오답아님. 재설명지원이력으로복습등록하며원인을임의확정하지않음.",
+      "feedback": {
+        "verdict": "정답2,2100",
+        "standard_solution": "서버가연속으로받은데이터는2000~2099다. 다음필요한2100부터2199까지가없으므로누적ACK는2100. 2200~2299가도착해도그앞누락을뛰어넘어확인할수없다.",
+        "quick_solution": "연속수신이다음에끊기는첫번호2100을고른다.",
+        "distractors": {
+          "1": "가장늦게받은조각2200+100만계산하여누락무시",
+          "3": "일반데이터100바이트대신무조건+1",
+          "4": "가장뒤받은마지막번호와누적ACK를혼동"
+        },
+        "error_analysis": "택배비유와구간표재설명후정답. 처음필요한번호를기준으로반복확인하며독립재풀이를내일실시.",
+        "related_concept": "중간누락이있으면누적ACK는가장앞의미수신바이트번호에머무름"
+      },
+      "review_id": "REV-CS-0004"
+    },
+    {
+      "attempt_id": "2026-10-27-01-A008",
+      "question_id": "CS-NET-006-Q001",
+      "question_version": 1,
+      "subject": "computer-science",
+      "exam_track": "computer-science",
+      "concept_ids": [
+        "NET-TCPIP"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-27",
+      "user_answer_raw": "3. 모두 다 syn-ack는 전송했고 마지막으로 클라이언트에게 다음 인덱스를 알려주는 단계이므로 2299 + 1",
+      "selected_choice": 3,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": "누락 구간이 채워져 저장된 뒤쪽 데이터까지 연속되므로 2299 다음 번호 2300이라고 설명.",
+      "stability": "reasoning_supported",
+      "stability_basis": "최종 연속 수신 바이트2299 다음 번호를 계산하고 저장 데이터가 연결됨을 설명함.",
+      "error_category": null,
+      "error_confirmation": "오답 아님",
+      "feedback": {
+        "verdict": "정답 3, ACK 2300",
+        "standard_solution": "2000~2099 뒤에 2100~2199가 도착해 빈 구간을 채웠다. 먼저 저장한 2200~2299까지 연속되므로 다음 기대 번호는 2300이다.",
+        "quick_solution": "연속 구간의 끝 2299 + 1 = 2300.",
+        "distractors": {
+          "1": "빈 구간을 채운 뒤에도 ACK가 그대로라고 봄",
+          "2": "도착한 구간의 시작 번호와 다음 기대 번호를 혼동",
+          "4": "데이터에 SYN의 +1을 추가함"
+        },
+        "error_analysis": "정답이며 설명에서 뒤쪽 데이터까지 연결되는 이유와 끝 번호+1을 사용했다. 마지막 ACK 단계와 데이터 수신 ACK 설명을 구분해 보완했다.",
+        "related_concept": "TCP 누적 ACK는 연속 수신 구간 다음에 기대하는 바이트 번호를 알림."
+      },
+      "review_id": null
+    }
+  ],
+  "summary": {
+    "first_attempts": 5,
+    "first_correct": 5,
+    "first_incorrect": 0,
+    "first_accuracy": 1.0,
+    "review_attempts": 3,
+    "review_correct": 3,
+    "review_incorrect": 0,
+    "review_accuracy": 1.0,
+    "review_successes": 2,
+    "review_retries": 1
+  },
+  "weak_concepts": [
+    "TCP 연결 설정과 ACK 확인 대상",
+    "SYN의초기순서번호동기화와포트개방구분"
+  ],
+  "covered_concepts": [
+    "TCP ACK확인대상복습",
+    "NCS문서의필수조건·대체조건·제출경로",
+    "영어주어·동사·목적어기초",
+    "일반동사현재긍정문의3인칭단수·복수형태",
+    "데이터없는TCP핸드셰이크의SEQ·ACK번호와SYN순서공간1소비",
+    "이전누락없는연속데이터의ACK번호=SEQ+데이터길이",
+    "누적ACK와중간누락시처음필요한번호유지",
+    "빠진데이터도착후버퍼된후속데이터까지연결되어누적ACK전진"
+  ],
+  "next_action": "2026-10-28 도래 복습 REV-CS-0001 및 REV-CS-0004 수행. NCS Day1은 완료조건을 채우지 못해 다음 세션에 이어간다.",
+  "notes": [
+    "Git pull --ff-only:Already up to date.",
+    "확정 시험 일정은 등록0건으로 기본6/6/2시간 유지. 공식 일정 확인 완료로 간주하지 않음.",
+    "이전 NCS Day1은 미완료이므로 Day를 자동으로 넘기지 않음.",
+    "복습 답변 전 정답이나 결정적 힌트 미공개.",
+    "오늘 미응답0시도, 어제 최초7시도와 분리.",
+    "복습선택지정답과복습성공판정을분리. 최초통계7/4/3유지, 오늘재풀이1정답이나설명불안정으로다음날재예약. 시간미확인.",
+    "사용자오케이로SYN설명수용. 이를새문항정답/숙달로집계하지않음. 복습2/3을한문제만제시하고대기.",
+    "사용자확신도확인으로A002복습성공확정. 자기평가는새풀이로집계하지않음. Q003하나만제시,답변대기.",
+    "Q003확신도확인으로단계1성공·10/30단계2. 오늘복습3정답,2단계이동2건·개념보완재예약1건. 오늘복습처리완료후NCS강의로전환.",
+    "NCS Q003최종2정답,원답과확인이력보존. NCS최초누적3/3,전체최초8문항5정답3오답. 오늘최초1/1,복습3/3. 설명근거타당하여새오답·복습일정추가없음.",
+    "사용자다음요청으로계획한TOEIC기초강의시작. 첫문제미응답0시도,LC미실시,공식점수추정없음.",
+    "TOEIC모드변경은새풀이가아님. 이전강의·정답·오답·복습원장보존. 주말합계50으로운영,주2시간기존예산유지.",
+    "TOEIC스킵후다음요청으로전산기초보완진행. 새문제미응답은시도미집계. 이전복습성적과일정변경없음.",
+    "SEQ+1문제정답·근거타당. 새기초개념데이터길이적용,숙달/난이도자동상향없음. 새문제는미응답으로성적제외.",
+    "일반데이터ACK문제정답·근거타당,새복습등록없음. 오늘최초3/3·복습3/3,전체최초7/10정답. 시간미확인,공통개념learning·난이도자동상향없음.",
+    "CS-NET-005-Q001 최종2정답,재설명지원포함. 오늘최초4/4·복습3/3. 누적최초8/11정답. REV-CS-0004 내일복습등록,시간미확인.",
+    "CS-NET-006-Q001 정답3(2300), 누락구간을 채운 뒤 저장된 뒤쪽 데이터까지 연속됨을 설명. 오늘최초5/5·복습3/3. 실제시간미확인. 사용자 다음 요청으로세션마무리, Day1완료처리하지않음."
+  ],
+  "pending_user_prompt": null,
+  "pending_answer_clarification": null,
+  "deferred_questions": [
+    {
+      "question_id": "TOEIC-RC-001-Q001",
+      "exam_track": "toeic",
+      "status": "unanswered",
+      "deferred_on": "2026-10-27",
+      "reason": "사용자 요청:평일 TOEIC 제외·주말 RC50진단 전환",
+      "resume_policy": "주말 세트 등록 후 실제 답변 시 최초풀이 집계"
+    }
+  ],
+  "plan_revisions": [
+    {
+      "changed_on": "2026-10-27",
+      "previous_plan": [
+        {
+          "topic": "TCP 도래 복습3건",
+          "minutes": 20
+        },
+        {
+          "topic": "NCS Day1 정리와 문서 이해",
+          "minutes": 20
+        },
+        {
+          "topic": "TCP 취약 개념 보완·기초 적용",
+          "minutes": 20
+        },
+        {
+          "topic": "TOEIC 기본 문법·어휘",
+          "minutes": 10
+        },
+        {
+          "topic": "정리·기록",
+          "minutes": 5
+        }
+      ],
+      "reason": "TOEIC 데일리 제외;미사용예상10분을NCS·전산에5분씩배치,실제시간아님"
+    }
+  ],
+  "learning_support_events": [
+    {
+      "date": "2026-10-27",
+      "question_id": "CS-NET-005-Q001",
+      "user_raw": "뭔말인지 모르겟어",
+      "type": "reexplanation_requested",
+      "action": "숫자붙은물건수신비유로누적확인의미부터재설명. 실제문항정답공개하지않음.",
+      "graded": false
+    },
+    {
+      "date": "2026-10-27",
+      "question_id": "CS-NET-005-Q001",
+      "user_raw": "돼",
+      "type": "analogy_understood_self_report",
+      "graded": false,
+      "note": "비유이해자기보고,원문항정답/복습성공으로집계하지않음"
+    }
+  ],
+  "daily_plan_file": "subjects/daily_plans/2026-10-27.json"
+}

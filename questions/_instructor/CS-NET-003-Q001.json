@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "concept_ids": [
+    "NET-TCPIP"
+  ],
+  "scoring_format": "choice",
+  "domain": "컴퓨터 네트워크",
+  "subtype": "데이터 없는 기본 연결 설정의 ACK 번호",
+  "difficulty": "기초",
+  "recommended_seconds": 90,
+  "source_type": "독창적 창작; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5",
+      "section": "3.5 Figure6,3.4",
+      "checked_on": "2026-10-27"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "RFC9293의SYN순서공간1소비·데이터없는ACK비소비·ACK번호다음기대값규칙과대조. 기본3단계/데이터0조건명시. 수치코드검사병행. 독립검수아님."
+  },
+  "concept": "SEQ는자기순서번호,ACK번호는상대에서다음에받기를기대하는번호;SYN은1소비",
+  "id": "CS-NET-003-Q001",
+  "kind": "practice",
+  "passage": "일반적인 TCP 연결 설정에서 클라이언트가 SEQ=120인 SYN을 보내고, 서버가 SEQ=700, ACK 번호=121인 SYN+ACK로 응답했다. 모든 메시지에 응용 데이터는 없고 재전송·동시 연결 시작은 없다.",
+  "prompt": "마지막에 클라이언트가 보내는 ACK 메시지의 ACK 번호는?",
+  "choices": [
+    "121",
+    "700",
+    "701",
+    "702"
+  ],
+  "answer": 3,
+  "explanation": "클라이언트마지막ACK는서버SYN을확인한다. 서버SYN의SEQ700은순서공간1을소비하므로다음기대서버번호701이다. 121은클라이언트쪽다음번호이며최종ACK번호가아니다.",
+  "quick_solution": "서버SYN의SEQ700에1을더해701.",
+  "distractor_analysis": {
+    "1": "서버가클라이언트SYN을확인할때의ACK번호와혼동",
+    "2": "SYN이1소비함을누락",
+    "4": "서버SYN외에추가소비가있다고잘못계산"
+  },
+  "hints": [
+    "지금ACK를보내는쪽과확인받는SYN의송신자를나눠보세요.",
+    "확인하는상대의시작번호를찾고데이터없는SYN이소비하는길이를적용하세요."
+  ],
+  "verification": {
+    "model": "tcp_handshake_ack",
+    "client_isn": 120,
+    "server_isn": 700,
+    "syn_payload_bytes": 0,
+    "choice_facts": [
+      {
+        "ack": 121
+      },
+      {
+        "ack": 700
+      },
+      {
+        "ack": 701
+      },
+      {
+        "ack": 702
+      }
+    ]
+  }
+}

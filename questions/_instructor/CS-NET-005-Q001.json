@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "concept_ids": [
+    "NET-TCPIP"
+  ],
+  "scoring_format": "choice",
+  "domain": "컴퓨터 네트워크",
+  "subtype": "누락 구간이 있는 TCP 누적 ACK 번호",
+  "difficulty": "기초 응용",
+  "recommended_seconds": 120,
+  "source_type": "독창적 창작; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.4",
+      "section": "3.4 cumulative ACK",
+      "checked_on": "2026-10-27"
+    }
+  ],
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-27",
+    "reviewer": "Codex",
+    "scope": "RFC9293누적ACK는연속수신범위다음번호라는규칙대조. 초기기대값·수신길이·누락구간·순서·SYN/FIN없음명시. 숫자코드검증병행. 독립검수아님."
+  },
+  "concept": "중간누락이있으면누적ACK는가장앞의미수신바이트번호에머무름",
+  "id": "CS-NET-005-Q001",
+  "kind": "practice",
+  "passage": "TCP 연결이 설정되어 있고 서버는 다음 클라이언트 데이터 번호로 2000을 기대했다. 서버는 SEQ=2000의 데이터 100바이트를 받았고, 이어 SEQ=2200의 데이터 100바이트를 받았다. 2100~2199 데이터는 도착하지 않았다. 이전 누락은 없고 SYN·FIN은 없으며 수신 창은 충분하다.",
+  "prompt": "두 번째 데이터 수신 후 서버의 누적 ACK 번호는?",
+  "choices": [
+    "2300",
+    "2100",
+    "2001",
+    "2299"
+  ],
+  "answer": 2,
+  "explanation": "서버가연속으로받은데이터는2000~2099다. 다음필요한2100부터2199까지가없으므로누적ACK는2100. 2200~2299가도착해도그앞누락을뛰어넘어확인할수없다.",
+  "quick_solution": "연속수신이다음에끊기는첫번호2100을고른다.",
+  "distractor_analysis": {
+    "1": "가장늦게받은조각2200+100만계산하여누락무시",
+    "3": "일반데이터100바이트대신무조건+1",
+    "4": "가장뒤받은마지막번호와누적ACK를혼동"
+  },
+  "hints": [
+    "맨앞부터빈곳없이이어지는수신범위를표시해보세요.",
+    "ACK가가장뒤에받은번호인지처음필요한번호인지생각해보세요."
+  ],
+  "verification": {
+    "model": "tcp_cumulative_ack",
+    "initial_expected": 2000,
+    "syn": false,
+    "fin": false,
+    "received_segments": [
+      {
+        "seq": 2000,
+        "payload_bytes": 100
+      },
+      {
+        "seq": 2200,
+        "payload_bytes": 100
+      }
+    ],
+    "choice_facts": [
+      {
+        "ack": 2300
+      },
+      {
+        "ack": 2100
+      },
+      {
+        "ack": 2001
+      },
+      {
+        "ack": 2299
+      }
+    ]
+  }
+}
