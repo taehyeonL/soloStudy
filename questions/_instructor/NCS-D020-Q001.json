@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D020-Q001",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "ratio_allocation",
+  "difficulty": "basic_application",
+  "correct_answer": 3,
+  "explanation": "전체 비율 단위는 2+5=7이다. 84만 원을 7로 나누면 한 부분은 12만 원이고, B는 5부분이므로 60만 원이다.",
+  "quick_solution": "B 몫=84×5/(2+5)=60만 원.",
+  "recommended_seconds": 60,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "84*5/7=60; allocations A=24,B=60 sum to 84; unique choice.",
+    "unique_correct_choice": 3,
+    "duplicate_choices": false
+  }
+}

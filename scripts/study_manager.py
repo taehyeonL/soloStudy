@@ -164,8 +164,12 @@ def daily_progress(today):
                     actual['ncs'] += 1
                 elif track in ('computer-science', 'security-written', 'security-practical'):
                     actual['cs_security'] += 1
-    actual['wrapup'] = int(bool(sessions) and all(s.get('status') in ('completed', 'interrupted')
-                            for s in sessions) and any(s.get('status') == 'completed' for s in sessions))
+    integrated_sessions = [s for s in sessions if not (
+        s.get('attempts') and all(a.get('exam_track') == 'toeic' for a in s['attempts'])
+    )]
+    actual['wrapup'] = int(bool(integrated_sessions) and all(
+        s.get('status') in ('completed', 'interrupted') for s in integrated_sessions
+    ) and any(s.get('status') == 'completed' for s in integrated_sessions))
     completed = {key: min(actual[key], targets[key]) for key in targets}
     total = sum(targets.values())
     done = sum(completed.values())

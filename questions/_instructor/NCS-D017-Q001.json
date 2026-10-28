@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D017-Q001",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "decimal_to_fraction_simplification",
+  "difficulty": "basic",
+  "correct_answer": 1,
+  "explanation": "0.48은 소수 둘째 자리까지이므로 48/100이다. 분자와 분모를 4로 나누면 12/25가 된다. 24/50은 값은 같지만 약분된 가장 간단한 형태가 아니다. 48/10은 4.8이고, 6/25는 0.24다.",
+  "quick_solution": "0.48=48/100; 둘 다 4로 나눠 12/25.",
+  "recommended_seconds": 45,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "Exact arithmetic: 48/100 reduces by gcd 4 to 12/25; distractors tested for simplified-form condition.",
+    "unique_correct_choice": 1,
+    "duplicate_choices": false
+  }
+}

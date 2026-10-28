@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D023-Q002",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "reverse_percentage_base",
+  "difficulty": "basic_application",
+  "correct_answer": 2,
+  "explanation": "올해 예산은 전년도 예산의 120%, 즉 1.2배다. 전년도 예산을 x라 두면 1.2x=960이므로 x=960÷1.2=800만 원이다. 960에서 20%를 빼는 방식은 증가 후 기준을 잘못 사용한다.",
+  "quick_solution": "증가 후=1.2배이므로 960÷1.2=800만 원.",
+  "recommended_seconds": 90,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "960/1.2=800; correct forward check 800*1.2=960.",
+    "unique_correct_choice": 2,
+    "duplicate_choices": false
+  }
+}

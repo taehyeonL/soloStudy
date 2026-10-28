@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-10-28-01",
+  "part": 6,
+  "skill_tags": [
+    "문맥 연결",
+    "순서 연결"
+  ],
+  "scoring_format": "choice",
+  "id": "TOEIC-RC-20261028-Q011",
+  "kind": "practice",
+  "domain": "TOEIC RC Part 6",
+  "subtype": "문맥 연결",
+  "difficulty": "기초~중하",
+  "recommended_seconds": 75,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-28",
+    "reviewer": "Codex",
+    "scope": "문법·어휘·문맥과 선택지 유일성을 검토. ETS 공식문제 복제 아님."
+  },
+  "passage": "A public lecture on urban planning will be held on May 20 at the Civic Hall. To reserve a seat, complete the online form by May 8. [blank], you will receive a confirmation email with your seat number. The event is free, but registration is required because seating is limited.",
+  "prompt": "Which word best completes the passage?",
+  "choices": [
+    "Otherwise",
+    "Thereafter",
+    "Nevertheless",
+    "For example"
+  ],
+  "answer": 2,
+  "explanation": "Registration comes first; the confirmation email follows.",
+  "quick_solution": "신청 이후 순서를 나타내는 말.",
+  "distractor_analysis": {
+    "note": "otherwise 그렇지 않으면; nevertheless 그럼에도; for example 예를 들어."
+  },
+  "hints": [
+    "문장 구조나 지문에서 시점·대상·요청 단서를 확인하세요.",
+    "오답 선택지의 범위와 조건도 대조하세요."
+  ],
+  "verification": {
+    "model": "text_lookup",
+    "target": "Thereafter",
+    "choice_facts": [
+      {
+        "value": "Otherwise"
+      },
+      {
+        "value": "Thereafter"
+      },
+      {
+        "value": "Nevertheless"
+      },
+      {
+        "value": "For example"
+      }
+    ]
+  }
+}

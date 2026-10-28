@@ -1,0 +1,1036 @@
+{
+  "schema_version": 2,
+  "session_id": "2026-10-28-01",
+  "date": "2026-10-28",
+  "timezone": "Asia/Seoul",
+  "session_number": 1,
+  "status": "completed",
+  "week": 2,
+  "days_covered": [],
+  "topic": "TOEIC RC 20문항 진단(사용자 요청 평일 예외)",
+  "duration_minutes": null,
+  "duration_source": null,
+  "planned_minutes": 45,
+  "plan": [
+    {
+      "topic": "Part 5 문법·어휘 10문항",
+      "minutes": 15
+    },
+    {
+      "topic": "Part 6 문맥 완성 3문항",
+      "minutes": 8
+    },
+    {
+      "topic": "Part 7 독해 7문항",
+      "minutes": 17
+    },
+    {
+      "topic": "결과 요약·기록",
+      "minutes": 5
+    }
+  ],
+  "lesson_files": [
+    "lessons/toeic-rc-01.md"
+  ],
+  "stage": "toeic_set_complete",
+  "pending_question_id": null,
+  "pending_question_kind": null,
+  "pending_exam_track": null,
+  "pending_hint_level": 0,
+  "review_queue": [],
+  "planned_questions": [
+    {
+      "question_id": "TOEIC-RC-20261028-Q001",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q002",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q003",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q004",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q005",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q006",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q007",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q008",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q009",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q010",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q011",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q012",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q013",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q014",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q015",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q016",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q017",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q018",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q019",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    },
+    {
+      "question_id": "TOEIC-RC-20261028-Q020",
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "status": "answered"
+    }
+  ],
+  "attempts": [
+    {
+      "attempt_id": "2026-10-28-01-A001",
+      "question_id": "TOEIC-RC-20261028-Q001",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "수동태"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 5,
+      "skill_tags": [
+        "태",
+        "수동태"
+      ],
+      "user_answer_raw": "4",
+      "selected_choice": 4,
+      "correct": false,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "not_applicable",
+      "stability_basis": "오답. 구체적인 판단 이유와 풀이시간은 미확인.",
+      "error_category": "미확인",
+      "error_confirmation": "사용자에게 오답 원인을 아직 묻지 않음. 원인을 추정해 사실로 기록하지 않는다.",
+      "feedback": {
+        "verdict": "오답; 정답 2번",
+        "standard_solution": "주어 The annual report는 재무팀에 의해 검토되는 대상이다. 따라서 수동태 is reviewed가 필요하다. has review는 have/has 뒤 목적어 또는 과거분사 구조가 필요한데, review 원형이 와 문법적으로 성립하지 않는다.",
+        "quick_solution": "report가 행동을 하는 주체인지 받는 대상인지 확인: 받는 대상이므로 be + reviewed.",
+        "distractors": {
+          "1": "능동태라서 보고서가 재무팀을 검토한다는 뜻이 된다.",
+          "3": "분사형만 있어 문장의 정동사가 없다.",
+          "4": "has 뒤에 동사원형 review가 와 형태가 맞지 않는다."
+        },
+        "error_analysis": "정답은 2번. 사용자는 4번을 선택했다. 선택 이유는 미확인.",
+        "related_concept": "현재 시제 수동태: 주어 + am/is/are + 과거분사."
+      },
+      "review_id": "REV-TOEIC-0001"
+    },
+    {
+      "attempt_id": "2026-10-28-01-A002",
+      "question_id": "TOEIC-RC-20261028-Q002",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "전치사",
+        "시간 전치사"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 5,
+      "skill_tags": [
+        "전치사",
+        "시간 전치사"
+      ],
+      "user_answer_raw": "2",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답. 정오답 선택 근거는 별도 설명 없음.",
+      "error_category": null,
+      "error_confirmation": "오답 없음.",
+      "feedback": {
+        "verdict": "정답; 정답 2번",
+        "standard_solution": "Employees must submit receipts within five business days after returning. within sets a deadline of no later than five days.",
+        "quick_solution": "within + 기간=~이내",
+        "distractors": {
+          "note": "among 사이, during ~동안, beside 옆."
+        },
+        "error_analysis": "정답. 정오답 선택 근거는 별도 설명 없음.",
+        "related_concept": "전치사"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A003",
+      "question_id": "TOEIC-RC-20261028-Q003",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "접속사",
+        "접속사"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 5,
+      "skill_tags": [
+        "접속사",
+        "접속사"
+      ],
+      "user_answer_raw": "3",
+      "selected_choice": 3,
+      "correct": false,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "not_applicable",
+      "stability_basis": "오답; 선택 이유 미확인. despite는 명사구를 취하고 unless of / because to는 비문.",
+      "error_category": "미확인",
+      "error_confirmation": "정오답 원인은 사용자가 설명하지 않아 미확인.",
+      "feedback": {
+        "verdict": "오답; 정답 1번",
+        "standard_solution": "Once the revised schedule is approved, Ms. Chen will contact the suppliers. once introduces a complete clause.",
+        "quick_solution": "완전한 절 앞 접속사 once",
+        "distractors": {
+          "note": "despite 뒤 명사구, unless of/because to는 비문."
+        },
+        "error_analysis": "오답; 선택 이유 미확인. despite는 명사구를 취하고 unless of / because to는 비문.",
+        "related_concept": "접속사"
+      },
+      "review_id": "REV-TOEIC-0002"
+    },
+    {
+      "attempt_id": "2026-10-28-01-A004",
+      "question_id": "TOEIC-RC-20261028-Q004",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "수일치",
+        "수일치"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 5,
+      "skill_tags": [
+        "수일치",
+        "수일치"
+      ],
+      "user_answer_raw": "3",
+      "selected_choice": 3,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "reasoning_supported",
+      "stability_basis": "정답. 간단한 답변만 있어 풀이 근거·시간은 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 없음.",
+      "feedback": {
+        "verdict": "정답; 정답 3번",
+        "standard_solution": "With neither A nor B, the verb commonly agrees with the nearer subject. The nearer subject assistants is plural, so are is correct.",
+        "quick_solution": "nor에 가까운 주어 assistants가 복수형",
+        "distractors": {
+          "note": "is/was 단수, has 형태 부적절."
+        },
+        "error_analysis": "정답. 간단한 답변만 있어 풀이 근거·시간은 미확인.",
+        "related_concept": "수일치"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A005",
+      "question_id": "TOEIC-RC-20261028-Q005",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "to부정사",
+        "to부정사"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 5,
+      "skill_tags": [
+        "to부정사",
+        "to부정사"
+      ],
+      "user_answer_raw": "1",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 제출; 풀이근거·시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "Expected to is followed by the base form reduce.",
+        "quick_solution": "to 뒤 동사원형.",
+        "distractors": {
+          "note": "reduce to 연결 부적절; reduction 명사; reduced 분사."
+        },
+        "error_analysis": "정답. 구체적인 풀이 이유는 확인되지 않음.",
+        "related_concept": "to부정사"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A006",
+      "question_id": "TOEIC-RC-20261028-Q006",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "전치사",
+        "시간 전치사"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 5,
+      "skill_tags": [
+        "전치사",
+        "시간 전치사"
+      ],
+      "user_answer_raw": "4",
+      "selected_choice": 4,
+      "correct": false,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "not_applicable",
+      "stability_basis": "오답; 풀이 이유와 시간 미확인.",
+      "error_category": "미확인",
+      "error_confirmation": "사용자가 선택 이유를 설명하지 않아 원인 미확인.",
+      "feedback": {
+        "verdict": "오답; 정답 1번",
+        "standard_solution": "The maintenance work will continue until 4 p.m.는 공사가 오후 4시까지 계속된다는 뜻이다. until은 끝나는 시점을 나타낸다.",
+        "quick_solution": "계속되는 작업의 종료 시점 앞에는 until.",
+        "distractors": {
+          "2": "across는 가로질러라는 뜻이다.",
+          "3": "between은 두 대상 사이, among은 여럿 사이를 뜻하며 여기 시간 종료점에 맞지 않는다."
+        },
+        "error_analysis": "4번을 선택했으며 정답은 1번. 선택 이유는 미확인.",
+        "related_concept": "시간 전치사 until + 종료 시각."
+      },
+      "review_id": "REV-TOEIC-0003"
+    },
+    {
+      "attempt_id": "2026-10-28-01-A007",
+      "question_id": "TOEIC-RC-20261028-Q007",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "어휘",
+        "어휘"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 5,
+      "skill_tags": [
+        "어휘",
+        "어휘"
+      ],
+      "user_answer_raw": "1",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 제출, 근거와 시간은 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "A launch can be postponed until a later date.",
+        "quick_solution": "지연된 일정은 postponed.",
+        "distractors": {
+          "note": "나머지는 설득·제공·수행."
+        },
+        "error_analysis": "정답. 풀이 근거는 확인되지 않음.",
+        "related_concept": "어휘"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A008",
+      "question_id": "TOEIC-RC-20261028-Q008",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "관용표현",
+        "어휘·명사"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 5,
+      "skill_tags": [
+        "관용표현",
+        "어휘·명사"
+      ],
+      "user_answer_raw": "1",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 제출. 풀이 근거·시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "For your records means for your files/reference.",
+        "quick_solution": "your 뒤 명사, 관용 표현 for your records.",
+        "distractors": {
+          "note": "나머지는 문맥·품사가 부적절."
+        },
+        "error_analysis": "정답. 풀이 근거 미확인.",
+        "related_concept": "관용표현"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A009",
+      "question_id": "TOEIC-RC-20261028-Q009",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "전치사",
+        "전치사 결합"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 5,
+      "skill_tags": [
+        "전치사",
+        "전치사 결합"
+      ],
+      "user_answer_raw": "2",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 제출. 시간·독립 풀이 근거 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "Be responsible for + gerund is the standard construction.",
+        "quick_solution": "responsible for -ing.",
+        "distractors": {
+          "note": "나머지는 이 결합에 맞지 않는다."
+        },
+        "error_analysis": "정답. 풀이 이유는 미확인.",
+        "related_concept": "전치사"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A010",
+      "question_id": "TOEIC-RC-20261028-Q010",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "접속사",
+        "시간 접속사"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 5,
+      "skill_tags": [
+        "접속사",
+        "시간 접속사"
+      ],
+      "user_answer_raw": "1",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 응답. 구체적 근거·시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "Visitors sign in before entering.",
+        "quick_solution": "두 행동의 선후 관계.",
+        "distractors": {
+          "note": "양보·이유·비문은 의미와 형태 불일치."
+        },
+        "error_analysis": "정답, 풀이 안정성은 미확인.",
+        "related_concept": "접속사"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A011",
+      "question_id": "TOEIC-RC-20261028-Q011",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "문맥 연결",
+        "순서 연결"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 6,
+      "skill_tags": [
+        "문맥 연결",
+        "순서 연결"
+      ],
+      "user_answer_raw": "2",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 제출. 문맥 이해 근거·풀이시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "Registration comes first; the confirmation email follows.",
+        "quick_solution": "신청 이후 확인 메일을 받으므로 thereafter.",
+        "distractors": {
+          "note": "otherwise 그렇지 않으면; nevertheless 그럼에도; for example 예를 들어."
+        },
+        "error_analysis": "정답. 상세 풀이 안정성은 미확인.",
+        "related_concept": "문맥 연결"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A012",
+      "question_id": "TOEIC-RC-20261028-Q012",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "문장 삽입",
+        "지시어·문장 연결"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 6,
+      "skill_tags": [
+        "문장 삽입",
+        "지시어·문장 연결"
+      ],
+      "user_answer_raw": "4",
+      "selected_choice": 4,
+      "correct": false,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "not_applicable",
+      "stability_basis": "오답; 선택 이유와 풀이시간 미확인.",
+      "error_category": "미확인",
+      "error_confirmation": "사용자 확인 전 원인 단정하지 않음.",
+      "feedback": {
+        "verdict": "오답; 정답 2번",
+        "standard_solution": "2번 It explains how to use each feature of the portal는 포털 기능을 설명하는 안내서의 역할을 이어 준다. 바로 뒤의 A step-by-step guide is attached가 그 안내서를 구체화한다. 4번의 benefit requests are reviewed only once a year는 지문에 없는 검토 주기를 새로 주장한다.",
+        "quick_solution": "뒤 문장의 guide와 이어지는 설명인지 보고, 근거 없는 연간 검토 주기는 제외한다.",
+        "distractors": {
+          "1": "로비 종이 안내서를 대체한다는 내용은 지문에 없다.",
+          "3": "도움 센터 이전은 언급되지 않았다.",
+          "4": "급여 신청 검토 주기에 관한 내용은 지문에 없다."
+        },
+        "error_analysis": "4번을 골랐으며 답은 2번. 선택 이유와 오답 원인은 미확인.",
+        "related_concept": "Part 6 지시어 antecedent와 문맥 연결."
+      },
+      "review_id": "REV-TOEIC-0004"
+    },
+    {
+      "attempt_id": "2026-10-28-01-A013",
+      "question_id": "TOEIC-RC-20261028-Q013",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "대조 연결",
+        "담화 표지"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 6,
+      "skill_tags": [
+        "대조 연결",
+        "담화 표지"
+      ],
+      "user_answer_raw": "3",
+      "selected_choice": 3,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 제출. 풀이근거와 시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 3번",
+        "standard_solution": "Visitor access instructions differ from delivery instructions, so however signals contrast.",
+        "quick_solution": "일반 출입과 배송 동선의 대조.",
+        "distractors": {
+          "note": "예시·유사·결과는 관계가 맞지 않는다."
+        },
+        "error_analysis": "정답. 풀이 안정성은 미확인.",
+        "related_concept": "대조 연결"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A014",
+      "question_id": "TOEIC-RC-20261028-Q014",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "공지 세부정보",
+        "세부정보"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 7,
+      "skill_tags": [
+        "공지 세부정보",
+        "세부정보"
+      ],
+      "user_answer_raw": "2",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 제출, 풀이근거·시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "The room is unavailable until 1 P.M. Tuesday.",
+        "quick_solution": "이용 불가 종료 시각이 화요일 오후1시.",
+        "distractors": {
+          "note": "다른 값은 시작·마감 또는 다른 날짜다."
+        },
+        "error_analysis": "정답. 근거 설명은 미확인.",
+        "related_concept": "공지 세부정보"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A015",
+      "question_id": "TOEIC-RC-20261028-Q015",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "이메일 요청",
+        "요청사항"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 7,
+      "skill_tags": [
+        "이메일 요청",
+        "요청사항"
+      ],
+      "user_answer_raw": "1",
+      "selected_choice": 1,
+      "correct": false,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "not_applicable",
+      "stability_basis": "오답. 구체적 판단 근거와 풀이시간 미확인.",
+      "error_category": "미확인",
+      "error_confirmation": "사용자 확인 전 오답 원인을 특정하지 않음.",
+      "feedback": {
+        "verdict": "오답; 정답 2번",
+        "standard_solution": "청구서에는 라우터 18대, 실제 입고 기록에는 16대라고 되어 있다. 그래서 요청은 추가 2대 배송이 아니라 실제 수량 16대에 맞춰 청구서를 수정해 보내는 것이다.",
+        "quick_solution": "invoice 18 vs received 16 → corrected invoice 요청.",
+        "distractors": {
+          "1": "추가 물품 배송이 아니라 청구서 수정 요청이다.",
+          "3": "수정 청구서를 받은 뒤 결제를 일정 잡겠다고 했다.",
+          "4": "4월 3일은 이미 납품된 날짜다."
+        },
+        "error_analysis": "1번 선택, 정답 2번. 선택 이유 및 오답 원인은 미확인.",
+        "related_concept": "Part 7 이메일 요청사항과 수량 불일치 대조."
+      },
+      "review_id": "REV-TOEIC-0005"
+    },
+    {
+      "attempt_id": "2026-10-28-01-A016",
+      "question_id": "TOEIC-RC-20261028-Q016",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "문자 일정",
+        "일정 변경"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 7,
+      "skill_tags": [
+        "문자 일정",
+        "일정 변경"
+      ],
+      "user_answer_raw": "3",
+      "selected_choice": 3,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 응답, 근거와 시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 3번",
+        "standard_solution": "Nora states the new inspection time is Thursday at 2:30 P.M.",
+        "quick_solution": "새 일정은 목요일 2:30 P.M.; 2–4시는 적재 공간 비우는 시간.",
+        "distractors": {
+          "note": "2–4 P.M. is the time to keep the loading area clear, not inspection start."
+        },
+        "error_analysis": "정답. 근거는 미확인.",
+        "related_concept": "문자 일정"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A017",
+      "question_id": "TOEIC-RC-20261028-Q017",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "공지 원인",
+        "원인 추론"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 7,
+      "skill_tags": [
+        "공지 원인",
+        "원인 추론"
+      ],
+      "user_answer_raw": "2",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 제출; 근거·시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "The delayed shipment moved Central work from Tuesday to Wednesday; North remains unchanged.",
+        "quick_solution": "because 뒤 배송 지연이 Central 일정 변경의 이유.",
+        "distractors": {
+          "note": "North unchanged, South unaffected, work not canceled."
+        },
+        "error_analysis": "정답. 구체적 근거 설명은 미확인.",
+        "related_concept": "공지 원인"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A018",
+      "question_id": "TOEIC-RC-20261028-Q018",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "이메일 기한",
+        "기한"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 7,
+      "skill_tags": [
+        "이메일 기한",
+        "기한"
+      ],
+      "user_answer_raw": "3",
+      "selected_choice": 3,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 번호만 응답. 선택 근거와 시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 3번",
+        "standard_solution": "Employees should reply by Thursday, September 5.",
+        "quick_solution": "reply by 바로 뒤 날짜가 제출 마감.",
+        "distractors": {
+          "note": "월·화는 교육 시간이며 무응답이면 관리자가 배정."
+        },
+        "error_analysis": "정답, 풀이 근거는 미확인.",
+        "related_concept": "이메일 기한"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A019",
+      "question_id": "TOEIC-RC-20261028-Q019",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "주요 목적",
+        "주요 목적"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 7,
+      "skill_tags": [
+        "주요 목적",
+        "주요 목적"
+      ],
+      "user_answer_raw": "2",
+      "selected_choice": 2,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 선택만 제출, 풀이근거와 시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 2번",
+        "standard_solution": "The library will open one hour earlier on weekdays after morning attendance rose during a pilot.",
+        "quick_solution": "평일 운영시간 변경과 그 배경을 모두 포함한 선택지.",
+        "distractors": {
+          "note": "Weekend hours unchanged; no volunteers; attendance increased."
+        },
+        "error_analysis": "정답; 풀이근거 미확인.",
+        "related_concept": "주요 목적"
+      },
+      "review_id": null
+    },
+    {
+      "attempt_id": "2026-10-28-01-A020",
+      "question_id": "TOEIC-RC-20261028-Q020",
+      "question_version": 1,
+      "subject": "toeic",
+      "exam_track": "toeic",
+      "concept_ids": [
+        "안내문 세부정보",
+        "조건·기한"
+      ],
+      "scoring_format": "choice",
+      "kind": "first",
+      "date": "2026-10-28",
+      "study_set_id": "TOEIC-RC-2026-10-28-01",
+      "part": 7,
+      "skill_tags": [
+        "안내문 세부정보",
+        "조건·기한"
+      ],
+      "user_answer_raw": "1",
+      "selected_choice": 1,
+      "correct": true,
+      "elapsed_seconds": null,
+      "time_source": null,
+      "hint_level": 0,
+      "reasoning_raw": null,
+      "stability": "unconfirmed",
+      "stability_basis": "정답 선택. 풀이근거와 시간 미확인.",
+      "error_category": null,
+      "error_confirmation": "오답 아님.",
+      "feedback": {
+        "verdict": "정답 1번",
+        "standard_solution": "The notice requires a receipt and request within 14 days.",
+        "quick_solution": "환불은 구매 후 14일 이내, 영수증을 ticket office로 제출.",
+        "distractors": {
+          "note": "다른 방법·기한은 안내문에 없다."
+        },
+        "error_analysis": "정답. 구체적 풀이 근거와 안정성은 미확인.",
+        "related_concept": "안내문 세부정보"
+      },
+      "review_id": null
+    }
+  ],
+  "summary": {
+    "first_attempts": 20,
+    "first_correct": 15,
+    "first_incorrect": 5,
+    "first_accuracy": 0.75,
+    "review_attempts": 0,
+    "review_correct": 0,
+    "review_incorrect": 0,
+    "review_accuracy": null
+  },
+  "covered_concepts": [],
+  "weak_concepts": [
+    "수동태: be + 과거분사 (1회 오답; 원인 미확인)",
+    "접속사 once / despite 구분 (1회 오답; 원인 미확인)",
+    "until로 종료 시점 표현 (1회 오답; 원인 미확인)",
+    "Part6 문장 연결·지시어 (오답 1회, 원인 미확인)",
+    "Part7 이메일의 입고 수량과 수정 요청 구분 (오답 1회; 원인 미확인)"
+  ],
+  "next_action": "세트 완료. 결과 보고서를 확인하고 이후 TOEIC 정규학습은 주말 RC로 복귀.",
+  "notes": [
+    "사용자가 명시한 평일 일회성 20문항 진단. 평일 제외 정규정책 유지.",
+    "비공식 독창 문제이며 결과는 TOEIC 점수로 환산하지 않는다.",
+    "실측 풀이·학습시간 미확인.",
+    "20문항 완료: 정답15, 오답5(75%, 소표본 비공식 문제). Part5 7/10, Part6 2/3, Part7 6/7. 점수 환산 없음. 풀이·학습시간 미확인."
+  ]
+}

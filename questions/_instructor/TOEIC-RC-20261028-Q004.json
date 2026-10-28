@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-10-28-01",
+  "part": 5,
+  "skill_tags": [
+    "수일치",
+    "수일치"
+  ],
+  "scoring_format": "choice",
+  "id": "TOEIC-RC-20261028-Q004",
+  "kind": "practice",
+  "domain": "TOEIC RC Part 5",
+  "subtype": "수일치",
+  "difficulty": "기초~중하",
+  "recommended_seconds": 45,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-28",
+    "reviewer": "Codex",
+    "scope": "문법·어휘·문맥과 선택지 유일성을 검토. ETS 공식문제 복제 아님."
+  },
+  "passage": "Choose the option that best completes the sentence.",
+  "prompt": "Neither the department manager nor the assistants ___ available this afternoon.",
+  "choices": [
+    "is",
+    "was",
+    "are",
+    "has"
+  ],
+  "answer": 3,
+  "explanation": "In neither A nor B, the verb commonly agrees with the nearer subject assistants.",
+  "quick_solution": "nor에 가까운 복수 주어 assistants에 맞춘다.",
+  "distractor_analysis": {
+    "note": "is/was 단수, has 형태 부적절."
+  },
+  "hints": [
+    "문장 구조나 지문에서 시점·대상·요청 단서를 확인하세요.",
+    "오답 선택지의 범위와 조건도 대조하세요."
+  ],
+  "verification": {
+    "model": "text_lookup",
+    "target": "are",
+    "choice_facts": [
+      {
+        "value": "is"
+      },
+      {
+        "value": "was"
+      },
+      {
+        "value": "are"
+      },
+      {
+        "value": "has"
+      }
+    ]
+  }
+}

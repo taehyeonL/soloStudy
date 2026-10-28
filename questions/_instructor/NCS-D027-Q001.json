@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D027-Q001",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "compare_growth_rates",
+  "difficulty": "basic_application",
+  "correct_answer": 2,
+  "explanation": "A센터는 (560−500)/500=60/500=12% 증가다. B센터는 (150−120)/120=30/120=25% 증가다. 증가량은 A가 더 크지만 증가율은 B가 더 크다.",
+  "quick_solution": "A 60/500=12%; B 30/120=25%; B.",
+  "recommended_seconds": 90,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "A=12%, B=25%; distinct rates; unique answer B.",
+    "unique_correct_choice": 2,
+    "duplicate_choices": false
+  }
+}

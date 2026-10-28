@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D023-Q001",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "successive_percentage_change",
+  "difficulty": "basic_application",
+  "correct_answer": 1,
+  "explanation": "먼저 200×1.10=220건이다. 다음 달 10% 감소는 새 기준인 220건의 10%인 22건을 빼므로 198건이다. 배율로는 200×1.10×0.90=198. 같은 10%라도 기준값이 달라져 서로 상쇄되지 않는다.",
+  "quick_solution": "200×1.1×0.9=198.",
+  "recommended_seconds": 90,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "200*1.1*0.9=198; sequential bases respected; unique choice.",
+    "unique_correct_choice": 1,
+    "duplicate_choices": false
+  }
+}

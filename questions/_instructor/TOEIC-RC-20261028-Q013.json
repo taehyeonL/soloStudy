@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-10-28-01",
+  "part": 6,
+  "skill_tags": [
+    "대조 연결",
+    "담화 표지"
+  ],
+  "scoring_format": "choice",
+  "id": "TOEIC-RC-20261028-Q013",
+  "kind": "practice",
+  "domain": "TOEIC RC Part 6",
+  "subtype": "대조 연결",
+  "difficulty": "기초~중하",
+  "recommended_seconds": 75,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-28",
+    "reviewer": "Codex",
+    "scope": "문법·어휘·문맥과 선택지 유일성을 검토. ETS 공식문제 복제 아님."
+  },
+  "passage": "The west entrance will be closed for repairs from June 3 through June 6. Visitors may use the south entrance. [blank], deliveries should continue to use the loading area on Pine Street. Please allow extra time.",
+  "prompt": "Which transition best completes the passage?",
+  "choices": [
+    "For example",
+    "Similarly",
+    "However",
+    "As a result"
+  ],
+  "answer": 3,
+  "explanation": "Visitor access instructions differ from delivery instructions, so however signals contrast.",
+  "quick_solution": "일반 출입과 배송 동선의 대조.",
+  "distractor_analysis": {
+    "note": "예시·유사·결과는 관계가 맞지 않는다."
+  },
+  "hints": [
+    "문장 구조나 지문에서 시점·대상·요청 단서를 확인하세요.",
+    "오답 선택지의 범위와 조건도 대조하세요."
+  ],
+  "verification": {
+    "model": "text_lookup",
+    "target": "However",
+    "choice_facts": [
+      {
+        "value": "For example"
+      },
+      {
+        "value": "Similarly"
+      },
+      {
+        "value": "However"
+      },
+      {
+        "value": "As a result"
+      }
+    ]
+  }
+}

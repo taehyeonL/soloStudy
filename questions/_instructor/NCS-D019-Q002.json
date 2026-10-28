@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D019-Q002",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "percentage_point",
+  "difficulty": "basic_application",
+  "correct_answer": 1,
+  "explanation": "퍼센트포인트는 두 백분율을 그대로 뺀 차이다. 50%-40%=10퍼센트포인트. 기존 40% 대비 상대 증가율은 10/40=25%로 별도 값이다.",
+  "quick_solution": "두 비율을 빼기: 50−40=10퍼센트포인트.",
+  "recommended_seconds": 60,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "Difference is exactly 10 percentage points; relative increase 25%, distractors discriminate.",
+    "unique_correct_choice": 1,
+    "duplicate_choices": false
+  }
+}

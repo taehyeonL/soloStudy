@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D021-Q002",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "ratio_whole_and_part",
+  "difficulty": "basic_application",
+  "correct_answer": 3,
+  "explanation": "전체 비율 부분은 3+5=8이다. 한 부분은 64÷8=8명이며 기술직은 5부분이므로 5×8=40명이다.",
+  "quick_solution": "기술직=64×5/(3+5)=40.",
+  "recommended_seconds": 90,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "64*5/8=40; parts sum 64 and options unique.",
+    "unique_correct_choice": 3,
+    "duplicate_choices": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D021-Q003",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "decimal_to_percent",
+  "difficulty": "basic",
+  "correct_answer": 2,
+  "explanation": "소수를 백분율로 바꾸려면 100을 곱하고 %를 붙인다. 0.375×100=37.5%다.",
+  "quick_solution": "소수점을 오른쪽으로 두 자리 이동: 0.375→37.5%.",
+  "recommended_seconds": 45,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "0.375*100=37.5; unique choice.",
+    "unique_correct_choice": 2,
+    "duplicate_choices": false
+  }
+}

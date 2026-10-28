@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D028-Q003",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "table_complement_sum",
+  "difficulty": "basic_application",
+  "correct_answer": 3,
+  "explanation": "A센터 기한 초과율은 10%이므로 80×0.10=8건이다. B센터 기한 초과율은 25%이므로 120×0.25=30건이다. 합계는 8+30=38건이다.",
+  "quick_solution": "A 8건+B 30건=38건.",
+  "recommended_seconds": 90,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "80*(1-.9)+120*(1-.75)=8+30=38; unique answer.",
+    "unique_correct_choice": 3,
+    "duplicate_choices": false
+  }
+}

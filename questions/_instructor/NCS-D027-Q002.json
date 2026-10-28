@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D027-Q002",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "multiple_growth_rate_comparison",
+  "difficulty": "basic_application",
+  "correct_answer": 2,
+  "explanation": "증가율은 A:140/1480≈9.46%, B:75/680≈11.03%, C:190/2200≈8.64%다. 따라서 B가 가장 높다. 대략 비교해도 A는 약10%, B는 약11%, C는 약9%다.",
+  "quick_solution": "증가량/이전값: A≈9.5%, B≈11%, C≈8.6%; B.",
+  "recommended_seconds": 120,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "A=140/1480=9.459%; B=75/680=11.029%; C=190/2200=8.636%; unique maximum B.",
+    "unique_correct_choice": 2,
+    "duplicate_choices": false
+  }
+}

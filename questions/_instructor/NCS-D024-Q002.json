@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D024-Q002",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "weighted_mean",
+  "difficulty": "basic_application",
+  "correct_answer": 2,
+  "explanation": "A팀 총 처리량은 12×8=96건, B팀은 8×14=112건이다. 전체 208건을 전체 직원 20명으로 나누면 10.4건이다. 두 팀 평균 8과14를 단순 평균하면 인원수가 다른 점을 무시하게 된다.",
+  "quick_solution": "(12×8+8×14)/(12+8)=208/20=10.4.",
+  "recommended_seconds": 90,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "(12*8+8*14)/20=10.4; denominator is total staff, choices unique.",
+    "unique_correct_choice": 2,
+    "duplicate_choices": false
+  }
+}

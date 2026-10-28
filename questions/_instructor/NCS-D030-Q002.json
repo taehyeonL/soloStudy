@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D030-Q002",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "inclusive_or_conditions",
+  "difficulty": "basic_application",
+  "correct_answer": 4,
+  "explanation": "포함적 OR은 두 조건 중 하나 이상 참이면 규정을 만족한다. 출입증 또는 직원 동행 중 아무것도 없는 4번만 조건을 만족하지 못한다. 1번처럼 둘 다 참인 경우도 포함적 OR에서는 만족이다.",
+  "quick_solution": "A OR B가 거짓인 경우는 A와 B가 모두 거짓일 때뿐.",
+  "recommended_seconds": 75,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "Inclusive OR truth table: false only for (false,false); unique choice.",
+    "unique_correct_choice": 4,
+    "duplicate_choices": false
+  }
+}

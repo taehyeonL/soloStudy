@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-10-28-01",
+  "part": 5,
+  "skill_tags": [
+    "전치사",
+    "전치사 결합"
+  ],
+  "scoring_format": "choice",
+  "id": "TOEIC-RC-20261028-Q009",
+  "kind": "practice",
+  "domain": "TOEIC RC Part 5",
+  "subtype": "전치사",
+  "difficulty": "기초~중하",
+  "recommended_seconds": 45,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-28",
+    "reviewer": "Codex",
+    "scope": "문법·어휘·문맥과 선택지 유일성을 검토. ETS 공식문제 복제 아님."
+  },
+  "passage": "Choose the option that best completes the sentence.",
+  "prompt": "Ms. Patel is responsible ___ coordinating the regional training sessions.",
+  "choices": [
+    "to",
+    "for",
+    "with",
+    "at"
+  ],
+  "answer": 2,
+  "explanation": "Be responsible for + gerund is the standard construction.",
+  "quick_solution": "responsible for -ing.",
+  "distractor_analysis": {
+    "note": "나머지는 이 결합에 맞지 않는다."
+  },
+  "hints": [
+    "문장 구조나 지문에서 시점·대상·요청 단서를 확인하세요.",
+    "오답 선택지의 범위와 조건도 대조하세요."
+  ],
+  "verification": {
+    "model": "text_lookup",
+    "target": "for",
+    "choice_facts": [
+      {
+        "value": "to"
+      },
+      {
+        "value": "for"
+      },
+      {
+        "value": "with"
+      },
+      {
+        "value": "at"
+      }
+    ]
+  }
+}

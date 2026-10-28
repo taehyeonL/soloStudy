@@ -1,13 +1,98 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-27",
-  "sets": [],
+  "updated_on": "2026-10-28",
+  "sets": [
+    {
+      "set_id": "TOEIC-RC-2026-10-28-01",
+      "weekend_start": "2026-10-28",
+      "status": "completed",
+      "target_questions": 20,
+      "part_targets": {
+        "part5": 10,
+        "part6": 3,
+        "part7": 7
+      },
+      "question_ids": [
+        "TOEIC-RC-20261028-Q001",
+        "TOEIC-RC-20261028-Q002",
+        "TOEIC-RC-20261028-Q003",
+        "TOEIC-RC-20261028-Q004",
+        "TOEIC-RC-20261028-Q005",
+        "TOEIC-RC-20261028-Q006",
+        "TOEIC-RC-20261028-Q007",
+        "TOEIC-RC-20261028-Q008",
+        "TOEIC-RC-20261028-Q009",
+        "TOEIC-RC-20261028-Q010",
+        "TOEIC-RC-20261028-Q011",
+        "TOEIC-RC-20261028-Q012",
+        "TOEIC-RC-20261028-Q013",
+        "TOEIC-RC-20261028-Q014",
+        "TOEIC-RC-20261028-Q015",
+        "TOEIC-RC-20261028-Q016",
+        "TOEIC-RC-20261028-Q017",
+        "TOEIC-RC-20261028-Q018",
+        "TOEIC-RC-20261028-Q019",
+        "TOEIC-RC-20261028-Q020"
+      ],
+      "attempt_ids": [
+        "2026-10-28-01-A001",
+        "2026-10-28-01-A002",
+        "2026-10-28-01-A003",
+        "2026-10-28-01-A004",
+        "2026-10-28-01-A005",
+        "2026-10-28-01-A006",
+        "2026-10-28-01-A007",
+        "2026-10-28-01-A008",
+        "2026-10-28-01-A009",
+        "2026-10-28-01-A010",
+        "2026-10-28-01-A011",
+        "2026-10-28-01-A012",
+        "2026-10-28-01-A013",
+        "2026-10-28-01-A014",
+        "2026-10-28-01-A015",
+        "2026-10-28-01-A016",
+        "2026-10-28-01-A017",
+        "2026-10-28-01-A018",
+        "2026-10-28-01-A019",
+        "2026-10-28-01-A020"
+      ],
+      "answered_count": 20,
+      "correct_count": 15,
+      "report_file": "reports/TOEIC-RC-2026-10-28-01.md",
+      "note": "사용자 요청 평일 일회성 진단. 정규 주말 50문항 목표에 포함하지 않음; TOEIC 점수 환산 금지. 현재 20문항 세트 범위는 Q001–Q020; Q021–Q022는 미배정 문제은행에 보존.",
+      "part_results": {
+        "part5": {
+          "attempts": 10,
+          "correct": 7,
+          "incorrect": 3,
+          "accuracy": 0.7
+        },
+        "part6": {
+          "attempts": 3,
+          "correct": 2,
+          "incorrect": 1,
+          "accuracy": 0.6666666666666666
+        },
+        "part7": {
+          "attempts": 7,
+          "correct": 6,
+          "incorrect": 1,
+          "accuracy": 0.8571428571428571
+        }
+      },
+      "accuracy": 0.75
+    }
+  ],
   "set_template": {
     "set_id": "TOEIC-RC-YYYY-MM-DD-01",
     "weekend_start": "YYYY-MM-DD",
     "status": "planned/active/completed/incomplete",
     "target_questions": 50,
-    "part_targets": {"part5": 25, "part6": 8, "part7": 17},
+    "part_targets": {
+      "part5": 25,
+      "part6": 8,
+      "part7": 17
+    },
     "question_ids": [],
     "attempt_ids": [],
     "report_file": null

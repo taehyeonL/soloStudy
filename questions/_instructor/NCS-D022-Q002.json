@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D022-Q002",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "decrease_amount_rate",
+  "difficulty": "basic_application",
+  "correct_answer": 1,
+  "explanation": "감소량은 160−120=40건이다. 감소율은 감소량을 이전 값인 160으로 나눈 값으로 40÷160=25%다. 40÷120은 새 값을 분모로 쓴 오류다.",
+  "quick_solution": "160−120=40; 40/160=1/4=25%.",
+  "recommended_seconds": 75,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "difference=40; decrease fraction=40/160=.25; options distinct.",
+    "unique_correct_choice": 1,
+    "duplicate_choices": false
+  }
+}

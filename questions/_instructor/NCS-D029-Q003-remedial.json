@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D029-Q003-remedial",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "negation_universal_remediation",
+  "difficulty": "basic",
+  "correct_answer": 1,
+  "explanation": "모든 보고서에 서명이 있다는 말은 보고서마다 서명이 있다는 뜻이다. 이를 반박하려면 반례 하나, 즉 서명이 없는 보고서 한 건만 있으면 충분하다.",
+  "quick_solution": "“모든”을 깨는 최소 반례는 예외 하나.",
+  "recommended_seconds": 60,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "Counterexample to ∀ is one instance violating predicate; unique choice.",
+    "unique_correct_choice": 1,
+    "duplicate_choices": false
+  }
+}

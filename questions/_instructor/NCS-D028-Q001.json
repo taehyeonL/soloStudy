@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D028-Q001",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "table_rate_count",
+  "difficulty": "basic_application",
+  "correct_answer": 3,
+  "explanation": "A:160×0.85=136건, B:120×0.90=108건, C:200×0.80=160건이다. 가장 많은 곳은 C다. 비율만 보면 B가 높지만 질문은 실제 처리 건수를 묻는다.",
+  "quick_solution": "실제 수: A136, B108, C160; C.",
+  "recommended_seconds": 90,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "[136,108,160]; unique maximum C.",
+    "unique_correct_choice": 3,
+    "duplicate_choices": false
+  }
+}

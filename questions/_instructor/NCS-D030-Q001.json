@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D030-Q001",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "conditional_counterexample",
+  "difficulty": "basic_application",
+  "correct_answer": 3,
+  "explanation": "조건문 A이면 B가 위반되는 경우는 A가 참인데 B가 거짓인 경우다. 교육을 수료했는데 수료증이 발급되지 않은 3번이 반례다. A가 거짓인 상황은 조건문 위반을 보여주지 않는다.",
+  "quick_solution": "조건을 만족(A 참)했는데 결과(B 거짓)인 경우만 위반.",
+  "recommended_seconds": 75,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "Implication p→q is false only when p=true and q=false; unique choice.",
+    "unique_correct_choice": 3,
+    "duplicate_choices": false
+  }
+}

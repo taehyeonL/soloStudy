@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D022-Q001",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "increase_rate",
+  "difficulty": "basic_application",
+  "correct_answer": 2,
+  "explanation": "증가량은 100−80=20건이다. 증가율은 증가량÷이전 값×100이므로 20÷80×100=25%다. 새 값 100을 분모로 사용하지 않는다.",
+  "quick_solution": "(100−80)/80=20/80=25%.",
+  "recommended_seconds": 60,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "(100-80)/80*100=25%; choices distinct.",
+    "unique_correct_choice": 2,
+    "duplicate_choices": false
+  }
+}

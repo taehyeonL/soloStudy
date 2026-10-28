@@ -1,0 +1,19 @@
+{
+  "question_id": "SEC-WR-ACCESS-001-Q001",
+  "version": 1,
+  "subject": "security-engineer",
+  "exam_track": "security-written",
+  "subtype": "security_policy_conjunction",
+  "difficulty": "basic_application",
+  "correct_answer": 1,
+  "explanation": "규정은 암호화와 사전 승인을 모두 요구한다(AND). 두 조건이 함께 충족된 1번만 정책을 만족한다.",
+  "quick_solution": "모두 충족(AND): 암호화 O, 승인 O.",
+  "recommended_seconds": 60,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "Conjunction true only when both encryption and approval are true; unique choice.",
+    "unique_correct_choice": 1,
+    "duplicate_choices": false
+  }
+}

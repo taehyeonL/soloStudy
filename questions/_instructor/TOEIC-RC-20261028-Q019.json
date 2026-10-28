@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-10-28-01",
+  "part": 7,
+  "skill_tags": [
+    "주요 목적",
+    "주요 목적"
+  ],
+  "scoring_format": "choice",
+  "id": "TOEIC-RC-20261028-Q019",
+  "kind": "practice",
+  "domain": "TOEIC RC Part 7",
+  "subtype": "주요 목적",
+  "difficulty": "기초~중하",
+  "recommended_seconds": 90,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-28",
+    "reviewer": "Codex",
+    "scope": "문법·어휘·문맥과 선택지 유일성을 검토. ETS 공식문제 복제 아님."
+  },
+  "passage": "RIVERFRONT LIBRARY: Beginning October 1, the library will open at 8 A.M. on weekdays, one hour earlier. The change follows a three-month pilot in which morning attendance increased steadily. Weekend hours will remain unchanged. Updated hours are available online.",
+  "prompt": "What is the main purpose of the notice?",
+  "choices": [
+    "Announce weekend service closure.",
+    "Explain a weekday opening-time change and its reason.",
+    "Recruit volunteers.",
+    "Report declining weekday attendance."
+  ],
+  "answer": 2,
+  "explanation": "The library will open one hour earlier on weekdays after morning attendance rose during a pilot.",
+  "quick_solution": "변경과 이유를 함께 요약.",
+  "distractor_analysis": {
+    "note": "Weekend hours unchanged; no volunteers; attendance increased."
+  },
+  "hints": [
+    "문장 구조나 지문에서 시점·대상·요청 단서를 확인하세요.",
+    "오답 선택지의 범위와 조건도 대조하세요."
+  ],
+  "verification": {
+    "model": "text_lookup",
+    "target": "Explain a weekday opening-time change and its reason.",
+    "choice_facts": [
+      {
+        "value": "Announce weekend service closure."
+      },
+      {
+        "value": "Explain a weekday opening-time change and its reason."
+      },
+      {
+        "value": "Recruit volunteers."
+      },
+      {
+        "value": "Report declining weekday attendance."
+      }
+    ]
+  }
+}

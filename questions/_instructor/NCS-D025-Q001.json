@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D025-Q001",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "table_absolute_change",
+  "difficulty": "basic_application",
+  "correct_answer": 2,
+  "explanation": "네트워크는 150−120=30건, DB는 112−80=32건, 사용자지원은 230−200=30건 증가했다. 가장 큰 증가량은 DB의 32건이다. 올해 수치의 크기가 아니라 전년과 올해의 차이를 비교해야 한다.",
+  "quick_solution": "각 행에서 올해−전년:30,32,30; DB.",
+  "recommended_seconds": 75,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "row differences [30,32,30]; unique maximum=32 at database.",
+    "unique_correct_choice": 2,
+    "duplicate_choices": false
+  }
+}

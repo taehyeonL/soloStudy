@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D018-Q002",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "ratio_scale",
+  "difficulty": "basic_application",
+  "correct_answer": 1,
+  "explanation": "A:B=3:5에서 B의 5부분이 40만 원이므로 한 부분은 40÷5=8만 원이다. A는 3부분이므로 3×8=24만 원이다.",
+  "quick_solution": "B 5칸=40이므로 1칸=8, A 3칸=24.",
+  "recommended_seconds": 60,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "Ratio scale 40/5*3=24; options distinct.",
+    "unique_correct_choice": 1,
+    "duplicate_choices": false
+  }
+}

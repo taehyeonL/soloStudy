@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-10-28-01",
+  "part": 7,
+  "skill_tags": [
+    "공지 세부정보",
+    "세부정보"
+  ],
+  "scoring_format": "choice",
+  "id": "TOEIC-RC-20261028-Q014",
+  "kind": "practice",
+  "domain": "TOEIC RC Part 7",
+  "subtype": "공지 세부정보",
+  "difficulty": "기초~중하",
+  "recommended_seconds": 90,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-28",
+    "reviewer": "Codex",
+    "scope": "문법·어휘·문맥과 선택지 유일성을 검토. ETS 공식문제 복제 아님."
+  },
+  "passage": "NOTICE: The third-floor conference room will be unavailable on Tuesday, July 14, from 9:00 A.M. to 1:00 P.M. while video equipment is installed. Meetings may move to Room 210. Contact Facilities by Monday noon to request a room change.",
+  "prompt": "When will the room become available again?",
+  "choices": [
+    "Tuesday at 9:00 A.M.",
+    "Tuesday at 1:00 P.M.",
+    "Monday at noon",
+    "Wednesday at 1:00 P.M."
+  ],
+  "answer": 2,
+  "explanation": "The room is unavailable until 1 P.M. Tuesday.",
+  "quick_solution": "이용불가 시간의 종료 시각.",
+  "distractor_analysis": {
+    "note": "다른 값은 시작·마감 또는 다른 날짜다."
+  },
+  "hints": [
+    "문장 구조나 지문에서 시점·대상·요청 단서를 확인하세요.",
+    "오답 선택지의 범위와 조건도 대조하세요."
+  ],
+  "verification": {
+    "model": "text_lookup",
+    "target": "Tuesday at 1:00 P.M.",
+    "choice_facts": [
+      {
+        "value": "Tuesday at 9:00 A.M."
+      },
+      {
+        "value": "Tuesday at 1:00 P.M."
+      },
+      {
+        "value": "Monday at noon"
+      },
+      {
+        "value": "Wednesday at 1:00 P.M."
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D026-Q002",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "pie_chart_share",
+  "difficulty": "basic_application",
+  "correct_answer": 2,
+  "explanation": "원그래프 비율 35%를 전체 240건에 적용한다. 240×0.35=84건.",
+  "quick_solution": "240×(35/100)=84건.",
+  "recommended_seconds": 60,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "240*35/100=84; unique choice.",
+    "unique_correct_choice": 2,
+    "duplicate_choices": false
+  }
+}

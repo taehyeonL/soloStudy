@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D029-Q001",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "negation_universal",
+  "difficulty": "basic",
+  "correct_answer": 2,
+  "explanation": "“모든 지원자가 제출했다”가 거짓이려면 제출하지 않은 지원자가 한 명 이상 존재하면 된다. “아무도 제출하지 않았다”는 모든 사람이 제출하지 않았다는 더 강한 문장이다.",
+  "quick_solution": "모든 P는 Q의 부정은 적어도 하나의 P는 Q가 아니다.",
+  "recommended_seconds": 60,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "Formal negation ¬∀x P(x)=∃x ¬P(x); unique choice.",
+    "unique_correct_choice": 2,
+    "duplicate_choices": false
+  }
+}

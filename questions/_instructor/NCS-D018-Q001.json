@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D018-Q001",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "ratio_simplification",
+  "difficulty": "basic",
+  "correct_answer": 1,
+  "explanation": "온라인 접수:전체는 24:36이다. 양쪽을 최대공약수 12로 나누면 2:3이다. 순서를 바꾸면 3:2가 되므로 질문의 비교 순서를 지켜야 한다.",
+  "quick_solution": "24:36에서 둘 다 12로 나눠 2:3.",
+  "recommended_seconds": 45,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "gcd(24,36)=12; ratio reduces uniquely to 2:3.",
+    "unique_correct_choice": 1,
+    "duplicate_choices": false
+  }
+}

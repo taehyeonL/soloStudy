@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-28",
+  "declared_on": "2026-10-28",
+  "basis": "사용자가 TOEIC 20문항 진단 후 오늘 통합 수업으로 전환 요청. 도래 복습4문제 우선 후 NCS Day15·16과 DNS/HTTP·보안 적용문제. TOEIC 진단은 별도이며 이번 통합 계획에 포함하지 않음.",
+  "targets": {
+    "review": 4,
+    "ncs": 33,
+    "cs_security": 6,
+    "wrapup": 1
+  },
+  "unit": "채점과 피드백을 마친 문제 또는 수업 종료 기록",
+  "time_policy": "Day24–30 추가 예상 약180–240분(이전 완료 세션 제외); 실제시간은 사용자 보고만 기록. 중단 시 남은 범위를 보존하고 이어감.",
+  "revisions": [
+    {
+      "at": "2026-10-28",
+      "reason": "사용자가 당일 학습량이 적다고 하여 Day17–23 집중 패키지로 일일 할당량을 확대. NCS 신규 15문항 추가, 전산/보안 적용 2문항 추가. 당일 완료 기록은 보존하며 TOEIC 별도 세션 제외.",
+      "previous_targets": {
+        "review": 4,
+        "ncs": 2,
+        "cs_security": 2,
+        "wrapup": 1
+      },
+      "new_targets": {
+        "review": 4,
+        "ncs": 17,
+        "cs_security": 4,
+        "wrapup": 1
+      }
+    },
+    {
+      "at": "2026-10-28",
+      "reason": "사용자가 Day24–30을 이어서 진행 요청. NCS 15문항과 전산/보안 적용2문항을 추가하여 당일 누적 목표 확장. 기존 완료기록과 TOEIC 별도처리 보존.",
+      "previous_targets": {
+        "review": 4,
+        "ncs": 17,
+        "cs_security": 4,
+        "wrapup": 1
+      },
+      "new_targets": {
+        "review": 4,
+        "ncs": 32,
+        "cs_security": 6,
+        "wrapup": 1
+      }
+    },
+    {
+      "at": "2026-10-28",
+      "reason": "Day29 명제 부정 문제 오답으로 사용자 지정 난이도조절 규칙에 따라 보충1문항 추가.",
+      "previous_targets": {
+        "review": 4,
+        "ncs": 32,
+        "cs_security": 6,
+        "wrapup": 1
+      },
+      "new_targets": {
+        "review": 4,
+        "ncs": 33,
+        "cs_security": 6,
+        "wrapup": 1
+      }
+    }
+  ]
+}

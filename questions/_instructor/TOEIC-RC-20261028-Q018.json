@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-10-28-01",
+  "part": 7,
+  "skill_tags": [
+    "이메일 기한",
+    "기한"
+  ],
+  "scoring_format": "choice",
+  "id": "TOEIC-RC-20261028-Q018",
+  "kind": "practice",
+  "domain": "TOEIC RC Part 7",
+  "subtype": "이메일 기한",
+  "difficulty": "기초~중하",
+  "recommended_seconds": 90,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-28",
+    "reviewer": "Codex",
+    "scope": "문법·어휘·문맥과 선택지 유일성을 검토. ETS 공식문제 복제 아님."
+  },
+  "passage": "To: Design Department | Subject: Software orientation\nSessions are Monday at 10 A.M. and Tuesday at 3 P.M.; both cover the same material. Reply by Thursday, September 5, with your preferred session. If you do not respond, your supervisor will assign one.",
+  "prompt": "By when should employees submit their preference?",
+  "choices": [
+    "Monday at 10 A.M.",
+    "Tuesday at 3 P.M.",
+    "Thursday, September 5",
+    "After assignment"
+  ],
+  "answer": 3,
+  "explanation": "Employees should reply by Thursday, September 5.",
+  "quick_solution": "교육 선택시간과 회신 기한 구분.",
+  "distractor_analysis": {
+    "note": "월·화는 교육 시간이며 무응답이면 관리자가 배정."
+  },
+  "hints": [
+    "문장 구조나 지문에서 시점·대상·요청 단서를 확인하세요.",
+    "오답 선택지의 범위와 조건도 대조하세요."
+  ],
+  "verification": {
+    "model": "text_lookup",
+    "target": "Thursday, September 5",
+    "choice_facts": [
+      {
+        "value": "Monday at 10 A.M."
+      },
+      {
+        "value": "Tuesday at 3 P.M."
+      },
+      {
+        "value": "Thursday, September 5"
+      },
+      {
+        "value": "After assignment"
+      }
+    ]
+  }
+}

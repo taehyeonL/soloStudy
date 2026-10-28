@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D021-Q001",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "percentage_then_fraction",
+  "difficulty": "basic_application",
+  "correct_answer": 1,
+  "explanation": "온라인은 200×35/100=70건이다. 그중 2/5가 모바일이므로 70×2/5=28건이다. 70은 전체 온라인 접수 수이지 모바일 접수 수가 아니다.",
+  "quick_solution": "온라인70건; 그 2/5=28건.",
+  "recommended_seconds": 90,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "200*0.35*2/5=28; distractors distinct and reflect intermediate/full counts.",
+    "unique_correct_choice": 1,
+    "duplicate_choices": false
+  }
+}

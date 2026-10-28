@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-10-28-01",
+  "part": 6,
+  "skill_tags": [
+    "문장 삽입",
+    "지시어·문장 연결"
+  ],
+  "scoring_format": "choice",
+  "id": "TOEIC-RC-20261028-Q012",
+  "kind": "practice",
+  "domain": "TOEIC RC Part 6",
+  "subtype": "문장 삽입",
+  "difficulty": "기초~중하",
+  "recommended_seconds": 75,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-10-28",
+    "reviewer": "Codex",
+    "scope": "문법·어휘·문맥과 선택지 유일성을 검토. ETS 공식문제 복제 아님."
+  },
+  "passage": "The employee self-service portal is now available to all staff. Users can update contact information and review benefit requests. [blank] A step-by-step guide is attached. If you have trouble signing in, contact the help desk at extension 440.",
+  "prompt": "Which sentence best fits the blank?",
+  "choices": [
+    "The portal replaces the paper directory in the lobby.",
+    "It explains how to use each feature of the portal.",
+    "The help desk will move next month.",
+    "Benefit requests are reviewed only once a year."
+  ],
+  "answer": 2,
+  "explanation": "An attached step-by-step guide explains the portal features.",
+  "quick_solution": "It이 guide를 받아 내용이 자연스럽다.",
+  "distractor_analysis": {
+    "note": "다른 문장은 문맥에 새 정보를 무리하게 추가."
+  },
+  "hints": [
+    "문장 구조나 지문에서 시점·대상·요청 단서를 확인하세요.",
+    "오답 선택지의 범위와 조건도 대조하세요."
+  ],
+  "verification": {
+    "model": "text_lookup",
+    "target": "It explains how to use each feature of the portal.",
+    "choice_facts": [
+      {
+        "value": "The portal replaces the paper directory in the lobby."
+      },
+      {
+        "value": "It explains how to use each feature of the portal."
+      },
+      {
+        "value": "The help desk will move next month."
+      },
+      {
+        "value": "Benefit requests are reviewed only once a year."
+      }
+    ]
+  }
+}

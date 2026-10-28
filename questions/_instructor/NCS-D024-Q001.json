@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D024-Q001",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "arithmetic_mean",
+  "difficulty": "basic",
+  "correct_answer": 2,
+  "explanation": "산술평균은 자료를 모두 더해 자료의 개수로 나눈 값이다. 합은 18+22+15+25+20=100이고, 100÷5=20건이다.",
+  "quick_solution": "합계100÷5일=20건.",
+  "recommended_seconds": 60,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "sum([18,22,15,25,20])=100; 100/5=20; unique choice.",
+    "unique_correct_choice": 2,
+    "duplicate_choices": false
+  }
+}

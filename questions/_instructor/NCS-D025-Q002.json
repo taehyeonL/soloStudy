@@ -1,0 +1,19 @@
+{
+  "question_id": "NCS-D025-Q002",
+  "version": 1,
+  "subject": "ncs",
+  "exam_track": "ncs",
+  "subtype": "table_rate_and_units",
+  "difficulty": "basic_application",
+  "correct_answer": 3,
+  "explanation": "집행액은 배정 예산×집행률이다. A=120×0.85=102만 원, B=90×1=90만 원, C=150×0.70=105만 원이다. C가 가장 크다. 집행률만 비교하거나 배정예산만 비교하면 안 된다.",
+  "quick_solution": "A102, B90, C105만 원; C.",
+  "recommended_seconds": 90,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "[120*.85,90*1,150*.70]=[102,90,105], unique max C.",
+    "unique_correct_choice": 3,
+    "duplicate_choices": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "question_id": "CS-OPS-001-Q001",
+  "version": 1,
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "subtype": "http_log_rate_interpretation",
+  "difficulty": "basic_application",
+  "correct_answer": 2,
+  "explanation": "서버 오류 수는 120−90−18=12건이다. 비율은 12/120×100=10%다.",
+  "quick_solution": "남은 12건이 5xx; 12/120=10%.",
+  "recommended_seconds": 75,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "120-90-18=12; 12/120=0.10; unique choice.",
+    "unique_correct_choice": 2,
+    "duplicate_choices": false
+  }
+}

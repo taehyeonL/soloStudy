@@ -1,0 +1,19 @@
+{
+  "question_id": "CS-DB-AVG-001-Q001",
+  "version": 1,
+  "subject": "computer-science",
+  "exam_track": "computer-science",
+  "subtype": "sql_group_by_avg",
+  "difficulty": "basic_application",
+  "correct_answer": 1,
+  "explanation": "GROUP BY category는 category별로 행을 묶는다. A 그룹은 (10+20)/2=15분, B 그룹은 30분이다. category별로 한 행씩 결과가 나온다. 전체 평균은 (10+20+30)/3=20분이지만 해당 쿼리는 전체 평균만 계산하지 않는다.",
+  "quick_solution": "A 묶음은 15, B 묶음은 30; GROUP BY가 그룹별 출력.",
+  "recommended_seconds": 90,
+  "source_type": "original_practice",
+  "review_status": "verified",
+  "verification": {
+    "method": "Group A average=15; B=30; grouped output two rows.",
+    "unique_correct_choice": 1,
+    "duplicate_choices": false
+  }
+}
