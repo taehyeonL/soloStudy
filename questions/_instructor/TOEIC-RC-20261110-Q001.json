@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "TOEIC-RC-20261110-Q001",
+  "kind": "practice",
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-11-10-01",
+  "part": 5,
+  "skill_tags": [
+    "수일치"
+  ],
+  "scoring_format": "choice",
+  "domain": "TOEIC RC Part 5",
+  "subtype": "주어-동사 수일치",
+  "difficulty": "중하~중 (비공식 연습)",
+  "recommended_seconds": 35,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "passage": "The list of approved vendors ___ on the procurement portal every Friday.",
+  "prompt": "Choose the option that best completes the sentence.",
+  "choices": [
+    "are updated",
+    "is updated",
+    "updating",
+    "have updated"
+  ],
+  "answer": 2,
+  "explanation": "The head noun is the singular 'list,' and it receives the update: is updated.",
+  "quick_solution": "The head noun is the singular 'list,' and it receives the update: is updated.",
+  "distractor_analysis": {
+    "note": "문법·지문 근거와 오답 선택지의 관련성, 정답 유일성을 수동 검수."
+  },
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-11-10",
+    "reviewer": "Codex",
+    "scope": "독창적 문항; 문법/지문 근거와 정답 유일성을 수동 검토."
+  },
+  "verification": {
+    "model": "manual_language_review",
+    "target_choice": 2,
+    "choice_facts": [
+      {
+        "choice": "are updated"
+      },
+      {
+        "choice": "is updated"
+      },
+      {
+        "choice": "updating"
+      },
+      {
+        "choice": "have updated"
+      }
+    ],
+    "note": "자연어 문항은 코드로 의미 검증할 수 없어 수동 검수."
+  }
+}

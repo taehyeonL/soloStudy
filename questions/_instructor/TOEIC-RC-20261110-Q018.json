@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "TOEIC-RC-20261110-Q018",
+  "kind": "practice",
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-11-10-01",
+  "part": 7,
+  "skill_tags": [
+    "안내문",
+    "추론"
+  ],
+  "scoring_format": "choice",
+  "domain": "TOEIC RC Part 7",
+  "subtype": "안내문 추론",
+  "difficulty": "중하~중 (비공식 연습)",
+  "recommended_seconds": 75,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "passage": "NORTHGATE PROCUREMENT NOTICE\n\nSuppliers wishing to be considered for the June equipment contract must upload pricing documents through the supplier portal by April 22. Product samples are not required at this stage. Shortlisted suppliers will be contacted by May 2 and may then be asked to provide samples. Questions about portal access should be sent to vendor.support@northgate.example.",
+  "prompt": "Which statement is supported by the notice?",
+  "choices": [
+    "Every supplier must send a sample before April 22.",
+    "Only shortlisted suppliers may later be asked for samples.",
+    "The June contract has already been awarded.",
+    "Pricing documents should be emailed to vendor support."
+  ],
+  "answer": 2,
+  "explanation": "The notice says shortlisted suppliers may be asked for samples after they are contacted by May 2.",
+  "quick_solution": "The notice says shortlisted suppliers may be asked for samples after they are contacted by May 2.",
+  "distractor_analysis": {
+    "note": "문법·지문 근거와 오답 선택지의 관련성, 정답 유일성을 수동 검수."
+  },
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-11-10",
+    "reviewer": "Codex",
+    "scope": "독창적 문항; 문법/지문 근거와 정답 유일성을 수동 검토."
+  },
+  "verification": {
+    "model": "manual_language_review",
+    "target_choice": 2,
+    "choice_facts": [
+      {
+        "choice": "Every supplier must send a sample before April 22."
+      },
+      {
+        "choice": "Only shortlisted suppliers may later be asked for samples."
+      },
+      {
+        "choice": "The June contract has already been awarded."
+      },
+      {
+        "choice": "Pricing documents should be emailed to vendor support."
+      }
+    ],
+    "note": "자연어 문항은 코드로 의미 검증할 수 없어 수동 검수."
+  }
+}

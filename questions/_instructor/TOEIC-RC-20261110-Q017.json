@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "TOEIC-RC-20261110-Q017",
+  "kind": "practice",
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-11-10-01",
+  "part": 7,
+  "skill_tags": [
+    "안내문",
+    "마감일"
+  ],
+  "scoring_format": "choice",
+  "domain": "TOEIC RC Part 7",
+  "subtype": "안내문 세부정보",
+  "difficulty": "중하~중 (비공식 연습)",
+  "recommended_seconds": 75,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "passage": "NORTHGATE PROCUREMENT NOTICE\n\nSuppliers wishing to be considered for the June equipment contract must upload pricing documents through the supplier portal by April 22. Product samples are not required at this stage. Shortlisted suppliers will be contacted by May 2 and may then be asked to provide samples. Questions about portal access should be sent to vendor.support@northgate.example.",
+  "prompt": "What must suppliers do by April 22?",
+  "choices": [
+    "Send product samples to the procurement office.",
+    "Upload pricing documents to the supplier portal.",
+    "Contact shortlisted suppliers.",
+    "Confirm a sample delivery date."
+  ],
+  "answer": 2,
+  "explanation": "Pricing documents must be uploaded by April 22; samples are not required yet.",
+  "quick_solution": "Pricing documents must be uploaded by April 22; samples are not required yet.",
+  "distractor_analysis": {
+    "note": "문법·지문 근거와 오답 선택지의 관련성, 정답 유일성을 수동 검수."
+  },
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-11-10",
+    "reviewer": "Codex",
+    "scope": "독창적 문항; 문법/지문 근거와 정답 유일성을 수동 검토."
+  },
+  "verification": {
+    "model": "manual_language_review",
+    "target_choice": 2,
+    "choice_facts": [
+      {
+        "choice": "Send product samples to the procurement office."
+      },
+      {
+        "choice": "Upload pricing documents to the supplier portal."
+      },
+      {
+        "choice": "Contact shortlisted suppliers."
+      },
+      {
+        "choice": "Confirm a sample delivery date."
+      }
+    ],
+    "note": "자연어 문항은 코드로 의미 검증할 수 없어 수동 검수."
+  }
+}

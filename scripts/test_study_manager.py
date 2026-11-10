@@ -47,7 +47,7 @@ class WeekendStudyTests(unittest.TestCase):
 
     def test_weekday_excludes_toeic_without_removing_weekly_budget(self):
         result = manager.plan(self.profile, {'events': []}, date(2026, 10, 27))
-        self.assertEqual(result['minutes'], {'ncs': 360, 'cs_security': 360, 'toeic': 120})
+        self.assertEqual(result['minutes'], {'ncs': 480, 'cs_security': 240, 'toeic': 120})
         self.assertEqual(result['daily_available_groups'], ['ncs', 'cs_security'])
         self.assertEqual(result['next_toeic_study_date'], '2026-10-31')
         self.assertEqual(result['toeic_weekend_questions_target'], 50)
@@ -56,12 +56,22 @@ class WeekendStudyTests(unittest.TestCase):
         result = manager.plan(self.profile, {'events': []}, date(2026, 10, 31), 7)
         self.assertTrue(result['toeic_today_included'])
         self.assertEqual(sum(result['minutes'].values()), 420)
+        self.assertEqual(result['minutes'], {'ncs': 0, 'cs_security': 360, 'toeic': 60})
         profile = copy.deepcopy(self.profile)
         profile['toeic'].update(confirmed_official_score=750, score_evidence_confirmed=True)
         result = manager.plan(profile, {'events': []}, date(2026, 10, 31))
-        self.assertEqual(result['minutes'], {'ncs': 420, 'cs_security': 420, 'toeic': 0})
+        self.assertEqual(result['minutes'], {'ncs': 0, 'cs_security': 840, 'toeic': 0})
         self.assertFalse(result['toeic_today_included'])
         self.assertEqual(result['toeic_weekend_questions_target'], 0)
+
+    def test_priority_phase_transition_and_weekly_allocations(self):
+        theory = manager.plan(self.profile, {'events': []}, date(2026, 10, 28))
+        practice = manager.plan(self.profile, {'events': []}, date(2026, 11, 25))
+        after = manager.plan(self.profile, {'events': []}, date(2026, 12, 23))
+        self.assertEqual(theory['minutes'], {'ncs': 0, 'cs_security': 720, 'toeic': 120})
+        self.assertIn('theory', theory['reason'])
+        self.assertIn('problem solving', practice['reason'])
+        self.assertEqual(after['minutes'], {'ncs': 480, 'cs_security': 240, 'toeic': 120})
 
     def test_nominal_and_execution_dates(self):
         nominal = date(2026, 10, 28)

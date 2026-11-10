@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "TOEIC-RC-20261110-Q013",
+  "kind": "practice",
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-11-10-01",
+  "part": 6,
+  "skill_tags": [
+    "어휘",
+    "문맥"
+  ],
+  "scoring_format": "choice",
+  "domain": "TOEIC RC Part 6",
+  "subtype": "문맥상 어휘",
+  "difficulty": "중하~중 (비공식 연습)",
+  "recommended_seconds": 55,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "passage": "Please contact the learning team if you need assistance with registration. A revised agenda will be distributed ___ to all registered participants.",
+  "prompt": "Choose the option that best completes the sentence.",
+  "choices": [
+    "separately",
+    "shortly",
+    "nearly",
+    "formerly"
+  ],
+  "answer": 2,
+  "explanation": "Shortly means soon and fits a future distribution.",
+  "quick_solution": "Shortly means soon and fits a future distribution.",
+  "distractor_analysis": {
+    "note": "문법·지문 근거와 오답 선택지의 관련성, 정답 유일성을 수동 검수."
+  },
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-11-10",
+    "reviewer": "Codex",
+    "scope": "독창적 문항; 문법/지문 근거와 정답 유일성을 수동 검토."
+  },
+  "verification": {
+    "model": "manual_language_review",
+    "target_choice": 2,
+    "choice_facts": [
+      {
+        "choice": "separately"
+      },
+      {
+        "choice": "shortly"
+      },
+      {
+        "choice": "nearly"
+      },
+      {
+        "choice": "formerly"
+      }
+    ],
+    "note": "자연어 문항은 코드로 의미 검증할 수 없어 수동 검수."
+  }
+}

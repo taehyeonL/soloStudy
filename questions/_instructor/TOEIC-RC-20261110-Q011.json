@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "TOEIC-RC-20261110-Q011",
+  "kind": "practice",
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-11-10-01",
+  "part": 6,
+  "skill_tags": [
+    "문맥",
+    "공지문"
+  ],
+  "scoring_format": "choice",
+  "domain": "TOEIC RC Part 6",
+  "subtype": "문맥 완성",
+  "difficulty": "중하~중 (비공식 연습)",
+  "recommended_seconds": 55,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "passage": "MEMO\nTo: Department coordinators\nSubject: Annual safety briefing\n\nThe annual safety briefing will be held on May 18 in Room 4B. Coordinators should submit attendee names by May 10. Employees who work remotely may join through the video link that will be sent after registration. The briefing materials will be available ___ the session ends.",
+  "prompt": "Choose the option that best completes the sentence.",
+  "choices": [
+    "during",
+    "once",
+    "despite",
+    "unless"
+  ],
+  "answer": 2,
+  "explanation": "Once means as soon as/after that event; materials become available after the session ends.",
+  "quick_solution": "Once means as soon as/after that event; materials become available after the session ends.",
+  "distractor_analysis": {
+    "note": "문법·지문 근거와 오답 선택지의 관련성, 정답 유일성을 수동 검수."
+  },
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-11-10",
+    "reviewer": "Codex",
+    "scope": "독창적 문항; 문법/지문 근거와 정답 유일성을 수동 검토."
+  },
+  "verification": {
+    "model": "manual_language_review",
+    "target_choice": 2,
+    "choice_facts": [
+      {
+        "choice": "during"
+      },
+      {
+        "choice": "once"
+      },
+      {
+        "choice": "despite"
+      },
+      {
+        "choice": "unless"
+      }
+    ],
+    "note": "자연어 문항은 코드로 의미 검증할 수 없어 수동 검수."
+  }
+}

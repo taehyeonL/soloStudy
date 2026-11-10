@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "TOEIC-RC-20261110-Q002",
+  "kind": "practice",
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-11-10-01",
+  "part": 5,
+  "skill_tags": [
+    "접속사",
+    "양보"
+  ],
+  "scoring_format": "choice",
+  "domain": "TOEIC RC Part 5",
+  "subtype": "접속사와 전치사",
+  "difficulty": "중하~중 (비공식 연습)",
+  "recommended_seconds": 40,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "passage": "___ the shipment arrived two days late, the client agreed to keep the original installation date.",
+  "prompt": "Choose the option that best completes the sentence.",
+  "choices": [
+    "Despite",
+    "Although",
+    "Because of",
+    "In spite of"
+  ],
+  "answer": 2,
+  "explanation": "A complete clause follows the blank, so the conjunction Although fits; despite and in spite of take a noun phrase or gerund.",
+  "quick_solution": "A complete clause follows the blank, so the conjunction Although fits; despite and in spite of take a noun phrase or gerund.",
+  "distractor_analysis": {
+    "note": "문법·지문 근거와 오답 선택지의 관련성, 정답 유일성을 수동 검수."
+  },
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-11-10",
+    "reviewer": "Codex",
+    "scope": "독창적 문항; 문법/지문 근거와 정답 유일성을 수동 검토."
+  },
+  "verification": {
+    "model": "manual_language_review",
+    "target_choice": 2,
+    "choice_facts": [
+      {
+        "choice": "Despite"
+      },
+      {
+        "choice": "Although"
+      },
+      {
+        "choice": "Because of"
+      },
+      {
+        "choice": "In spite of"
+      }
+    ],
+    "note": "자연어 문항은 코드로 의미 검증할 수 없어 수동 검수."
+  }
+}

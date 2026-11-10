@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "SEC-WR-SYS-001-Q003",
+  "kind": "practice",
+  "subject": "security-engineer-written",
+  "exam_track": "security-written",
+  "concept_ids": ["SEC-CIA"],
+  "scoring_format": "short_answer",
+  "domain": "시스템 보안",
+  "subtype": "CIA 목표 식별",
+  "difficulty": "기초 응용",
+  "passage": "직원이 파일 서버에 로그인할 수 있지만, 시스템 장애로 급여 파일을 열 수 없다.",
+  "prompt": "가장 직접적으로 침해된 보안 목표는 무엇인가? 이유도 설명하시오.",
+  "answer": "가용성. 필요한 사용자가 필요한 시점에 정보·서비스를 사용할 수 없기 때문이다.",
+  "explanation": "인증은 성공했지만 장애 때문에 필요한 파일을 열 수 없다. 이는 정보 또는 서비스의 적시 이용 가능성인 가용성 침해다.",
+  "quick_solution": "필요한 파일을 사용할 수 없음 → 가용성.",
+  "recommended_seconds": 45,
+  "source_type": "독창적 비공식 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "references": [{"url": "https://csrc.nist.gov/glossary/term/availability", "section": "Availability definition", "checked_on": "2026-10-28"}],
+  "manual_review": {"status": "passed", "date": "2026-10-28", "reviewer": "Codex", "scope": "장애로 인한 서비스 이용 불가 사례를 가용성 정의와 대조."}
+}

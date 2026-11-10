@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "TOEIC-RC-20261110-Q007",
+  "kind": "practice",
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-11-10-01",
+  "part": 5,
+  "skill_tags": [
+    "조건절",
+    "접속사"
+  ],
+  "scoring_format": "choice",
+  "domain": "TOEIC RC Part 5",
+  "subtype": "조건 표현",
+  "difficulty": "중하~중 (비공식 연습)",
+  "recommended_seconds": 45,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "passage": "Visitors may enter the laboratory ___ they wear the protective equipment provided at reception.",
+  "prompt": "Choose the option that best completes the sentence.",
+  "choices": [
+    "unless",
+    "provided that",
+    "whereas",
+    "despite"
+  ],
+  "answer": 2,
+  "explanation": "Provided that introduces the condition under which visitors may enter.",
+  "quick_solution": "Provided that introduces the condition under which visitors may enter.",
+  "distractor_analysis": {
+    "note": "문법·지문 근거와 오답 선택지의 관련성, 정답 유일성을 수동 검수."
+  },
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-11-10",
+    "reviewer": "Codex",
+    "scope": "독창적 문항; 문법/지문 근거와 정답 유일성을 수동 검토."
+  },
+  "verification": {
+    "model": "manual_language_review",
+    "target_choice": 2,
+    "choice_facts": [
+      {
+        "choice": "unless"
+      },
+      {
+        "choice": "provided that"
+      },
+      {
+        "choice": "whereas"
+      },
+      {
+        "choice": "despite"
+      }
+    ],
+    "note": "자연어 문항은 코드로 의미 검증할 수 없어 수동 검수."
+  }
+}

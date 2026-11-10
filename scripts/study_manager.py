@@ -39,7 +39,29 @@ def plan(profile, schedule, today, hours=None):
     threshold = max(toeic['target_score_range'][0], toeic.get('confirmed_institution_requirement') or 0)
     secured = (isinstance(score, (int, float)) and 10 <= score <= 990
                and toeic.get('score_evidence_confirmed') is True and score >= threshold)
-    weights = [7, 7, 0] if secured else [6, 6, 2]
+    priority = profile.get('priority_plan', {})
+    phase_start = priority.get('phase_start_date')
+    focus_active = bool(phase_start and today >= date.fromisoformat(phase_start)
+                        and (today - date.fromisoformat(phase_start)).days < priority.get('focus_duration_weeks', 8) * 7)
+    if focus_active:
+        if secured:
+            configured = priority.get('focus_allocation_hours', {'ncs': 0, 'cs_security': 12, 'toeic': 2})
+            weights_map = {'ncs': 0, 'cs_security': configured.get('cs_security', 12) + configured.get('toeic', 2), 'toeic': 0}
+        else:
+            weights_map = priority.get('focus_allocation_hours', {'ncs': 0, 'cs_security': 12, 'toeic': 2})
+        phase_week = (today - date.fromisoformat(phase_start)).days // 7 + 1
+        phase_name = 'theory' if phase_week <= priority.get('theory_weeks', 4) else 'problem solving'
+        reason = f'InfoSec written {phase_name}, week {phase_week}/8'
+    elif secured:
+        weights_map = priority.get('post_focus_toeic_secured_allocation_hours',
+                                   profile.get('toeic', {}).get('post_target_allocation_hours',
+                                   {'ncs': 7, 'cs_security': 7, 'toeic': 0}))
+        reason = 'post-focus allocation; TOEIC secured'
+    else:
+        weights_map = priority.get('post_focus_allocation_hours',
+                                   profile.get('weekly_allocation_hours', {'ncs': 6, 'cs_security': 6, 'toeic': 2}))
+        reason = 'post-InfoSec-written focus allocation'
+    weights = [weights_map.get(group, 0) for group in GROUPS]
     minutes = allocate(total, weights)
     candidates = []
     for event in schedule.get('events', []):
@@ -51,7 +73,6 @@ def plan(profile, schedule, today, hours=None):
             if group == 'toeic' and secured:
                 continue
             candidates.append((days, event.get('id', ''), group))
-    reason = 'base allocation; TOEIC secured' if secured else 'base allocation'
     if candidates:
         days, event_id, group = min(candidates)
         donors = [g for g in GROUPS if g != group and minutes[g] > 0]
@@ -64,7 +85,7 @@ def plan(profile, schedule, today, hours=None):
             minutes[donor] -= take
             remaining -= take
         minutes[group] += transfer - remaining
-        reason = f'confirmed exam {event_id} in {days} days; temporary priority'
+        reason += f'; confirmed exam {event_id} in {days} days; temporary priority'
     weekend_only = toeic.get('study_mode') == 'weekend_rc_diagnostic'
     weekend = today.weekday() >= 5
     eligible = [g for g in GROUPS if minutes[g] > 0

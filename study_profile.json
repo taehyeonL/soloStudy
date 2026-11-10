@@ -75,6 +75,13 @@
     ],
     "day_advancement_rule": "문제마다 Day를 올리지 않음. 미리 제시한 해당 Day 패키지의 이론 범위·기본 문제·조건부 보완을 마친 뒤에만 해당 패키지를 완료",
     "common_concept_exam_separation": "공통 이론은 한 번 강의하고 전산전공/정보보안기사 필기/실기 문제 수를 각각 명시"
+    ,"question_realism": {
+      "warmup_questions_may_be_easy": true,
+      "label_warmup_vs_exam_style": true,
+      "exam_style_distractors": "보기는 모두 기술적으로 그럴듯하게 구성하고, 노골적으로 무관하거나 터무니없는 선택지를 정답 식별용으로 쓰지 않는다.",
+      "increase_application": "기초 확인 뒤에는 세부 조건·예외·원인과 결과를 비교하는 적용형 문항으로 난도를 올린다.",
+      "no_unverified_past_exam_claim": true
+    }
   },
   "review": {
     "interval_days": [
@@ -124,9 +131,23 @@
   ],
   "weekly_hours": 14,
   "weekly_allocation_hours": {
-    "ncs": 6,
-    "cs_security": 6,
+    "ncs": 0,
+    "cs_security": 12,
     "toeic": 2
+  },
+  "priority_plan": {
+    "phase_start_date": "2026-10-28",
+    "focus_track": "security-written",
+    "focus_duration_weeks": 8,
+    "theory_weeks": 4,
+    "problem_solving_weeks": 4,
+    "focus_allocation_hours": {"ncs": 0, "cs_security": 12, "toeic": 2},
+    "post_focus_allocation_hours": {"ncs": 8, "cs_security": 4, "toeic": 2},
+    "post_focus_toeic_secured_allocation_hours": {"ncs": 10, "cs_security": 4, "toeic": 0},
+    "ncs_psat_resume_after_focus": true,
+    "toeic_weekend_only": true,
+    "weekday_priority": ["security-written", "ncs", "psat"],
+    "note": "첫 8주 정보보안기사 필기 집중. 이미 쌓인 NCS·전산·보안 학습 기록은 보존하고 진도만 새 우선순위에 따라 이어간다."
   },
   "toeic": {
     "target_score_range": [
@@ -148,8 +169,8 @@
     "mock_requires_real_audio_for_lc": true,
     "stop_regular_study_when_target_secured": true,
     "post_target_allocation_hours": {
-      "ncs": 7,
-      "cs_security": 7,
+      "ncs": 10,
+      "cs_security": 4,
       "toeic": 0
     },
     "policy_history": [
@@ -188,7 +209,7 @@
     "exam_schedule_file": "subjects/exam_schedule.json",
     "priority_rule": "공식 근거로 확인된 28일 이내 가장 가까운 시험에 총시간의 1/7을 타 과목에서 비례 이동; 지나면 기본 배분 복귀",
     "background_execution": false,
-    "hours_change_policy": "6:6:2 비례; TOEIC 확보 후 7:7:0; 분 단위 최대 나머지 배분으로 총시간 유지 진도 가속 요청으로 학습 단위는 주력 과목 세션당 2개를 목표로 하되 주간 예산은 자동 증가하지 않음. 오답·불안정 개념만 추가 보완."
+    "hours_change_policy": "첫 8주는 정보보안기사 필기12:TOEIC2, NCS0; 이후 TOEIC 미확보면 NCS8:전산·보안4:TOEIC2, 확보 후10:4:0. 변경된 총시간에 비례 계산하며 분 단위 총합 유지. 진도 가속은 주간 예산을 자동 증가시키지 않음."
   },
   "availability_note": "주 14시간을 우선 적용. 종전 평일90분·주말180분 상한 합계는13.5시간이므로 주중 또는 주말에 총30분 추가 분할학습. 불가하면 요청 시간으로 재계산.",
   "concept_registry": "subjects/concepts.json"

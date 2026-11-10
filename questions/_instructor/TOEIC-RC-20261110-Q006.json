@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "version": 1,
+  "id": "TOEIC-RC-20261110-Q006",
+  "kind": "practice",
+  "subject": "toeic",
+  "exam_track": "toeic",
+  "study_set_id": "TOEIC-RC-2026-11-10-01",
+  "part": 5,
+  "skill_tags": [
+    "어휘",
+    "연어"
+  ],
+  "scoring_format": "choice",
+  "domain": "TOEIC RC Part 5",
+  "subtype": "동사-명사 연어",
+  "difficulty": "중하~중 (비공식 연습)",
+  "recommended_seconds": 40,
+  "source_type": "독창적 비공식 TOEIC 연습문제; 공식 기출 아님",
+  "review_status": "passed",
+  "passage": "Before the building reopens, the facilities team will ___ a final inspection of the ventilation system.",
+  "prompt": "Choose the option that best completes the sentence.",
+  "choices": [
+    "conduct",
+    "undergo",
+    "attend",
+    "submit"
+  ],
+  "answer": 1,
+  "explanation": "The facilities team carries out the inspection, so conduct an inspection is the best fit. Undergo an inspection would mean the team itself is inspected; attend means being present, and submit does not express carrying out the inspection.",
+  "quick_solution": "주체가 점검을 직접 수행하므로 conduct an inspection.",
+  "distractor_analysis": {
+    "note": "문법·지문 근거와 오답 선택지의 관련성, 정답 유일성을 수동 검수."
+  },
+  "manual_review": {
+    "status": "passed",
+    "date": "2026-11-10",
+    "reviewer": "Codex",
+    "scope": "독창적 문항; 문법/지문 근거와 정답 유일성을 수동 검토."
+  },
+  "verification": {
+    "model": "manual_language_review",
+    "target_choice": 1,
+    "choice_facts": [
+      {
+        "choice": "conduct"
+      },
+      {
+        "choice": "undergo"
+      },
+      {
+        "choice": "attend"
+      },
+      {
+        "choice": "submit"
+      }
+    ],
+    "note": "자연어 문항은 코드로 의미 검증할 수 없어 수동 검수."
+  }
+}
